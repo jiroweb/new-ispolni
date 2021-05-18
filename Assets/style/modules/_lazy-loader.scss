@@ -1,0 +1,74 @@
+.lazy {
+   position: relative;
+   width: 100%;
+   min-height: rem(217px);
+
+   @include xs {
+      min-height: rem(169px);
+   }
+
+   &-loader {
+      height: 100%;
+
+      &__img {
+         max-width: 100%;
+         height: calc(100% - 72px);
+         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.16);
+         border-radius: rem(8px);
+         background-color: var(--grey_color_dark-E6E6E6);
+
+         @include xs {
+            height: calc(100% - 60px);
+         }
+
+         &--product {
+            @include wh(100%);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.16);
+            border-radius: rem(8px);
+            background-color: var(--grey_color_dark-E6E6E6);
+
+            @include xs {
+               height: rem(256px);
+            }
+         }
+      }
+
+      &__info {
+         margin-top: rem(12px);
+
+         &--name {
+            min-height: rem(22px);
+            margin-bottom: rem(16px);
+            background-color: var(--grey_color_dark-E6E6E6);
+
+            @include md {
+               margin-bottom: rem(10px);
+            }
+
+            @include xs {
+               min-height: rem(19px);
+            }
+         }
+
+         &--price {
+            width: calc(100% - 76px);
+            min-height: rem(22px);
+            background-color: var(--grey_color_dark-E6E6E6);
+
+            @include xs {
+               min-height: rem(19px);
+            }
+         }
+      }
+   }
+
+   &-icon {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      @include sm {
+         top: 0;
+      }
+   }
+}
