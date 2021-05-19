@@ -10,7 +10,7 @@
 //  html
 
 html {
-    background-color: #FBFAFA;
+    background-color: var(--grey_color_default-bg);
     font-size: rem(16px);
 
     @include md {
@@ -37,13 +37,13 @@ body {
 
 // container  -- START
 .container {
-    max-width: rem(1366px);
+    max-width: rem(1320px);
     width: 100%;
     padding: rem(0 40px);
     margin: 0 auto;
 
     @include md {
-        padding: rem(0 16px);
+        padding: rem(0 15px);
     }
 }
 
