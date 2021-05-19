@@ -106,9 +106,7 @@
         background-color: var(--neutral_color_white);
         border: rem(1px) solid var(--grey_color_default-D3D3D3);
 
-        @include xs {
-            width: rem(150px);
-        }
+
 
         &--selected {
             text-align: left;

@@ -1,0 +1,68 @@
+@import './shared',
+'./icons',
+'./normalize',
+'./flex-box',
+'./grid-box',
+'./root';
+
+
+//  html
+
+html {
+   background-color: var(--body_bg);
+   font-size: rem(16px);
+}
+
+
+// container  -- START
+.container {
+   max-width: 1400px;
+   width: 100%;
+   padding: 0 40px;
+   margin: 0 auto;
+}
+
+// container  -- END
+
+
+// cursor pointer -- START
+.curs-pointer {
+   cursor: pointer;
+}
+
+// cursor pointer -- END
+
+
+
+// overflow-hidden -- START
+.overflow-hidden,
+.modal-overflow {
+   overflow: hidden;
+}
+
+// overflow-hidden -- END
+
+// display block -- START
+.d-block {
+   display: block;
+}
+
+.d-none {
+   display: none;
+}
+
+// display block -- END
+
+
+
+
+@import // modules
+'../modules/buttons',
+'../modules/checked',
+'../modules/input-textarea',
+'../modules/pagination',
+'../modules/dropdown-select',
+'../modules/scrollbar',
+
+// pages
+'../pages/index';
