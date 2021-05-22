@@ -1,6 +1,5 @@
 input {
     width: 100%;
-    font: rem(16px) $Regular;
     line-height: rem(27px);
     color: var(--grey_color_dark-text);
     border: 1px solid var(--grey_color_border-input);
@@ -10,7 +9,6 @@ input {
     box-shadow: none;
 
     &::placeholder {
-        font: rem(16px) $Regular;
         line-height: rem(27px);
         color: var(--grey_color_light-text);
         opacity: .37;
@@ -23,12 +21,7 @@ input {
     }
 
 
-    &.input-table {
-        padding: 24px 25px;
 
-        &:hover {
-            border: transparent;
-        }
 
     }
 }
