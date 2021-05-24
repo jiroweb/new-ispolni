@@ -8,7 +8,7 @@ sans-serif; // 500
 $Regular: 'Roboto-Regular',
 sans-serif; // normal
 
-$font-path:'../../../assets/fonts/Roboto/';
+$font-path:'../assets/fonts/Roboto/';
 $list: 'Roboto-Regular''Roboto-Medium''Roboto-Bold';
 
 @each $name in $list {
