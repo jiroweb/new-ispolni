@@ -1,0 +1,136 @@
+.header {
+   border-bottom: 1px solid #F2F2F7;
+   background-color: var(--neutral_color_white);
+
+   &-block {
+      &__main {
+         &--logo {
+            width: 140px;
+            height: 32px;
+         }
+
+         &--menu {
+            margin-left: 92px;
+
+            &-item {
+               position: relative;
+
+               &+& {
+                  margin-left: 44px;
+               }
+
+               &:hover &__dropdawn {
+                  display: block;
+               }
+
+               &:hover &__link::before {
+                  width: 100%;
+                  left: 0;
+               }
+
+               &__link {
+                  padding: 23px 0;
+                  position: relative;
+                  transition: 0.3s;
+                  color: var(--default_light);
+                  font: rem(15px) $Medium;
+
+                  &::before {
+                     content: "";
+                     position: absolute;
+                     bottom: 0px;
+                     left: 50%;
+                     width: 0;
+                     height: 3px;
+                     background-color: var(--primary_color_green-dark);
+                     transition: 0.3s;
+                  }
+
+                  &.active {
+                     color: var(--primary_color_green-dark);
+
+                     &::before {
+                        width: 100%;
+                        left: 0;
+                     }
+                  }
+               }
+
+               &__icon {
+                  font-size: 24px;
+                  cursor: pointer;
+                  color: var(--default_dark);
+               }
+
+               &__dropdawn {
+                  width: 190px;
+                  padding: 20px 14px 20px 20px;
+                  position: absolute;
+                  top: 100%;
+                  left: 0;
+                  background: var(--neutral_color_white);
+                  box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
+                  border-radius: 0px 0px 8px 8px;
+                  z-index: 999;
+                  display: none;
+
+                  &--section {
+
+                     &+& {
+                        padding-top: 20px;
+                     }
+
+                     &-link {
+                        width: 100%;
+                        font: rem(15px) $Regular;
+                        color: var(--default_dark);
+                        transition: 0.3s;
+
+                        &:hover {
+                           color: var(--primary_color_green-dark);
+
+                        }
+                     }
+                  }
+               }
+
+
+
+            }
+         }
+      }
+
+      &__user {
+         &--search {
+            position: relative;
+            width: 330px;
+            margin-right: 20px;
+
+            &-icon {
+               position: absolute;
+               color: #BBBBBB;
+               right: 15px;
+               cursor: pointer;
+            }
+         }
+
+         &--item {
+            cursor: pointer;
+
+            &-photo {
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+               margin-right: 10px;
+            }
+
+            &-icon {
+               color: var(--default_light);
+               font-size: 8px;
+            }
+         }
+      }
+
+   }
+
+}

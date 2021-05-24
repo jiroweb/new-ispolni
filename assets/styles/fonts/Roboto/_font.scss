@@ -2,15 +2,14 @@
 $Bold: 'Roboto-Bold',
 sans-serif; // 700
 
-$Regular: 'Roboto-Regular',
-sans-serif; // normal
-
 $Medium: 'Roboto-Medium',
 sans-serif; // 500
 
+$Regular: 'Roboto-Regular',
+sans-serif; // normal
 
 $font-path:'../../assets/fonts/Roboto/';
-$list: 'Roboto-Regular''Roboto-Bold''Roboto-Medium';
+$list: 'Roboto-Regular''Roboto-Medium''Roboto-Bold';
 
 @each $name in $list {
     $src: $font-path + $name;
