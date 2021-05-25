@@ -5,7 +5,7 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    <title>Исполняй</title>
-   <link rel="icon" href="./assets/img/header/logo-small.svg">
+   <link rel="icon" href="./assets/img/favicon/favicon.svg">
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -29,7 +29,7 @@
                <img src="./assets/img/header/logo-all.svg" alt="logo">
             </a>
             <ul class="header-block__main--menu d-f j-c-b a-i-c">
-               <li class="header-block__main--menu-item d-f a-i-c" data-dropdown-click>
+               <li class="header-block__main--menu-item d-f a-i-c">
                   <a class="header-block__main--menu-item__link active" href="#">Кабинет WB</a>
                   <i class="icon icon-arrow header-block__main--menu-item__icon"></i>
                   <ul class="header-block__main--menu-item__dropdawn">
@@ -83,7 +83,8 @@
          </div>
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
-               <input class="input-search header-block__user--search-form" type="text" placeholder="Поиск категории">
+               <input class="input-search header-block__user--search-form focus" type="text"
+                  placeholder="Поиск категории">
                <i class="icon icon-search header-block__user--search-icon"></i>
             </div>
             <div class="header-block__user--item d-f a-i-c">
@@ -95,81 +96,87 @@
          </div>
       </div>
    </header>
-   <section class="results container">
-      <div class="results-block g-t-c-4 g-g-20 d-g ">
-         <div class="results-block__graphic results-block__things  d-f j-c-b">
-            <div class="results-block__graphic--canvas">
-               <img src="./assets/img/main/graphic.png" alt="graphic">
-            </div>
-            <div class="results-block__graphic--info">
-               <h4 class="results-block__graphic--info-title">Товаров</h4>
-               <div class="results-block__graphic--info-number d-f a-i-c">
-                  <i class="icon icon-arrow-small results-block__graphic--info-number__icon"></i>
-                  <p class="results-block__graphic--info-number__item">26 564 588</p>
+   <section class="home container">
+      <div class="home-results">
+         <div class="home-results__block g-t-c-4 g-g-20 d-g ">
+            <div class="home-results__block--graphic home-results__block--things  d-f j-c-b">
+               <div class="home-results__block--graphic-canvas">
+                  <img src="./assets/img/main/graphic.png" alt="graphic">
                </div>
-            </div>
+               <div class="home-results__block--graphic-info">
+                  <h4 class="home-results__block--graphic-info__title">Товаров</h4>
+                  <div class="home-results__block--graphic-info__number d-f a-i-c">
+                     <i class="icon icon-arrow-small home-results__block--graphic-info__number--icon"></i>
+                     <p class="home-results__block--graphic-info__number--item">26 564 588</p>
+                  </div>
+               </div>
 
-         </div>
-         <div class="results-block__graphic results-block__brend d-f j-c-b">
-            <div class="results-block__graphic--canvas">
-               <img src="./assets/img/main/graphic1.png" alt="graphic">
             </div>
-            <div class="results-block__graphic--info">
-               <h4 class="results-block__graphic--info-title">Брендов</h4>
-               <div class="results-block__graphic--info-number d-f a-i-c">
-                  <i class="icon icon-arrow-small results-block__graphic--info-number__icon"></i>
-                  <p class="results-block__graphic--info-number__item">240 372</p>
+            <div class="home-results__block--graphic home-results__block--brend d-f j-c-b">
+               <div class="home-results__block--graphic-canvas">
+                  <img src="./assets/img/main/graphic1.png" alt="graphic">
                </div>
-            </div>
-         </div>
-         <div class="results-block__graphic results-block__sales d-f j-c-b">
-            <div class="results-block__graphic--canvas">
-               <img src="./assets/img/main/graphic2.png" alt="graphic">
-            </div>
-            <div class="results-block__graphic--info">
-               <h4 class="results-block__graphic--info-title">Продаж</h4>
-               <div class="results-block__graphic--info-number d-f a-i-c">
-                  <i class="icon icon-arrow-small results-block__graphic--info-number__icon"></i>
-                  <p class="results-block__graphic--info-number__item">3 376 508</p>
+               <div class="home-results__block--graphic-info">
+                  <h4 class="home-results__block--graphic-info__title">Товаров</h4>
+                  <div class="home-results__block--graphic-info__number d-f a-i-c">
+                     <i class="icon icon-arrow-small home-results__block--graphic-info__number--icon"></i>
+                     <p class="home-results__block--graphic-info__number--item">26 564 588</p>
+                  </div>
                </div>
+
             </div>
-         </div>
-         <div class="results-block__graphic results-block__saler d-f j-c-b">
-            <div class="results-block__graphic--canvas">
-               <img src="./assets/img/main/graphic3.png" alt="graphic">
-            </div>
-            <div class="results-block__graphic--info">
-               <h4 class="results-block__graphic--info-title">Продавцов</h4>
-               <div class="results-block__graphic--info-number d-f a-i-c">
-                  <i class="icon icon-arrow-small results-block__graphic--info-number__icon"></i>
-                  <p class="results-block__graphic--info-number__item">88 686</p>
+            <div class="home-results__block--graphic home-results__block--sales  d-f j-c-b">
+               <div class="home-results__block--graphic-canvas">
+                  <img src="./assets/img/main/graphic2.png" alt="graphic">
                </div>
+               <div class="home-results__block--graphic-info">
+                  <h4 class="home-results__block--graphic-info__title">Товаров</h4>
+                  <div class="home-results__block--graphic-info__number d-f a-i-c">
+                     <i class="icon icon-arrow-small home-results__block--graphic-info__number--icon"></i>
+                     <p class="home-results__block--graphic-info__number--item">26 564 588</p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="home-results__block--graphic home-results__block--saler  d-f j-c-b">
+               <div class="home-results__block--graphic-canvas">
+                  <img src="./assets/img/main/graphic3.png" alt="graphic">
+               </div>
+               <div class="home-results__block--graphic-info">
+                  <h4 class="home-results__block--graphic-info__title">Товаров</h4>
+                  <div class="home-results__block--graphic-info__number d-f a-i-c">
+                     <i class="icon icon-arrow-small home-results__block--graphic-info__number--icon"></i>
+                     <p class="home-results__block--graphic-info__number--item">26 564 588</p>
+                  </div>
+               </div>
+
             </div>
          </div>
       </div>
-
-   </section>
-   <section class="main container">
-      <div class="main-block  d-f j-c-b">
-         <div class="main-block__info">
-            <h2 class="main-block__info--title">Исполняй</h2>
-            <span class="main-block__info--subtitle">Моментальный анализ продаж миллионов товаров на Российских
-               маркетплейсах</span>
-            <p class="main-block__info--text">MarketPlace Statistics, или mpstats, это комплекс из нескольких узлов:
-               система сбора данных, система
-               хранения и системы анализа. Ежедневно мы обрабатываем сотни гигабайтов данных, чтобы получить информацию
-               о товарах на основных маркетплейсах: их остатках, продавцах и брендах. Эти данные нормируются и
-               укладываются в удобные интерфейсы, чтобы наши пользователи смогли быстро сориентироваться и принять
-               верные решения.</p>
-            <button class="btn btn-background main-block__info--btn">Проверка видимости товаров WB</button>
-         </div>
-         <div class="main-block__video">
-            <div class="main-block__video--form">
-               <div class="main-block__video--form">
+      <div class="home-main">
+         <div class="home-main__block  d-f j-c-b">
+            <div class="home-main__block--info">
+               <h2 class="home-main__block--info-title">Исполняй</h2>
+               <span class="home-main__block--info-subtitle">Моментальный анализ продаж миллионов товаров на Российских
+                  маркетплейсах</span>
+               <p class="home-main__block--info-text">MarketPlace Statistics, или mpstats, это комплекс из нескольких
+                  узлов:
+                  система сбора данных, система
+                  хранения и системы анализа. Ежедневно мы обрабатываем сотни гигабайтов данных, чтобы получить
+                  информацию
+                  о товарах на основных маркетплейсах: их остатках, продавцах и брендах. Эти данные нормируются и
+                  укладываются в удобные интерфейсы, чтобы наши пользователи смогли быстро сориентироваться и принять
+                  верные решения.</p>
+               <button class="btn btn-background home-main__block--info-btn">Проверка видимости товаров WB</button>
+            </div>
+            <div class="home-main__block--video">
+               <div class="home-main__block--video-form">
                   <video poster="./assets/img/main/video.png" preload="none" class="video"
                      src="./assets/img/main/video1.mp4"></video>
-                  <div class="main-block__video--form-play">
-                     <span class="main-block__video--form-play__icon"></span>
+                  <div class="home-main__block--video-form__play">
+                     <span class="home-main__block--video-form__play--btn d-f j-c-c a-i-c">
+                        <i class="icon icon-play home-main__block--video-form__play--btn-icon"></i>
+                     </span>
                   </div>
                </div>
             </div>

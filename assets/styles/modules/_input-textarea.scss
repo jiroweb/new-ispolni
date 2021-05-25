@@ -12,7 +12,9 @@ input {
         opacity: .37;
     }
 
-
+    &:focus {
+        border: 1px solid var(--primary_color_green-dark);
+    }
 }
 
 .input-search {
@@ -29,7 +31,3 @@ input {
 // .input-table {}
 
 // .input-standard {}
-
-// &.input-active {
-//     border: 1px solid var(--primary_color_green-dark);
-// }

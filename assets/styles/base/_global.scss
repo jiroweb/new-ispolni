@@ -30,8 +30,16 @@ html {
    cursor: pointer;
 }
 
-// cursor pointer -- END
+// cursor pointer -- END 
 
+// section-title -- START
+.section-title {
+   font: rem(20px) $Medium;
+   line-height: rem(23px);
+   color: var(--default_dark);
+}
+
+// section-title -- END
 
 
 // overflow-hidden -- START
@@ -68,4 +76,5 @@ html {
 '../header/header',
 
 // pages
-'../pages/home';
+'../pages/home',
+'../pages/search';

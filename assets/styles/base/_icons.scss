@@ -1,6 +1,10 @@
 @import '../fonts/icons/icons';
 
 
+.icon-play:before {
+  content: "\e90d";
+}
+
 .icon-settings:before {
   content: "\e903";
 }
