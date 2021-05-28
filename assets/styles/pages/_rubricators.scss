@@ -59,39 +59,60 @@
             border-radius: var(--border-radius);
 
             &__item {
-               border: 1px solid #E1E1E1;
+               border-top: 1px solid #E1E1E1;
+               border-bottom: 1px solid #E1E1E1;
+               border-right: 1px solid #E1E1E1;
                padding: 11px 20px;
                cursor: pointer;
                font: rem(14px) $Medium;
                color: var(--default_dark);
             }
 
+            &__item:first-child {
+               border-left: 1px solid #E1E1E1;
+               border-top-left-radius: var(--border-radius);
+               border-bottom-left-radius: var(--border-radius);
+            }
+
+            &__item:last-child {
+               border-top-right-radius: var(--border-radius);
+               border-bottom-right-radius: var(--border-radius);
+            }
+
             &__filter {
-               transition: 0.3s;
                position: relative;
 
-               // &::before {
-               //    content: "";
-               //    height: 2px;
-               //    top: 0;
-               //    left: 50%;
-               //    width: 0;
-               //    background-color: var(--primary_color_green-dark);
-               //    transition: 0.3s;
-               // }
+               &::before {
+                  content: '';
+                  transition: .3s;
+               }
 
                &:hover {
                   background: #F9F9FB;
-                  border-top: 2px solid var(--primary_color_green-dark);
-                  z-index: 999;
+
+                  &::before {
+                     height: 2px;
+                     position: absolute;
+                     top: -1px;
+                     left: 0;
+                     right: 0;
+                     background-color: var(--primary_color_green-dark);
+                  }
                }
 
                &.active {
                   background: #F9F9FB;
-                  border-top: 2px solid var(--primary_color_green-dark);
-                  z-index: 999;
-               }
 
+                  &::before {
+                     content: "";
+                     height: 2px;
+                     position: absolute;
+                     top: -1px;
+                     left: 0;
+                     right: 0;
+                     background-color: var(--primary_color_green-dark);
+                  }
+               }
             }
 
          }

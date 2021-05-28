@@ -84,5 +84,59 @@
 
    &-grafic {
       margin-top: 33px;
+
+      &__block {
+         &--details {
+            margin: 31px auto 18px;
+
+            &-item {
+               &+& {
+                  margin-left: 42px;
+               }
+
+               &__text {
+                  margin: 0 6px 0 8px;
+                  font: rem(14px) $Medium;
+                  color: var(--default_dark);
+               }
+
+               &__circle {
+                  width: 8px;
+                  height: 8px;
+                  background-color: var(--primary_color_green-dark);
+                  border-radius: 50%;
+               }
+
+               &__square {
+                  width: 12px;
+                  height: 12px;
+               }
+
+               &__green {
+                  background: rgba(45, 202, 115, 0.3);
+               }
+
+               &__circlepink {
+                  background: #ED63D2;
+               }
+
+               &__squarepink {
+                  background: #FBE0F6;
+               }
+
+               &__circleorange {
+                  background: #FF7D51;
+               }
+
+               &__squarered {
+                  background: rgba(252, 93, 66, 0.3);
+               }
+
+               &__circleyellow {
+                  background: #FFC212;
+               }
+            }
+         }
+      }
    }
 }

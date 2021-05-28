@@ -1,29 +1,33 @@
 .checked {
     cursor: pointer;
-    height: rem(18px);
+    border: solid var(--primary_color_green-dark);
+    border-radius: 2px;
+
 
     &-checkbox {
-        @include wh(rem(18px));
-        border: solid rem(2px) #999999;
-        border-radius: var(--border-radius);
+        @include wh(19px);
         position: relative;
         opacity: 1;
     }
 
+    .checkbox:checked~.checked {
+        border: unset;
+    }
+
     .checkbox:checked~&-checkbox {
-        border: solid rem(2px) var(--primary_color_default-0DB02B);
-        background-color: var(--primary_color_default-0DB02B);
+        background-color: var(--primary_color_green-dark);
+        border: 1px solid var(--primary_color_green-dark);
 
         &::before {
             content: "";
-            @include wh(rem(6px), rem(12px));
+            @include wh(7px, 13px);
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             margin: auto;
             border: solid var(--neutral_color_white);
-            border-width: rem(0 2px 2px 0);
+            border-width: 0 2px 2px 0;
             transform: rotate(45deg);
         }
     }
