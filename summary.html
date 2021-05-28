@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <title>Исполняй</title>
+   <link rel="icon" href="./assets/img/favicon/favicon.svg">
+   <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-block d-f j-c-b a-i-c container">
+         <div class="header-block__main d-f a-i-c">
+            <a class="header-block__main--logo" href="index.html">
+               <img src="./assets/img/header/logo-all.svg" alt="logo">
+            </a>
+            <ul class="header-block__main--menu d-f j-c-b a-i-c">
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link active" href="#">Кабинет WB</a>
+                  <i class="icon icon-arrow header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Сводка</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Продажи и заказы</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">География заказов</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Подключения</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Группы</a>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Ozon</a>
+                  <i class="icon icon-arrow header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Кабинет WB</a>
+                  <i class="icon icon-arrow header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown" data-dropdown-box>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Рейтинг
+                           поставщиков</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="header-block__user d-f a-i-c">
+            <div class="header-block__user--search d-f a-i-c">
+               <input class="input-search header-block__user--search-form focus" type="text"
+                  placeholder="Поиск категории">
+               <i class="icon icon-search header-block__user--search-icon"></i>
+            </div>
+            <div class="header-block__user--item d-f a-i-c">
+               <div class="header-block__user--item-photo">
+                  <img src="./assets/img/header/Ellipse.png" alt="user">
+               </div>
+               <i class="icon icon-arrow-small header-block__user--item-icon"></i>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="summary main-section container">
+      <div class="main-section__block d-f j-c-b a-i-c">
+         <h4 class="section-title">Сводка</h4>
+         <div class="main-section__block--dates d-f">
+            <div class="main-section__block--dates-list d-f a-i-c">
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter active">Месяц
+               </div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней</div>
+               <div class="main-section__block--dates-list__item">
+                  01.04.2021 - 17.04.2021
+               </div>
+            </div>
+            <div class="main-section__block--dates-dropdwon d-f a-i-c">
+               <p class="main-section__block--dates-dropdwon__text">Все ключи API</p>
+               <i class="icon icon-arrow-small main-section__block--dates-dropdwon__icon"></i>
+            </div>
+         </div>
+      </div>
+      <div class="summary-results g-t-c-5 d-g g-g-20">
+         <div class="summary-results__block summary-results__green">
+            <div class="summary-results__block--item">
+               <div class="summary-results__block--item-title d-f j-c-b">
+                  <i class="icon icon-Union summary-results__block--item-title__icon"></i>
+                  <h5 class="summary-results__block--item-title__text">Продажи</h5>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Сумма</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
+                  </div>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Количество</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="summary-results__block summary-results__pink">
+            <div class="summary-results__block--item">
+               <div class="summary-results__block--item-title d-f j-c-b">
+                  <i class="icon summary-results__block--item-title__icon"></i>
+                  <h5 class="summary-results__block--item-title__text">Заказы</h5>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Сумма</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
+                  </div>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Количество</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="summary-results__block summary-results__orange">
+            <div class="summary-results__block--item">
+               <div class="summary-results__block--item-title d-f j-c-b">
+                  <i class="icon summary-results__block--item-title__icon"></i>
+                  <h5 class="summary-results__block--item-title__text">Возвраты</h5>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Сумма</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
+                  </div>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Количество</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="summary-results__block summary-results__blue">
+            <div class="summary-results__block--item">
+               <div class="summary-results__block--item-title d-f j-c-b">
+                  <i class="icon summary-results__block--item-title__icon"></i>
+                  <h5 class="summary-results__block--item-title__text">Логистика</h5>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Сумма</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
+                  </div>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Количество</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="summary-results__block summary-results__yellow">
+            <div class="summary-results__block--item">
+               <div class="summary-results__block--item-title d-f j-c-b">
+                  <i class="icon summary-results__block--item-title__icon"></i>
+                  <h5 class="summary-results__block--item-title__text">Прибыль и комиссия</h5>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Сумма</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
+                  </div>
+               </div>
+               <div class="summary-results__block--item-list d-f j-c-b">
+                  <p class="summary-results__block--item-list__text">Количество</p>
+                  <div class="summary-results__block--item-list__sum">
+                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
+                        <i class="icon icon-arrow-small summary-results__block--item-list__sum--all-icon"></i>
+                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
+                     </div>
+                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-section__block summary-grafic d-f j-c-b a-i-c">
+         <h4 class="section-title">Сводка</h4>
+         <div class="main-section__block--dates d-f">
+            <div class="main-section__block--dates-list d-f a-i-c">
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя</div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter active">Месяц
+               </div>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней</div>
+               <div class="main-section__block--dates-list__item">
+                  01.04.2021 - 17.04.2021
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+</body>
+
+<!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+<!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
+
+<!-- ======================= -SCRIPT-MY-START- ======================= -->
+<script src="./assets/js/scripts.js"></script>
+<!-- ======================== -SCRIPT-MY-END- ======================== -->
+
+
+</html>

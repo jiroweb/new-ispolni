@@ -38,12 +38,13 @@
                   &::before {
                      content: "";
                      position: absolute;
-                     bottom: 0px;
+                     bottom: -1px;
                      left: 50%;
                      width: 0;
                      height: 3px;
                      background-color: var(--primary_color_green-dark);
                      transition: 0.3s;
+                     z-index: 9999;
                   }
 
                   &.active {
@@ -110,6 +111,7 @@
                color: #BBBBBB;
                right: 15px;
                cursor: pointer;
+               font-size: 17px;
             }
          }
 

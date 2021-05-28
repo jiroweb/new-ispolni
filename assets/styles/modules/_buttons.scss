@@ -33,3 +33,14 @@
         }
     }
 }
+
+.search-btn {
+    border-radius: 0px 4px 4px 0px;
+    background-color: var(--primary_color_green-dark);
+    color: var(--neutral_color_white);
+    width: 43px;
+    height: 39px;
+    font-size: 17px;
+    position: absolute;
+    right: 0;
+}
