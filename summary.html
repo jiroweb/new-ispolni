@@ -71,7 +71,7 @@
          </div>
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
-               <input class="input-search header-block__user--search-form focus" type="text"
+               <input class="input input-search header-block__user--search-form focus" type="text"
                   placeholder="Поиск категории">
                <i class="icon icon-search header-block__user--search-icon"></i>
             </div>
@@ -89,14 +89,20 @@
          <h4 class="section-title">Сводка</h4>
          <div class="main-section__block--dates d-f">
             <div class="main-section__block--dates-list d-f a-i-c">
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня</div>
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</div>
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя</div>
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter active">Месяц
-               </div>
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней</div>
+               <button
+                  class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня</button>
+               <button
+                  class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</button>
+               <button
+                  class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя</button>
+               <button
+                  class="main-section__block--dates-list__item main-section__block--dates-list__filter active">Месяц
+               </button>
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">30
+                  дней</button>
                <div class="main-section__block--dates-list__item">
-                  01.04.2021 - 17.04.2021
+                  <i class="icon icon-arow-small"></i>
+                  <input class="input-calendar" type="text" placeholder=" 01.04.2021 - 17.04.2021">
                </div>
             </div>
             <div class="main-section__block--dates-dropdwon d-f a-i-c">
@@ -252,18 +258,19 @@
             <h4 class="section-title">Отображение на графике</h4>
             <div class="main-section__block--dates d-f">
                <div class="main-section__block--dates-list d-f a-i-c">
-                  <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня
-                  </div>
-                  <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</div>
-                  <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя
-                  </div>
-                  <div class="main-section__block--dates-list__item main-section__block--dates-list__filter active">
+                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">Сегодня
+                  </button>
+                  <button
+                     class="main-section__block--dates-list__item main-section__block--dates-list__filter">Вчера</button>
+                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">Неделя
+                  </button>
+                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter active">
                      Месяц
-                  </div>
-                  <div class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней
-                  </div>
+                  </button>
+                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней
+                  </button>
                   <div class="main-section__block--dates-list__item">
-                     01.04.2021 - 17.04.2021
+                     <input class="input-calendar" type="text" placeholder=" 01.04.2021 - 17.04.2021">
                   </div>
                </div>
             </div>
