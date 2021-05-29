@@ -2,9 +2,16 @@
     cursor: pointer;
 
     &-checkbox {
-        @include wh(19px);
+        @include wh(18px);
         position: relative;
-        opacity: 1;
+        border: 1px solid #BDBDBD;
+        box-sizing: border-box;
+        border-radius: 2px;
+
+
+        &:hover {
+            border-color: var(--primary_color_green-dark);
+        }
     }
 
     .checkbox:checked~&-checkbox {
