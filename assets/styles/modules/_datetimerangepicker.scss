@@ -1,0 +1,10 @@
+.input-calendar {
+   font: rem(14px) $Medium;
+   color: var(--default_dark);
+}
+
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+   background-color: var(--primary_color_green-dark);
+}

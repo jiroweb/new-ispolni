@@ -1,35 +1,44 @@
-.input {
+input:not(input[name="daterange"]) {
     width: 100%;
-    line-height: rem(27px);
     color: var(--default_dark);
     border: 1px solid #E1E1E1;
     background-color: var(--neutral_color_white);
     border-radius: var(--border-radius);
+    font: rem(14px) $Regular;
+    padding: 10px 20px;
 
     &::placeholder {
-        line-height: rem(27px);
-        color: #BBBBBB;
         opacity: .37;
     }
 
     &:focus {
         border: 1px solid var(--primary_color_green-dark);
     }
-}
 
-.input-search {
-    width: 100%;
-    font: rem(15px) $Regular;
-    padding: 10px 45px 10px 15px;
+    &:hover:not(:disabled) {
+        border: 1px solid var(--primary_color_green-dark);
+    }
 
-    &::placeholder {
-        font: rem(15px) $Regular;
+    &.disabled {
+        color: #AFB6BD;
+        border: 1px solid #F0F1F2;
+        background-color: #F7F8F9;
+    }
 
+    &.required {
+        border: 1px solid #f02626;
+    }
+
+    &.border-0 {
+        border: 0;
+
+        &:hover {
+            border: transparent;
+        }
+
+        &:focus {
+            border: 0;
+            outline: none;
+        }
     }
 }
-
-.input-calendar {}
-
-// .input-table {}
-
-// .input-standard {}

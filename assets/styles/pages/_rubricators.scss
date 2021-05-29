@@ -9,7 +9,6 @@
                border-radius: var(--border-radius);
                background-color: var(--neutral_color_white);
                transition: 0.3s;
-               cursor: pointer;
 
 
 
@@ -99,6 +98,7 @@
                border-bottom: 1px solid #E1E1E1;
                border-right: 1px solid #E1E1E1;
                cursor: pointer;
+               padding: 11px 20px;
                font: rem(14px) $Medium;
                color: var(--default_dark);
             }
@@ -161,7 +161,6 @@
             padding: 5.34px 16px 5.34px 19px;
             border: 1px solid #E1E1E1;
             border-radius: var(--border-radius);
-            cursor: pointer;
 
             &:hover {
                background: #F9F9FB;
@@ -175,7 +174,6 @@
 
             &__icon {
                color: var(--default_dark);
-
             }
 
          }
