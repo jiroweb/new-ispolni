@@ -58,7 +58,6 @@
                }
 
                &__icon {
-                  font-size: 24px;
                   cursor: pointer;
                   color: var(--default_dark);
                }
@@ -111,7 +110,6 @@
                color: #BBBBBB;
                right: 15px;
                cursor: pointer;
-               font-size: 17px;
             }
          }
 
@@ -127,7 +125,6 @@
 
             &-icon {
                color: var(--default_light);
-               font-size: 8px;
             }
          }
       }

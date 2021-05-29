@@ -12,7 +12,6 @@
             &-title {
                &__icon {
                   color: #C4C4C4;
-                  font-size: 18px;
                }
 
                &__text {
@@ -40,14 +39,22 @@
 
                      &-icon {
                         color: var(--primary_color_green-dark);
-                        font-size: 6px;
-                        transform: rotate(180deg);
+                        margin-right: 10px;
+                     }
+
+                     &-icondown {
+                        color: #FF7D51;
                         margin-right: 10px;
                      }
 
                      &-number {
                         font: 14px $Regular;
                         color: var(--default_dark);
+                     }
+
+                     &-numberdown {
+                        font: 14px $Regular;
+                        color: #FF7D51;
                      }
                   }
 

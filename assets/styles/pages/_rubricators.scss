@@ -5,30 +5,66 @@
       &__list {
          &--item {
             &-link {
-               padding: 9px 17px 9px 20px;
                border: 1px solid #F2F2F7;
                border-radius: var(--border-radius);
                background-color: var(--neutral_color_white);
                transition: 0.3s;
                cursor: pointer;
 
+
+
                &+& {
                   margin-top: 10px;
                }
 
-               &__title {
-                  font: rem(15px) $Regular;
-                  line-height: rem(22px);
-                  color: var(--default_dark)
+               &__main {
+                  position: relative;
+                  padding: 9px 17px 9px 20px;
+
+
+
+                  &--title {
+                     font: rem(15px) $Regular;
+                     line-height: rem(22px);
+                     color: var(--default_dark)
+                  }
+
+                  &--icon {
+                     color: var(--primary_color_green-dark);
+                  }
+
+                  &:hover {
+                     background: #E1F7EA;
+                  }
                }
 
-               &__icon {
-                  color: var(--primary_color_green-dark);
-                  font-size: 8px;
-               }
 
-               &:hover {
-                  background: #E1F7EA;
+               &__subblock {
+                  top: 100%;
+                  width: 100%;
+                  left: 0;
+
+                  &--part {
+                     padding: 14px 40px;
+
+                     &-title {
+                        font: rem(15px) $Regular;
+                        line-height: rem(22px);
+                        color: var(--default_dark)
+                     }
+
+                     &-icon {
+                        color: var(--primary_color_green-dark);
+
+                     }
+
+                     &:hover {
+                        background: #E1F7EA;
+                     }
+
+                  }
+
+
                }
             }
          }
@@ -62,7 +98,6 @@
                border-top: 1px solid #E1E1E1;
                border-bottom: 1px solid #E1E1E1;
                border-right: 1px solid #E1E1E1;
-               padding: 11px 20px;
                cursor: pointer;
                font: rem(14px) $Medium;
                color: var(--default_dark);
@@ -81,6 +116,7 @@
 
             &__filter {
                position: relative;
+               padding: 10px 20px;
 
                &::before {
                   content: '';
@@ -115,10 +151,14 @@
                }
             }
 
+            &__calendar {
+               padding: 6.4px 20px;
+            }
+
          }
 
          &-dropdwon {
-            padding: 11px 16px 11px 19px;
+            padding: 5.34px 16px 5.34px 19px;
             border: 1px solid #E1E1E1;
             border-radius: var(--border-radius);
             cursor: pointer;
@@ -134,7 +174,6 @@
             }
 
             &__icon {
-               font-size: 6px;
                color: var(--default_dark);
 
             }

@@ -1,58 +1,79 @@
 @import '../fonts/icons/icons';
 
 
-.icon-play:before {
-  content: "\e90d";
+.icon-menu-dots:before {
+  content: "\e900";
 }
 
-.icon-settings:before {
-  content: "\e903";
-}
-
-.icon-arrow-left:before {
-  content: "\e904";
-}
-
-.icon-arrow-right:before {
-  content: "\e905";
-}
-
-.icon-question-circle:before {
-  content: "\e906";
-}
-
-.icon-sliders:before {
-  content: "\e907";
-}
-
-.icon-trash:before {
-  content: "\e908";
-}
-
-.icon-pen:before {
-  content: "\e909";
-}
-
-.icon-calendar:before {
-  content: "\e90a";
-}
-
-.icon-filter:before {
+.icon-arrow-right-end:before {
   content: "\e901";
 }
 
-.icon-Union:before {
+.icon-arrow-right:before {
   content: "\e902";
 }
 
-.icon-arrow-small:before {
+.icon-arrow-left:before {
+  content: "\e903";
+}
+
+.icon-arrow-left-start:before {
+  content: "\e904";
+}
+
+.icon-pencil:before {
+  content: "\e905";
+}
+
+.icon-question-1:before {
+  content: "\e906";
+}
+
+.icon-burger:before {
+  content: "\e907";
+}
+
+.icon-calendar:before {
+  content: "\e908";
+}
+
+.icon-filter:before {
+  content: "\e909";
+}
+
+.icon-settings:before {
+  content: "\e90a";
+}
+
+.icon-trash:before {
   content: "\e90b";
 }
 
-.icon-search:before {
+.icon-slider:before {
   content: "\e90c";
 }
 
+.icon-caret:before {
+  content: "\e90d";
+}
+
 .icon-arrow:before {
-  content: "\e900";
+  content: "\e90e";
+}
+
+.icon-arrow-up {
+  transform: rotate(180deg);
+
+  &:before {
+    content: "\e90e";
+
+  }
+}
+
+.icon-loop:before {
+  content: "\e90f";
+}
+
+.icon-play:before {
+  content: "\e910";
 }

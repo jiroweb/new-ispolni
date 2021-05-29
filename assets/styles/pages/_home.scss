@@ -23,9 +23,7 @@
 
                &__number {
                   &--icon {
-                     font-size: 8px;
                      color: var(--primary_color_green-dark);
-                     transform: rotate(180deg);
                   }
 
                   &--item {
@@ -33,6 +31,7 @@
                      color: var(--default_dark);
                      margin-left: 10px;
                      text-align: right;
+                     white-space: nowrap;
                   }
                }
             }
@@ -125,11 +124,7 @@
 
                      &-icon {
                         color: var(--neutral_color_white);
-                        font-size: 33px;
-                        margin-left: 5px;
                      }
-
-
                   }
 
                }
