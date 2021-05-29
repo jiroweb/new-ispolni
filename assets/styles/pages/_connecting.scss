@@ -2,4 +2,126 @@
    &-btn {
       padding: 10px 20px;
    }
+
+   &-api {
+      margin-top: 20px;
+
+      &__block {
+         max-width: 339px;
+         width: 100%;
+         min-height: 368px;
+         background: var(--neutral_color_white);
+         border: 1px solid #F2F2F7;
+         border-radius: 8px;
+         border-top: 5px solid var(--primary_color_green-dark);
+
+         &+& {
+            margin-left: 30px;
+         }
+
+         &--status {
+            padding: 23px 20px 20px;
+            border-bottom: 1px solid #F2F2F7;
+
+            &-code {
+               margin-bottom: 9px;
+
+               &__symbols {
+                  max-width: 225px;
+                  width: 100%;
+                  font: rem(18px) $Medium;
+                  line-height: rem(21px);
+                  color: var(--default_dark);
+               }
+
+               &__icon {
+                  color: var(--default_light);
+
+                  &:active {
+                     color: var(--primary_color_green-dark)
+                  }
+               }
+            }
+
+            &-item {
+               font: rem(12px) $Regular;
+               line-height: rem(14px);
+               color: #BBBBBB;
+            }
+
+            &-type {
+               margin-top: 17px;
+
+               &__title {
+                  font: rem(12px) $Regular;
+                  color: #BBBBBB;
+               }
+
+               &__main {
+                  font: rem(12px) $Bold;
+                  line-height: rem(14px);
+                  text-transform: uppercase;
+                  color: var(--primary_color_green-dark);
+                  margin-left: 10px;
+               }
+            }
+         }
+
+         &--renewal {
+            margin: 9px 20px 0 20px;
+
+            &-title {
+               font: rem(14px) $Medium;
+               color: var(--default_dark);
+               margin-bottom: 22px;
+            }
+
+            &-info {
+               &+& {
+                  margin-top: 24px;
+               }
+
+               &__direction {
+                  font: rem(11px) $Medium;
+                  text-transform: uppercase;
+                  color: #BBBBBB;
+               }
+
+               &__date {
+                  font: rem(14px) $Regular;
+                  color: #4F4F4F;
+               }
+            }
+
+            &-input {
+               &+& {
+                  margin-top: 10px;
+               }
+
+               &__title {
+                  font: rem(11px) $Bold;
+                  text-transform: uppercase;
+                  color: #BBBBBB;
+                  margin-bottom: 5px;
+                  display: block;
+               }
+            }
+
+            &-btn {
+               margin-top: 20px;
+
+               &__style {
+                  width: 50%;
+
+                  &+& {
+                     margin-left: 13px;
+                     padding: 10px 0;
+                  }
+
+               }
+            }
+
+         }
+      }
+   }
 }

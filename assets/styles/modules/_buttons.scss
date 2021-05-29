@@ -24,6 +24,17 @@
 
     }
 
+    &-color {
+        border: 1px solid var(--primary_color_green-dark);
+        background-color: var(--neutral_color_white);
+        color: var(--primary_color_green-dark);
+
+        &:hover {
+            border: 1px solid var(--primary_color_green-light);
+        }
+
+    }
+
     &-orange {
         background-color: #FC5D42;
         color: var(--neutral_color_white);

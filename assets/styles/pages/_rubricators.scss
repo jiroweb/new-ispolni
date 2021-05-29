@@ -5,12 +5,9 @@
       &__list {
          &--item {
             &-link {
-               border: 1px solid #F2F2F7;
                border-radius: var(--border-radius);
                background-color: var(--neutral_color_white);
                transition: 0.3s;
-
-
 
                &+& {
                   margin-top: 10px;
