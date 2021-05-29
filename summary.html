@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    <title>Исполняй</title>
    <link rel="icon" href="./assets/img/favicon/favicon.svg">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -100,12 +103,12 @@
                </button>
                <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">30
                   дней</button>
-               <div class="main-section__block--dates-list__item">
+               <div class="main-section__block--dates-list__item d-f a-i-c">
                   <i class="icon icon-arow-small"></i>
-                  <input class="input-calendar" type="text" placeholder=" 01.04.2021 - 17.04.2021">
+                  <input class="input-calendar border-0 cursor-pointer" type="text" name="daterange" value="01/01/2021 - 01/15/2021">
                </div>
             </div>
-            <div class="main-section__block--dates-dropdwon d-f a-i-c">
+            <div class="main-section__block--dates-dropdwon d-f a-i-c cursor-pointer">
                <p class="main-section__block--dates-dropdwon__text">Все ключи API</p>
                <i class="icon icon-arrow-small main-section__block--dates-dropdwon__icon"></i>
             </div>
@@ -269,8 +272,8 @@
                   </button>
                   <button class="main-section__block--dates-list__item main-section__block--dates-list__filter">30 дней
                   </button>
-                  <div class="main-section__block--dates-list__item">
-                     <input class="input-calendar" type="text" placeholder=" 01.04.2021 - 17.04.2021">
+                  <div class="main-section__block--dates-list__item d-f a-i-c">
+                     <input class="input-calendar border-0 cursor-pointer" type="text" name="daterange" value="01/01/2021 - 01/15/2021">
                   </div>
                </div>
             </div>
@@ -353,6 +356,8 @@
 
 <!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
 <script src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
 
 <!-- ======================= -SCRIPT-MY-START- ======================= -->
