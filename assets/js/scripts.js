@@ -60,4 +60,15 @@ $(document).ready(function () {
       }
    })
    // Function for daterangepicker ui ===== -- End
+
+
+   // Function for change active ui ===== -- Start
+   $('body').on('click', '[data-change-active]', function () {
+      let thic_parent = $(this).parent();
+      let this_active = $(thic_parent).find('[data-change-active]');
+      $(this_active).removeClass('active');
+      $(this).addClass('active');
+   });
+   // Function for change active ui ===== -- End
+
 })
