@@ -3,6 +3,8 @@
    width: 100%;
    padding: 30px;
    background-color: var(--neutral_color_white);
+   border-radius: var(--border-radius);
+   box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
 
    &__title {
       font: rem(20px) $Medium;
@@ -31,6 +33,8 @@
    width: 100%;
    padding: 66px 0 62px;
    background-color: var(--neutral_color_white);
+   border-radius: var(--border-radius);
+   box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
 
    &__icon {
       font-size: 60px;

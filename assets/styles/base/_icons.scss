@@ -1,5 +1,8 @@
 @import '../fonts/icons/icons';
 
+.icon-close:before {
+  content: "\e911";
+}
 
 .icon-menu-dots:before {
   content: "\e900";

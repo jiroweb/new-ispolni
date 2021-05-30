@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <title>Ключи API</title>
+   <link rel="icon" href="./assets/img/favicon/favicon.svg">
+   <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-block d-f j-c-b a-i-c container">
+         <div class="header-block__main d-f a-i-c">
+            <a class="header-block__main--logo" href="index.html">
+               <img src="./assets/img/header/logo-all.svg" alt="logo">
+            </a>
+            <ul class="header-block__main--menu d-f j-c-b a-i-c">
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link active" href="#">Кабинет WB</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Сводка</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Продажи и заказы</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">География заказов</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Подключения</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Группы</a>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Ozon</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Кабинет WB</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown" data-dropdown-box>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Рейтинг
+                           поставщиков</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="header-block__user d-f a-i-c">
+            <div class="header-block__user--search d-f a-i-c">
+               <input class="input-search header-block__user--search-form focus" type="text"
+                  placeholder="Поиск категории">
+               <i class="icon icon-loop header-block__user--search-icon"></i>
+            </div>
+            <div class="header-block__user--item d-f a-i-c">
+               <div class="header-block__user--item-photo">
+                  <img src="./assets/img/header/Ellipse.png" alt="user">
+               </div>
+               <i class="icon icon-arrow header-block__user--item-icon"></i>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="statistics main-section container">
+      <div class="statistics-block">
+         <div class="statistics-block__name main-section__block">
+            <div class="statistics-block__name--title d-f j-c-b ">
+               <div class="statistics-block__name--title-main d-f a-i-c">
+                  <div class="statistics-block__name--title-main__img">
+                     <img src="./assets/img/statistic/statistics.png" alt="statistic">
+                  </div>
+                  <div class="statistics-block__name--title-main__text">
+                     <h4 class="statistics-block__name--title-main__text--info">Мельница
+                        ATIKO Kitchen
+                        за 60 дней</h4>
+                     <a class="statistics-block__name--title-main__text--link"
+                        href="https://www.wildberries.ru/catalog/18360968/detail.aspx">https://www.wildberries.ru/catalog/18360968/detail.aspx</a>
+                  </div>
+               </div>
+               <div class="statistics-block__name--title-date d-f a-i-c">
+                  <label class="checked checked-switch d-f a-i-c">
+                     <input type="checkbox" hidden>
+                     <span class="checked-switch__slider d-f a-i-c j-c-b">
+                        <span class="checked-switch__slider--text switch-checked d-none">FBS</span>
+                        <span class="checked-switch__slider--text switch-unchecked">FBS</span>
+                     </span>
+                  </label>
+                  <div class="statistics-block__name--title-date__calendar d-f a-i-c">
+                     <i class="icon icon-calendar"></i>
+                     <input class="input-calendar" name="daterange" type="text" placeholder="01.04.2021 - 17.04.2021">
+                  </div>
+               </div>
+            </div>
+            <div class="statistics-block__name--number g-t-c-4 d-g g-g-30">
+               <div class="statistics-block__name--number-info statistics-block__name--number-green">
+                  <span class="statistics-block__name--number-info__title ">СУММАРНО ЗА 60 ДНЕЙ</span>
+                  <div class="statistics-block__name--number-info__main d-f a-i-c">
+                     <p class="statistics-block__name--number-info__main--cost">1 642 шт</p>
+                     <i class="icon icon-arrow-right statistics-block__name--number-info__main--icon"></i>
+                     <p class="statistics-block__name--number-info__main--cost">562 194 ₽</p>
+                  </div>
+               </div>
+               <div class="statistics-block__name--number-info statistics-block__name--number-red">
+                  <span class="statistics-block__name--number-info__title">ПОТЕНЦИАЛ / УПУЩЕННАЯ ВЫРУЧКА </span>
+                  <div class="statistics-block__name--number-info__main d-f a-i-c">
+                     <p class="statistics-block__name--number-info__main--cost">749 592 ₽</p>
+                     <i class="icon icon-arrow-right statistics-block__name--number-info__main--icon"></i>
+                     <p class="statistics-block__name--number-info__main--cost">749 592 ₽</p>
+                  </div>
+               </div>
+               <div class="statistics-block__name--number-info statistics-block__name--number-green">
+                  <span class="statistics-block__name--number-info__title">СРЕДНЕЕ (В ДЕНЬ)</span>
+                  <div class="statistics-block__name--number-info__main d-f a-i-c">
+                     <p class="statistics-block__name--number-info__main--cost">27 шт</p>
+                     <i class="icon icon-arrow-right statistics-block__name--number-info__main--icon"></i>
+                     <p class="statistics-block__name--number-info__main--cost">9 369,90 ₽</p>
+                  </div>
+               </div>
+               <div class="statistics-block__name--number-info statistics-block__name--number-green">
+                  <span class="statistics-block__name--number-info__title">СРЕДНЕЕ ПРИ НАЛИЧИИ</span>
+                  <div class="statistics-block__name--number-info__main d-f a-i-c">
+                     <p class="statistics-block__name--number-info__main--cost">36 шт</p>
+                     <i class="icon icon-arrow-right statistics-block__name--number-info__main--icon"></i>
+                     <p class="statistics-block__name--number-info__main--cost">9 369,90 ₽</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="statistics-main d-f">
+         <div class="statistics-main__info">
+            <div class="statistics-main__info--block">
+               <h4 class="statistics-main__info--block-title">Информация о товаре</h4>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">SKU</span>
+                  <p class="statistics-main__info--block-parts__info">18360968</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">SKU</span>
+                  <div class="statistics-main__info--block-parts__add">
+                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                        <p class="statistics-main__info--block-parts__add--details-name">ATIKO Kitchen</p>
+                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                     </div>
+                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                        <p class="statistics-main__info--block-parts__add--details-name">В продаже на ВБ</p>
+                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                     </div>
+                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                        <p class="statistics-main__info--block-parts__add--details-name">КОНКУРЕНТЫ - Мельница</p>
+                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                     </div>
+                     <button class="btn btn-background statistics-main__info--block-parts__add--btn">+ Добавить</button>
+                  </div>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Название</span>
+                  <p class="statistics-main__info--block-parts__info">Мельница</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Бренд</span>
+                  <p class="statistics-main__info--block-parts__underline">ATIKO Kitchen</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Цена</span>
+                  <p class="statistics-main__info--block-parts__info">333,00 р.</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Цена до скидки</span>
+                  <p class="statistics-main__info--block-parts__info">1 000,00 р., скидка 66%</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Поставщик</span>
+                  <p class="statistics-main__info--block-parts__underline">Шепарова Марина
+                     Александровна ИП</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Обновлено</span>
+                  <p class="statistics-main__info--block-parts__info">19.04.2021</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Впервые обнаружен</span>
+                  <p class="statistics-main__info--block-parts__info">19.04.2021</p>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Дополнительно </span>
+                  <div class="statistics-main__info--block-parts__add d-f">
+                     <div class="statistics-main__info--block-parts__add--details d-f">
+                        <p class="statistics-main__info--block-parts__add--details-name">Рейтинг: 4,95</p>
+                     </div>
+                     <div class="statistics-main__info--block-parts__add--rating d-f">
+                        <p class="statistics-main__info--block-parts__add--rating-main">Комментарии: 275</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="statistics-main__info--block-parts d-f">
+                  <span class="statistics-main__info--block-parts__name">Примечание</span>
+                  <input class="statistics-main__info--block-parts__info">
+               </div>
+               <button class="btn btn-background statistics-main__info--block-btn">Сохранить</button>
+            </div>
+            <div class="statistics-main__info--photos d-f">
+               <div class="statistics-main__info--photos-part">
+                  <img src="./assets/img/statistic/statistics.png" alt="statistic">
+               </div>
+               <div class="statistics-main__info--photos-part">
+                  <img src="./assets/img/statistic/statistics1.png" alt="statistic">
+               </div>
+               <div class="statistics-main__info--photos-part">
+                  <img src="./assets/img/statistic/statistics2.png" alt="statistic">
+               </div>
+            </div>
+            <div class="statistics-main__info--remains">
+               <div class="statistics-main__info--remains-sections ">
+                  <div class="statistics-main__info--remains-sections__block search-block__parts">
+                     <h4 class="statistics-main__info--remains-sections__block--title">Остатки по складам и размерам на
+                        22.04.2021</h4>
+                     <ul class="search-block__parts--list statistics-main__info--remains-sections__block--list d-f">
+                        <li
+                           class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
+                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link active"
+                              href="#">Сводка</a>
+                        </li>
+                        <li
+                           class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
+                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link"
+                              href="#">Склады</a>
+                        </li>
+                        <li
+                           class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
+                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link"
+                              href="#">Размеры (нет данных)</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="statistics-main__info--remains-info d-f a-i-c">
+                     <div class="statistics-main__info--remains-info__orders d-f j-c-c a-i-c">Заказы</div>
+                     <div class="statistics-main__info--remains-info__city">
+                        <p
+                           class="statistics-main__info--remains-info__city--name statistics-main__info--remains-info__city--more">
+                           Москва</p>
+                        <p
+                           class="statistics-main__info--remains-info__city--name statistics-main__info--remains-info__city--few">
+                           Подольск</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="statistics-main__graphic summary">
+            <div class="main-section__block summary-grafic">
+               <div class="d-f j-c-b a-i-c">
+                  <h4 class="section-title">Отображение на графике</h4>
+               </div>
+               <div class="summary-grafic__block">
+                  <ul class="summary-grafic__block--details d-f a-i-c j-c-c">
+                     <li class="summary-grafic__block--details-item d-f a-i-c">
+                        <label class="checked d-f j-c-c a-i-c">
+                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <span class="checked-checkbox"></span>
+                        </label>
+                        <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
+                        <span class="summary-grafic__block--details-item__circle"></span>
+                     </li>
+                     <li class="summary-grafic__block--details-item d-f a-i-c">
+                        <label class="checked d-f j-c-c a-i-c">
+                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <span class="checked-checkbox"></span>
+                        </label>
+                        <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
+                        <span
+                           class="summary-grafic__block--details-item__circle summary-grafic__block--details-item__circlepink "></span>
+                     </li>
+                     <li class="summary-grafic__block--details-item d-f a-i-c">
+                        <label class="checked d-f j-c-c a-i-c">
+                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <span class="checked-checkbox"></span>
+                        </label>
+                        <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
+                        <span
+                           class="summary-grafic__block--details-item__circle summary-grafic__block--details-item__circleorange"></span>
+                     </li>
+                     <li class="summary-grafic__block--details-item d-f a-i-c">
+                        <label class="checked d-f j-c-c a-i-c">
+                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <span class="checked-checkbox"></span>
+                        </label>
+                        <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
+                        <span
+                           class="summary-grafic__block--details-item__circle summary-grafic__block--details-item__circleyellow"></span>
+                     </li>
+                  </ul>
+                  <div class="summary-grafic__block--info">
+                     <img src="./assets/img/statistic/Chart.png" alt="summary">
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+
+</body>
+
+<!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+<!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
+
+<!-- ======================= -SCRIPT-MY-START- ======================= -->
+<script src="./assets/js/scripts.js"></script>
+<!-- ======================== -SCRIPT-MY-END- ======================== -->
+
+
+</html>
