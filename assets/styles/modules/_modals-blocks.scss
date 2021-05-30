@@ -1,0 +1,64 @@
+.groups-input {
+   max-width: 593px;
+   width: 100%;
+   padding: 30px;
+   background-color: var(--neutral_color_white);
+
+   &__title {
+      font: rem(20px) $Medium;
+      line-height: rem(23px);
+      color: var(--default_dark);
+      margin-bottom: 24px;
+   }
+
+   &__btn {
+      margin-top: 20px;
+
+      &--cancel {
+         padding: 16px 53px;
+         margin-right: 10px;
+      }
+
+      &--approve {
+         padding: 16px 42px;
+      }
+   }
+}
+
+
+.delete-block {
+   max-width: 593px;
+   width: 100%;
+   padding: 66px 0 62px;
+   background-color: var(--neutral_color_white);
+
+   &__icon {
+      font-size: 60px;
+      color: #FC5D42;
+      margin-bottom: 15px;
+   }
+
+   &__title {
+      font: rem(24px) $Medium;
+      color: var(--default_dark);
+      margin-bottom: 10px;
+   }
+
+   &__info {
+      font: rem(18px) $Regular;
+      color: var(--default_dark);
+      margin-bottom: 35px;
+   }
+
+   &__btn {
+      &--cancel {
+         padding: 16px 53px;
+         margin-right: 10px;
+      }
+
+      &--approve {
+         padding: 16px 42px;
+      }
+   }
+
+}
