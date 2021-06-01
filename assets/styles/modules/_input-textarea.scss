@@ -42,3 +42,21 @@
         }
     }
 }
+
+.input-table {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background: var(--neutral_color_white);
+    color: var(--default_dark);
+    font: rem(14px) $Regular;
+    padding: 7px 5px;
+    width: 100%;
+
+    &:focus {
+        border: 1px solid var(--primary_color_green-dark);
+    }
+
+    &:hover:not(:disabled) {
+        border: 1px solid var(--primary_color_green-dark);
+    }
+}

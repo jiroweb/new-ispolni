@@ -1,0 +1,117 @@
+.table {
+   &-block {
+      border: 1px solid #E1E1E1;
+      border-radius: 8px;
+      overflow-x: auto;
+
+
+      &__main {
+         &--titles {
+            border-bottom: 1px solid #E1E1E1;
+            background-color: #F9F9FB;
+
+
+            &-list {
+               padding: 10px 35px 10px 10px;
+               font: rem(15px) $Medium;
+               color: var(--default_light);
+               position: relative;
+
+
+               &+& {
+                  border-left: 1px solid #E1E1E1;
+               }
+
+               &:first-child {
+                  padding-left: 20px;
+               }
+
+
+               &__icon {
+                  position: absolute;
+                  transform: translateY(-50%);
+                  top: 50%;
+                  right: 7px;
+                  color: var(--default_light);
+               }
+
+            }
+
+         }
+
+         &--form {
+            table-layout: fixed;
+            width: 100%;
+            display: table;
+            border-bottom: 1px solid #E1E1E1;
+
+            &:nth-child(odd) {
+               background-color: var(--neutral_color_white);
+            }
+
+            &:nth-last-child(even) {
+               background-color: #F9F9FB;
+            }
+
+            &-inside {
+               padding: 10px;
+
+               &:first-child {
+                  padding-left: 20px;
+               }
+
+            }
+
+         }
+
+         thead {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+
+         }
+
+         tbody {
+            display: block;
+            height: 500px;
+            overflow: auto;
+         }
+      }
+
+      &__down {
+         padding: 10px 20px;
+
+         &--btn {
+            &-main {
+               padding: 10px 41px;
+
+               &+& {
+                  margin-left: 10px;
+               }
+            }
+
+         }
+
+         &--pages {
+            &-info {
+               font: rem(14px) $Regular;
+               color: var(--default_light);
+               margin-right: 40px;
+            }
+
+            &-part {
+               &__btn {
+                  color: var(--default_light);
+               }
+
+               &__text {
+                  color: var(--default_light);
+                  font: rem(14px) $Regular;
+                  margin: 0 10px;
+
+               }
+            }
+         }
+      }
+   }
+}
