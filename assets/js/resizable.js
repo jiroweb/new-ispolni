@@ -1,0 +1,106 @@
+let tables = document.getElementsByClassName('resizable');
+for (let i = 0; i < tables.length; i++) {
+   resizableGrid(tables[i]);
+}
+
+function resizableGrid(table) {
+   let row = table.getElementsByTagName('tr')[0],
+      cols = row ? row.children : undefined;
+   if (!cols) return;
+
+   table.style.overflow = 'hidden';
+
+   let tableHeight = table.offsetHeight;
+
+   for (let i = 0; i < cols.length; i++) {
+      let div = createDiv(tableHeight);
+      cols[i].appendChild(div);
+      cols[i].style.position = 'relative';
+      setListeners(div);
+   }
+
+   function setListeners(div) {
+      let pageX, curCol, nxtCol, curColWidth, nxtColWidth, tableWidth;
+
+      div.addEventListener('mousedown', function (e) {
+
+         tableWidth = document.getElementById('tableId').offsetWidth;
+         curCol = e.target.parentElement;
+         nxtCol = curCol.nextElementSibling;
+         pageX = e.pageX;
+
+         let padding = paddingDiff(curCol);
+
+         curColWidth = curCol.offsetWidth - padding;
+
+      });
+
+      div.addEventListener('mouseover', function (e) {
+         e.target.style.borderRight = '2px solid #0000ff';
+      })
+
+      div.addEventListener('mouseout', function (e) {
+         e.target.style.borderRight = '';
+      })
+
+      document.addEventListener('mousemove', function (e) {
+         if (curCol) {
+            let diffX = e.pageX - pageX;
+            curCol.style.width = (curColWidth + diffX) + 'px';
+            document.getElementById('tableId').style.width = tableWidth + diffX + "px"
+         }
+      });
+
+      document.addEventListener('mouseup', function (e) {
+         curCol = undefined;
+         nxtCol = undefined;
+         pageX = undefined;
+         nxtColWidth = undefined;
+         curColWidth = undefined
+      });
+   }
+
+   function createDiv(height) {
+      let div = document.createElement('div');
+      div.style.top = 0;
+      div.style.right = 0;
+      div.style.width = '5px';
+      div.style.position = 'absolute';
+      div.style.cursor = 'ew-resize';
+      div.style.userSelect = 'none';
+      div.style.height = height + 'px';
+      div.style.zIndex = '999';
+      return div;
+   }
+
+   function paddingDiff(col) {
+
+      if (getStyleVal(col, 'box-sizing') == 'border-box') {
+         return 0;
+      }
+
+      let padLeft = getStyleVal(col, 'padding-left');
+      let padRight = getStyleVal(col, 'padding-right');
+      return (parseInt(padLeft) + parseInt(padRight));
+
+   }
+
+   function getStyleVal(elm, css) {
+      return (window.getComputedStyle(elm, null).getPropertyValue(css))
+   }
+};
+
+
+
+
+$(document).ready(function () {
+   // '.table-body' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+   $(window).on("load resize", function () {
+      var scrollWidth = $('.table-body').width() - $('.table-body table').width();
+      $('.table-header').css({
+         'padding-right': scrollWidth
+      });
+      console.log(scrollWidth)
+   }).resize();
+
+})

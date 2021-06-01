@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+  <!-- <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    table {
+      table-layout: fixed;
+    }
+
+    td,
+    th {
+      padding: 5px 15px;
+      text-align: left;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #000;
+    }
+
+    .table{
+      height: 500px;
+      overflow: scroll;
+    }
+
+    .table thead th{
+      position: sticky !important;
+      top: 0;
+    }
+  </style> -->
+
+  <style>
+    .table {
+      overflow-x: auto;
+    }
+
+    .table thead th {
+      position: sticky;
+      top: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      padding: 8px 15px;
+      border: 2px solid #529432;
+    }
+
+    th {
+      background: #ABDD93;
+    }
+
+
+    .table-body{
+      height: 500px;
+    }
+  </style>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="table scrollbar">
+      <div class="table-header">
+        <table id="tableId" class="resizable">
+          <thead>
+            <tr>
+              <th></th>
+              <th colspan="3">Продажи</th>
+              <th colspan="2">Заказы</th>
+              <th colspan="2">Возвраты</th>
+              <th colspan="2">Логистика</th>
+            </tr>
+            <tr>
+              <th>Дата</th>
+              <th>шт</th>
+              <th>руб</th>
+              <th>Прибыль</th>
+              <th>шт</th>
+              <th>руб</th>
+              <th>шт</th>
+              <th>руб</th>
+              <th>Клиенту</th>
+              <th>От клиента</th>
+            </tr>
+            <tr>
+              <th><input type="date"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+              <th><input type="text"></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="table-body scrollbar">
+        <table  class="resizable">
+          <tbody>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+            <tr>
+              <td>17.04.2021</td>
+              <td>40</td>
+              <td>654 869,33</td>
+              <td>565 664 999</td>
+              <td>2500</td>
+              <td>65 105,36</td>
+              <td>10</td>
+              <td>-1 500</td>
+              <td>2500</td>
+              <td>00,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="./assets/js/resizable.js"></script>
+
+</body>
+
+</html>
