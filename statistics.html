@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-   <title>Ключи API</title>
+   <title>Статистика</title>
    <link rel="icon" href="./assets/img/favicon/favicon.svg">
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -71,9 +71,8 @@
          </div>
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
-               <input class="input-search header-block__user--search-form focus" type="text"
-                  placeholder="Поиск категории">
-               <i class="icon icon-loop header-block__user--search-icon"></i>
+               <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
+               <button class="icon icon-loop header-block__user--search-icon"></button>
             </div>
             <div class="header-block__user--item d-f a-i-c">
                <div class="header-block__user--item-photo">
@@ -108,8 +107,9 @@
                         <span class="checked-switch__slider--text switch-unchecked">FBS</span>
                      </span>
                   </label>
-                  <div class="statistics-block__name--title-date__calendar d-f a-i-c">
-                     <i class="icon icon-calendar"></i>
+                  <div
+                     class="statistics-block__name--title-date__calendar main-section__block--dates-list__calendar d-f a-i-c">
+                     <i class="icon icon-calendar statistics-block__name--title-date__calendar--icon"></i>
                      <input class="input-calendar" name="daterange" type="text" placeholder="01.04.2021 - 17.04.2021">
                   </div>
                </div>
@@ -156,58 +156,66 @@
                <h4 class="statistics-main__info--block-title">Информация о товаре</h4>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">SKU</span>
-                  <p class="statistics-main__info--block-parts__info">18360968</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">18360968
+                  </p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">SKU</span>
-                  <div class="statistics-main__info--block-parts__add">
-                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                  <div class="statistics-main__info--block-parts__add statistics-main__info--block-parts__half">
+                     <div class="statistics-main__info--block-parts__add--details d-i-f a-i-c cursor-pointer">
                         <p class="statistics-main__info--block-parts__add--details-name">ATIKO Kitchen</p>
-                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                        <button class="icon icon-close statistics-main__info--block-parts__add--details-icon"></button>
                      </div>
-                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                     <div class="statistics-main__info--block-parts__add--details d-i-f a-i-c cursor-pointer">
                         <p class="statistics-main__info--block-parts__add--details-name">В продаже на ВБ</p>
-                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                        <button class="icon icon-close statistics-main__info--block-parts__add--details-icon"></button>
                      </div>
-                     <div class="statistics-main__info--block-parts__add--details d-f a-i-c">
+                     <div class="statistics-main__info--block-parts__add--details d-i-f a-i-c cursor-pointer">
                         <p class="statistics-main__info--block-parts__add--details-name">КОНКУРЕНТЫ - Мельница</p>
-                        <i class="icon icon-close statistics-main__info--block-parts__add--details-icon"></i>
+                        <button class="icon icon-close statistics-main__info--block-parts__add--details-icon"></button>
                      </div>
                      <button class="btn btn-background statistics-main__info--block-parts__add--btn">+ Добавить</button>
                   </div>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Название</span>
-                  <p class="statistics-main__info--block-parts__info">Мельница</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">Мельница
+                  </p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Бренд</span>
-                  <p class="statistics-main__info--block-parts__underline">ATIKO Kitchen</p>
+                  <p class="statistics-main__info--block-parts__underline statistics-main__info--block-parts__half">
+                     ATIKO Kitchen</p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Цена</span>
-                  <p class="statistics-main__info--block-parts__info">333,00 р.</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">333,00 р.
+                  </p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Цена до скидки</span>
-                  <p class="statistics-main__info--block-parts__info">1 000,00 р., скидка 66%</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">1 000,00
+                     р., скидка 66%</p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Поставщик</span>
-                  <p class="statistics-main__info--block-parts__underline">Шепарова Марина
+                  <p class="statistics-main__info--block-parts__underline statistics-main__info--block-parts__half">
+                     Шепарова Марина
                      Александровна ИП</p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Обновлено</span>
-                  <p class="statistics-main__info--block-parts__info">19.04.2021</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">
+                     19.04.2021</p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Впервые обнаружен</span>
-                  <p class="statistics-main__info--block-parts__info">19.04.2021</p>
+                  <p class="statistics-main__info--block-parts__info statistics-main__info--block-parts__half">
+                     19.04.2021</p>
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Дополнительно </span>
-                  <div class="statistics-main__info--block-parts__add d-f">
+                  <div class="statistics-main__info--block-parts__add statistics-main__info--block-parts__half d-f">
                      <div class="statistics-main__info--block-parts__add--details d-f">
                         <p class="statistics-main__info--block-parts__add--details-name">Рейтинг: 4,95</p>
                      </div>
@@ -218,7 +226,7 @@
                </div>
                <div class="statistics-main__info--block-parts d-f">
                   <span class="statistics-main__info--block-parts__name">Примечание</span>
-                  <input class="statistics-main__info--block-parts__info">
+                  <input class="input statistics-main__info--block-parts__input">
                </div>
                <button class="btn btn-background statistics-main__info--block-btn">Сохранить</button>
             </div>
@@ -241,18 +249,19 @@
                      <ul class="search-block__parts--list statistics-main__info--remains-sections__block--list d-f">
                         <li
                            class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
-                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link active"
-                              href="#">Сводка</a>
+                           <button
+                              class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link active">Сводка</button>
                         </li>
                         <li
                            class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
-                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link"
-                              href="#">Склады</a>
+                           <button
+                              class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link">Склады</button>
                         </li>
                         <li
                            class="search-block__parts--list-item statistics-main__info--remains-sections__block--list-item">
-                           <a class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link"
-                              href="#">Размеры (нет данных)</a>
+                           <button
+                              class="search-block__parts--list-item__link statistics-main__info--remains-sections__block--list-item__link">Размеры
+                              (нет данных)</button>
                         </li>
                      </ul>
                   </div>

@@ -83,6 +83,7 @@
       &--search {
          position: relative;
          width: 310px;
+         padding-right: 35px;
       }
 
       &--dates {
@@ -94,7 +95,6 @@
                border-top: 1px solid #E1E1E1;
                border-bottom: 1px solid #E1E1E1;
                border-right: 1px solid #E1E1E1;
-               cursor: pointer;
                padding: 11px 20px;
                font: rem(14px) $Medium;
                color: var(--default_dark);
@@ -113,7 +113,6 @@
 
             &__filter {
                position: relative;
-               padding: 10px 20px;
 
                &::before {
                   content: '';
@@ -149,8 +148,16 @@
             }
 
             &__calendar {
-               padding: 6.4px 20px;
+               position: relative;
+               padding-left: 40px;
+
+               &--icon {
+                  position: absolute;
+                  left: 15px;
+                  pointer-events: none;
+               }
             }
+
 
          }
 
