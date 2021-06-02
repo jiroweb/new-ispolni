@@ -70,8 +70,44 @@ $(document).ready(function () {
       $(this).addClass('active');
    });
    // Function for change active ui ===== -- End
+})
+
+
+let createDropdown = document.querySelectorAll('[data-btn-dropdown]')
+
+
+function generateDropdown() {
+   let dropdownBox = document.createElement('div');
+   dropdownBox.className = 'dropdown'
+   dropdownBox.setAttribute('data-dropdown', '')
+   dropdownBox.innerHTML = `
+      <div class="dropdown-content">test</div>
+   `
+   window.onclick = function (event) {
+      if (!event.target.matches('[data-btn-dropdown]')) {
+         dropdownBox.remove()
+      }
+   }
+
+   setTimeout(function () {}, 2000)
+
+   setTimeout(function () {
+      dropdownBox.setAttribute('data-open', 'true')
+
+   }, 3000);
+
+   if (dropdownBox.setAttribute('data-open', 'true') != dropdownBox.setAttribute('data-open', 'true')) {
+      dropdownBox.remove()
+   } else {
+      document.body.appendChild(dropdownBox)
+   }
 
 
 
+}
 
+createDropdown.forEach(function (item) {
+   item.addEventListener('click', function () {
+      generateDropdown()
+   })
 })
