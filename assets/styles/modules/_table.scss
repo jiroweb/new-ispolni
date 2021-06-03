@@ -5,82 +5,90 @@
 
    &-block {
       height: 70vh;
-      // border: 1px solid #E1E1E1;
-      // border-bottom: 0;
 
-      &__main {
-         // border-right: 1px solid #E1E1E1;
-
-         &--titles {
-            border-bottom: 1px solid #E1E1E1;
-            background-color: #F9F9FB;
-
-
-            &-list {
-               padding: 8px;
-               font: rem(15px) $Medium;
-               color: var(--default_light);
-               position: relative;
-
-               &__icon {
-                  position: absolute;
-                  transform: translateY(-50%);
-                  top: 50%;
-                  right: 7px;
-                  color: var(--default_light);
-               }
-
-            }
-
-         }
-
-         &--form {
-
-            // table-layout: fixed;
-            // width: 100%;
-            // display: table;
-            // border-bottom: 1px solid #E1E1E1;
-            &:hover {
-               background-color: #E1F7EA;
-            }
-
-            &:nth-child(odd) {
-               background-color: var(--neutral_color_white);
-            }
-
-            &:nth-last-child(even) {
-               background-color: #F9F9FB;
-            }
-
-            &-inside {
-               font: rem(14px) $Regular;
-               color: var(--default_dark);
-               padding: 10px;
-
-
-            }
-
-         }
-
+      table {
          thead {
-            position: static;
+            position: sticky;
             top: 0;
 
+            tr {
+               background-color: #F9F9FB;
+
+               th {
+                  padding: 8px;
+                  font: rem(15px) $Medium;
+                  color: var(--default_light);
+
+                  .icon-filter {
+                     color: var(--default_light);
+                  }
+
+                  &.resizing {
+                     cursor: ew-resize;
+                  }
+
+                  &.noSelect {
+                     user-select: none;
+                  }
+
+                  .input-table {
+                     border: 1px solid #BDBDBD;
+                     border-radius: 4px;
+                     background: var(--neutral_color_white);
+                     color: var(--default_dark);
+                     font: rem(14px) $Regular;
+                     padding: 5px;
+                     width: 100%;
+
+                     &:focus {
+                        border: 1px solid var(--primary_color_green-dark);
+                     }
+
+                     &:hover:not(:disabled) {
+                        border: 1px solid var(--primary_color_green-dark);
+                     }
+                  }
+
+                  .table-line::before {
+                     content: '';
+                     position: absolute;
+                     top: 0;
+                     bottom: 0;
+                     left: -3px;
+                     right: -3px;
+                     background-color: transparent;
+                  }
+               }
+            }
          }
 
-         // tbody {
-         //    display: block;
-         //    height: 500px;
-         //    overflow: auto;
-         // }
+         tbody {
+            tr {
+
+
+               &:nth-child(odd) {
+                  background-color: var(--neutral_color_white);
+               }
+
+               &:nth-last-child(even) {
+                  background-color: #F9F9FB;
+               }
+
+               &:hover {
+                  background-color: #E1F7EA;
+               }
+
+               td {
+                  font: rem(14px) $Regular;
+                  color: var(--default_dark);
+                  padding: 10px;
+               }
+            }
+         }
       }
 
       &__down {
          padding: 10px 20px;
-         // border: 1px solid #E1E1E1;
-         // border-top: 0;
-         // border-radius: 0px 0px 6px 6px;
-
 
          &--btn {
             &-main {
@@ -90,7 +98,6 @@
                   margin-left: 10px;
                }
             }
-
          }
 
          &--pages {
@@ -115,22 +122,4 @@
          }
       }
    }
-}
-
-
-
-
-
-
-table th.resizing {
-   cursor: col-resize;
-}
-
-.noSelect {
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
 }
