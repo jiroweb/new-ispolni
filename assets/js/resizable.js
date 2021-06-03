@@ -2,14 +2,12 @@ $(function () {
    let pressed = false
    let start = undefined
    let startX, startWidth
-
    $('[data-table] th').mousedown(function (e) {
       start = $(this)
       pressed = true
       startX = e.pageX
       table = $(this).parent().parent().parent()
       tableWidth = $(table).width()
-
       startWidth = $(this).width()
       $(start).addClass("resizing")
       $(start).addClass("noSelect")
