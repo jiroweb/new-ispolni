@@ -1,0 +1,96 @@
+.geography {
+   &-blocks {
+      &__results {
+         &--circle {
+            width: 160px;
+            height: 160px;
+            margin-right: 90px;
+            position: relative;
+
+            &-text {
+               position: absolute;
+               content: "";
+               transform: translate(-50%);
+               left: 50%;
+               top: 44%;
+               color: var(--default_dark);
+               font: rem(20px) $Medium;
+            }
+         }
+
+         &--parts {
+            &-text {
+               padding-right: 49px;
+               font: rem(14px) $Regular;
+               color: var(--default_dark);
+               position: relative;
+
+               &:before {
+                  position: absolute;
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  top: 9%;
+                  left: -22px;
+               }
+            }
+
+            &-green {
+               &::before {
+                  background-color: var(--primary_color_green-dark);
+               }
+            }
+
+            &-black {
+               &::before {
+                  background-color: #1C2D41;
+               }
+            }
+
+            &-orange {
+               &::before {
+                  background-color: #FFC212;
+               }
+            }
+
+            &-purple {
+               &::before {
+                  background-color: #9064F6;
+               }
+            }
+
+            &-pink {
+               &::before {
+                  background-color: #ED63D2;
+               }
+            }
+
+            &-gray {
+               &::before {
+                  background-color: #C0CCDA;
+               }
+            }
+
+            &-gray {
+               &::before {
+                  background-color: #C0CCDA;
+               }
+            }
+
+            &-red {
+               &::before {
+                  background-color: #FF7D51;
+               }
+            }
+
+            &-blue {
+               &::before {
+                  background-color: #0AAFFF;
+               }
+            }
+
+         }
+      }
+   }
+}

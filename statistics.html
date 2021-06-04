@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
    <title>Статистика</title>
    <link rel="icon" href="./assets/img/favicon/favicon.svg">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -74,7 +75,7 @@
                <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
                <button class="icon icon-loop header-block__user--search-icon"></button>
             </div>
-            <div class="header-block__user--item d-f a-i-c">
+            <div class="header-block__user--item cursor-pointer d-f a-i-c">
                <div class="header-block__user--item-photo">
                   <img src="./assets/img/header/Ellipse.png" alt="user">
                </div>
@@ -109,7 +110,7 @@
                   </label>
                   <div
                      class="statistics-block__name--title-date__calendar main-section__block--dates-list__calendar d-f a-i-c">
-                     <i class="icon icon-calendar statistics-block__name--title-date__calendar--icon"></i>
+                     <i class="icon icon-calendar main-section__block--dates-list__item--icon"></i>
                      <input class="input-calendar" name="daterange" type="text" placeholder="01.04.2021 - 17.04.2021">
                   </div>
                </div>
@@ -326,6 +327,26 @@
                      <img src="./assets/img/statistic/Chart.png" alt="summary">
                   </div>
                </div>
+               <div class="table">
+                  <div class="table-block">
+                     <div class="table-block__down d-f j-c-b a-i-c">
+                        <div class="table-block__down--btn d-f">
+                           <button class="btn btn-background table-block__down--btn-main">Скачать CSV</button>
+                           <button class="btn btn-background table-block__down--btn-main">Скачать Excel(.xlsx)</button>
+                        </div>
+                        <div class="table-block__down--pages d-f a-i-c">
+                           <p class="table-block__down--pages-info">1 к 100 из 250</p>
+                           <div class="table-block__down--pages-part d-f a-i-c">
+                              <button class="icon icon-arrow-left-start table-block__down--pages-part__btn"></button>
+                              <button class="icon icon-arrow-left table-block__down--pages-part__btn"></button>
+                              <p class="table-block__down--pages-part__text">Страница 1 из 3</p>
+                              <button class="icon icon-arrow-right table-block__down--pages-part__btn"></button>
+                              <button class="icon icon-arrow-right-end table-block__down--pages-part__btn"></button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
 
             </div>
          </div>
@@ -336,6 +357,8 @@
 
 <!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
 <script src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
 
 <!-- ======================= -SCRIPT-MY-START- ======================= -->

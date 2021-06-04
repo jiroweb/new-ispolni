@@ -105,6 +105,10 @@
             width: 330px;
             margin-right: 20px;
 
+            &-form {
+               padding-right: 40px;
+            }
+
             &-icon {
                position: absolute;
                color: #BBBBBB;
@@ -113,8 +117,6 @@
          }
 
          &--item {
-            cursor: pointer;
-
             &-photo {
                width: 40px;
                height: 40px;

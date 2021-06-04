@@ -1,7 +1,4 @@
 .connecting {
-   &-btn {
-      padding: 10px 20px;
-   }
 
    &-api {
       margin-top: 20px;
@@ -38,6 +35,10 @@
                   color: var(--default_light);
 
                   &:active {
+                     color: var(--primary_color_green-dark)
+                  }
+
+                  &:hover {
                      color: var(--primary_color_green-dark)
                   }
                }
@@ -115,7 +116,6 @@
 
                   &+& {
                      margin-left: 13px;
-                     padding: 10px 0;
                   }
 
                }

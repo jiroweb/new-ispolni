@@ -1,8 +1,13 @@
 .table {
+   margin-top: 20px;
+
    &-block {
       border: 1px solid #E1E1E1;
       border-radius: 8px;
       overflow-x: auto;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+
 
 
       &__main {
@@ -79,12 +84,10 @@
       }
 
       &__down {
-         padding: 10px 20px;
+         padding: 10px 0;
 
          &--btn {
             &-main {
-               padding: 10px 41px;
-
                &+& {
                   margin-left: 10px;
                }
@@ -113,5 +116,23 @@
             }
          }
       }
+   }
+}
+
+.input-table {
+   border: 1px solid #BDBDBD;
+   border-radius: 4px;
+   background: var(--neutral_color_white);
+   color: var(--default_dark);
+   font: rem(14px) $Regular;
+   padding: 7px 5px;
+   width: 100%;
+
+   &:focus {
+      border: 1px solid var(--primary_color_green-dark);
+   }
+
+   &:hover:not(:disabled) {
+      border: 1px solid var(--primary_color_green-dark);
    }
 }

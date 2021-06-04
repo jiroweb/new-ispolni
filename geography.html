@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+   <title>География</title>
+   <link rel="icon" href="./assets/img/favicon/favicon.svg">
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+   <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+   <header class="header">
+      <div class="header-block d-f j-c-b a-i-c container">
+         <div class="header-block__main d-f a-i-c">
+            <a class="header-block__main--logo" href="index.html">
+               <img src="./assets/img/header/logo-all.svg" alt="logo">
+            </a>
+            <ul class="header-block__main--menu d-f j-c-b a-i-c">
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link active" href="#">Кабинет WB</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Сводка</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Продажи и заказы</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">География заказов</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Подключения</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Группы</a>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Ozon</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown">
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+
+                  </ul>
+               </li>
+               <li class="header-block__main--menu-item d-f a-i-c">
+                  <a class="header-block__main--menu-item__link" href="#">Кабинет WB</a>
+                  <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+                  <ul class="header-block__main--menu-item__dropdown" data-dropdown-box>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+                     </li>
+                     <li class="header-block__main--menu-item__dropdown--section">
+                        <a class="header-block__main--menu-item__dropdown--section-link" href="#">Рейтинг
+                           поставщиков</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="header-block__user d-f a-i-c">
+            <div class="header-block__user--search d-f a-i-c">
+               <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
+               <i class="icon icon-loop header-block__user--search-icon cursor-pointer"></i>
+            </div>
+            <div class="header-block__user--item cursor-pointer d-f a-i-c">
+               <div class="header-block__user--item-photo">
+                  <img src="./assets/img/header/Ellipse.png" alt="user">
+               </div>
+               <i class="icon icon-arrow header-block__user--item-icon"></i>
+            </div>
+         </div>
+      </div>
+   </header>
+   <section class="main-section container">
+      <div class="main-section__block d-f j-c-b a-i-c">
+         <h4 class="section-title">Сводка</h4>
+         <div class="main-section__block--dates d-f">
+            <div class="main-section__block--dates-list d-f a-i-c">
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
+                  data-change-active>Сегодня</button>
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
+                  data-change-active>Вчера</button>
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
+                  data-change-active>Неделя</button>
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter active"
+                  data-change-active>Месяц
+               </button>
+               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
+                  data-change-active>30
+                  дней</button>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
+                  <i class="icon icon-calendar main-section__block--dates-list__calendar--icon"></i>
+                  <input class="input-calendar" name="daterange" type="text" placeholder="01.04.2021 - 17.04.2021">
+               </div>
+            </div>
+            <div class="main-section__block--dates-dropdwon d-f a-i-c cursor-pointer">
+               <p class="main-section__block--dates-dropdwon__text">Все ключи API</p>
+               <i class="icon icon-arrow main-section__block--dates-dropdwon__icon"></i>
+            </div>
+         </div>
+      </div>
+      <div class="geography d-g g-t-c-2 g-g-30 main-section">
+         <div class="geography-blocks main-section__block">
+            <div class="geography-blocks__results d-f">
+               <div class="geography-blocks__results--circle">
+                  <img src="./assets/img/geography/geography.png" alt="circle">
+                  <p class="geography-blocks__results--circle-text">Заказы</p>
+               </div>
+               <div class="geography-blocks__results--parts d-g g-t-c-2">
+                  <p class="geography-blocks__results--parts-green geography-blocks__results--parts-text">Краснодарский
+                  </p>
+                  <p class="geography-blocks__results--parts-black geography-blocks__results--parts-text">Московская</p>
+                  <p class="geography-blocks__results--parts-orange geography-blocks__results--parts-text">
+                     Санкт-Петербург</p>
+                  <p class="geography-blocks__results--parts-purple geography-blocks__results--parts-text">Москва</p>
+                  <p class="geography-blocks__results--parts-pink geography-blocks__results--parts-text">Крым</p>
+                  <p class="geography-blocks__results--parts-gray geography-blocks__results--parts-text">Красноярский
+                  </p>
+                  <p class="geography-blocks__results--parts-red geography-blocks__results--parts-text">Челябинская
+                  </p>
+                  <p class="geography-blocks__results--parts-blue geography-blocks__results--parts-text">Воронежская</p>
+               </div>
+            </div>
+            <div class="table">
+               <div class="table-block">
+                  <div class="table-block__down d-f a-i-c j-c-e">
+                     <div class="table-block__down--pages d-f a-i-c">
+                        <p class="table-block__down--pages-info">1 к 100 из 250</p>
+                        <div class="table-block__down--pages-part d-f a-i-c">
+                           <button class="icon icon-arrow-left-start table-block__down--pages-part__btn"></button>
+                           <button class="icon icon-arrow-left table-block__down--pages-part__btn"></button>
+                           <p class="table-block__down--pages-part__text">Страница 1 из 3</p>
+                           <button class="icon icon-arrow-right table-block__down--pages-part__btn"></button>
+                           <button class="icon icon-arrow-right-end table-block__down--pages-part__btn"></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-block__down--btn d-f">
+                  <button class="btn btn-background table-block__down--btn-main">Скачать CSV</button>
+                  <button class="btn btn-background table-block__down--btn-main">Скачать Excel(.xlsx)</button>
+               </div>
+            </div>
+         </div>
+         <div class="geography-blocks main-section__block">
+            <div class="geography-blocks__results d-f">
+               <div class="geography-blocks__results--circle">
+                  <img src="./assets/img/geography/geography.png" alt="circle">
+                  <p class="geography-blocks__results--circle-text">Заказы</p>
+               </div>
+               <div class="geography-blocks__results--parts d-g g-t-c-2">
+                  <p class="geography-blocks__results--parts-green geography-blocks__results--parts-text">Краснодарский
+                  </p>
+                  <p class="geography-blocks__results--parts-black geography-blocks__results--parts-text">Московская</p>
+                  <p class="geography-blocks__results--parts-orange geography-blocks__results--parts-text">
+                     Санкт-Петербург</p>
+                  <p class="geography-blocks__results--parts-purple geography-blocks__results--parts-text">Москва</p>
+                  <p class="geography-blocks__results--parts-pink geography-blocks__results--parts-text">Крым</p>
+                  <p class="geography-blocks__results--parts-gray geography-blocks__results--parts-text">Красноярский
+                  </p>
+                  <p class="geography-blocks__results--parts-red geography-blocks__results--parts-text">Челябинская
+                  </p>
+                  <p class="geography-blocks__results--parts-blue geography-blocks__results--parts-text">Воронежская</p>
+               </div>
+            </div>
+            <div class="table">
+               <div class="table-block">
+                  <div class="table-block__down d-f a-i-c j-c-e">
+                     <div class="table-block__down--pages d-f a-i-c">
+                        <p class="table-block__down--pages-info">1 к 100 из 250</p>
+                        <div class="table-block__down--pages-part d-f a-i-c">
+                           <button class="icon icon-arrow-left-start table-block__down--pages-part__btn"></button>
+                           <button class="icon icon-arrow-left table-block__down--pages-part__btn"></button>
+                           <p class="table-block__down--pages-part__text">Страница 1 из 3</p>
+                           <button class="icon icon-arrow-right table-block__down--pages-part__btn"></button>
+                           <button class="icon icon-arrow-right-end table-block__down--pages-part__btn"></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="table-block__down--btn d-f">
+                  <button class="btn btn-background table-block__down--btn-main">Скачать CSV</button>
+                  <button class="btn btn-background table-block__down--btn-main">Скачать Excel(.xlsx)</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+
+</body>
+
+<!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
+
+<!-- ======================= -SCRIPT-MY-START- ======================= -->
+<script src="./assets/js/scripts.js"></script>
+<!-- ======================== -SCRIPT-MY-END- ======================== -->
+
+
+</html>

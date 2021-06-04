@@ -37,6 +37,10 @@ html {
    font: rem(20px) $Medium;
    line-height: rem(23px);
    color: var(--default_dark);
+
+   &__activ {
+      color: var(--primary_color_green-dark);
+   }
 }
 
 // section-title -- END
@@ -74,6 +78,8 @@ html {
 '../modules/datetimerangepicker',
 '../modules/modals-blocks',
 '../modules/table',
+'../modules/main-section',
+'../pages/geography',
 
 
 // header
