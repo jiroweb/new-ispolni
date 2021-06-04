@@ -2,7 +2,7 @@
    overflow: auto;
 
    &::-webkit-scrollbar {
-      @include wh(12px);
+      @include wh(10px);
    }
 
    &::-webkit-scrollbar-thumb {
