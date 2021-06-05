@@ -13,8 +13,16 @@
 
                &__btn {
                   width: 190px;
+                  border: 1px solid #E1E1E1;
+                  padding: 10px 20px;
+                  border-radius: var(--border-radius);
 
-                  &-icon {
+                  &--text {
+                     font: rem(14px) $Medium;
+                     color: var(--default_dark);
+                  }
+
+                  &--icon {
                      color: var(--primary_color_green-dark);
                   }
                }

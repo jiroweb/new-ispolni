@@ -108,8 +108,8 @@
                      data-change-active>30 дней
                   </button>
                   <div
-                     class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c cursor-pointer">
-                     <i class="icon icon-calendar main-section__block--dates-list__calendar--icon"></i>
+                     class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
+                     <i class="icon icon-calendar main-section__block--dates-list__calendar--icon cursor-pointer"></i>
                      <input class="input-calendar cursor-pointer" name="daterange" type="text"
                         placeholder="01.04.2021 - 17.04.2021">
                   </div>
@@ -119,42 +119,55 @@
          <div class="sales-block__search d-f j-c-b a-i-c">
             <div class="sales-block__search--dropdowns d-f">
                <div class="sales-block__search--dropdowns-main">
-                  <button class="btn btn-border sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c"
-                     data-expand-click data-expand="false">
-                     <p>По артикулам</p>
-                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn-icon" data-expand-icon></i>
+                  <button class="sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c" data-expand-click
+                     data-not-outside-expand data-not-outside data-expand="false">
+                     <p class="sales-block__search--dropdowns-main__btn--text">По артикулам</p>
+                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn--icon" data-expand-icon></i>
                   </button>
-                  <ul class="dropdown-btn expand-block d-none" hidden data-expand-box>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#"> По датам</a></li>
-                     <li class="dropdown-btn__list active cursor-pointer"> <a href="#">По артикулам</a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">По SKU</a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">По брендам</a></li>
+                  <ul class="dropdown-list expand-block d-none" hidden data-expand-box>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link"> По датам</a></li>
+                     <li class="dropdown-list__item active"> <a href="#" class="dropdown-list__item--link">По
+                           артикулам</a>
+                     </li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По SKU</a></li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По брендам</a>
+                     </li>
                   </ul>
                </div>
                <div class="sales-block__search--dropdowns-main">
-                  <button class="btn btn-border sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c"
-                     data-expand-click data-expand="false">
-                     <p>Бренд</p>
-                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn-icon"></i>
+                  <button class="sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c" data-expand-click
+                     data-not-outside-expand data-not-outside data-expand="false">
+                     <p class="sales-block__search--dropdowns-main__btn--text">Бренд</p>
+                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn--icon" data-expand-icon></i>
                   </button>
-                  <ul class="dropdown-btn expand-block d-none" hidden data-expand-box>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#"> ATIKO Baby </a></li>
-                     <li class="dropdown-btn__list active cursor-pointer"> <a href="#">Baby MEPSI</a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">Baby MEPSI</a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">Baby MEPSI</a></li>
+                  <ul class="dropdown-list expand-block d-none" hidden data-expand-box>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link"> По датам</a></li>
+                     <li class="dropdown-list__item active"> <a href="#" class="dropdown-list__item--link">По
+                           артикулам</a>
+                     </li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По SKU</a></li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По брендам</a>
+                     </li>
                   </ul>
                </div>
                <div class="sales-block__search--dropdowns-main">
-                  <button class="btn btn-border sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c"
-                     data-expand-click data-expand="false">
-                     <p>Группа товаров</p>
-                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn-icon"></i>
+                  <button class="sales-block__search--dropdowns-main__btn d-f j-c-b a-i-c" data-expand-click
+                     data-not-outside-expand data-not-outside data-expand="false">
+                     <p class="sales-block__search--dropdowns-main__btn--text">Группа товаров</p>
+                     <i class="icon icon-arrow sales-block__search--dropdowns-main__btn--icon" data-expand-icon></i>
                   </button>
-                  <ul class="dropdown-btn expand-block d-none" hidden data-expand-box>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">Добавить товары по SKU </a></li>
-                     <li class="dropdown-btn__list active cursor-pointer"> <a href="#">Добавить товары по SKU </a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">Добавить из результатов поиска</a></li>
-                     <li class="dropdown-btn__list cursor-pointer"> <a href="#">Добавить из результатов поиска</a></li>
+                  <ul class="dropdown-list expand-block d-none" hidden data-expand-box>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">Добавить товары по
+                           SKU </a></li>
+                     <li class="dropdown-list__item active"> <a href="#" class="dropdown-list__item--link">Добавить
+                           товары по SKU
+                        </a>
+                     </li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">Добавить товары по
+                           SKU</a></li>
+                     <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">Добавить из
+                           результатов поиска</a>
+                     </li>
                   </ul>
                </div>
             </div>

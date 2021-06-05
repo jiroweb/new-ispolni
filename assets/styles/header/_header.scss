@@ -31,7 +31,7 @@
                &__link {
                   padding: 23px 0;
                   position: relative;
-                  transition: 0.3s;
+                  transition: var(--transition-global);
                   color: var(--default_light);
                   font: rem(15px) $Medium;
 
@@ -43,7 +43,7 @@
                      width: 0;
                      height: 3px;
                      background-color: var(--primary_color_green-dark);
-                     transition: 0.3s;
+                     transition: var(--transition-global);
                      z-index: 9999;
                   }
 
@@ -84,7 +84,7 @@
                         width: 100%;
                         font: rem(15px) $Regular;
                         color: var(--default_dark);
-                        transition: 0.3s;
+                        transition: var(--transition-global);
 
                         &:hover {
                            color: var(--primary_color_green-dark);

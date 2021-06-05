@@ -95,7 +95,7 @@
                height: 287px;
                position: relative;
                border-radius: var(--border-radius);
-               transition: 0.4s;
+               transition: var(--transition-global);
                overflow: hidden;
 
                &__play {

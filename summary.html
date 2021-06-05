@@ -74,7 +74,7 @@
          </div>
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
-               <input class="inputh header-block__user--search-form focus" type="text" placeholder="Поиск категории">
+               <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
                <i class="icon icon-loop header-block__user--search-icon"></i>
             </div>
             <div class="header-block__user--item cursor-pointer d-f a-i-c">
@@ -103,24 +103,25 @@
                <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
                   data-change-active>30
                   дней</button>
-               <div
-                  class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c cursor-pointer">
-                  <i class="icon icon-calendar main-section__block--dates-list__calendar--icon"></i>
+               <div class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
+                  <i class="icon icon-calendar main-section__block--dates-list__calendar--icon cursor-pointer"></i>
                   <input class="input-calendar cursor-pointer" name="daterange" type="text"
                      placeholder="01.04.2021 - 17.04.2021">
                </div>
             </div>
-            <div class="main-section__block--dates-dropdown">
-               <div data-expand-click data-expand="false"
-                  class="clmain-section__block--dates-dropdown__main d-f a-i-c cursor-pointer">
+            <div class="main-section__block--dates-dropdown d-f">
+               <div data-expand-click data-not-outside-expand data-not-outside data-expand="false"
+                  class="main-section__block--dates-dropdown__main d-f a-i-c cursor-pointer">
                   <p class="main-section__block--dates-dropdown__main--text">Все ключи API</p>
                   <i class="icon icon-arrow main-section__block--dates-dropdown__main--icon" data-expand-icon></i>
                </div>
-               <ul class="dropdown-btn expand-block d-none" hidden data-expand-box>
-                  <li class="dropdown-btn__list cursor-pointer"> <a href="#"> По датам</a></li>
-                  <li class="dropdown-btn__list active cursor-pointer"> <a href="#">По артикулам</a></li>
-                  <li class="dropdown-btn__list cursor-pointer"> <a href="#">По SKU</a></li>
-                  <li class="dropdown-btn__list cursor-pointer"> <a href="#">По брендам</a></li>
+               <ul class="dropdown-list expand-block d-none" hidden data-expand-box>
+                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link"> По датам</a></li>
+                  <li class="dropdown-list__item active"> <a href="#" class="dropdown-list__item--link">По
+                        артикулам</a>
+                  </li>
+                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По SKU</a></li>
+                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По брендам</a></li>
                </ul>
             </div>
          </div>
@@ -289,8 +290,9 @@
                   </button>
                   <div
                      class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
-                     <i class="icon icon-calendar main-section__block--dates-list__calendar--icon"></i>
-                     <input class="input-calendar" name="daterange" type="text" placeholder="01.04.2021 - 17.04.2021">
+                     <i class="icon icon-calendar cursor-pointer main-section__block--dates-list__calendar--icon"></i>
+                     <input class="input-calendar cursor-pointer" name="daterange" type="text"
+                        placeholder="01.04.2021 - 17.04.2021">
                   </div>
                </div>
             </div>

@@ -16,8 +16,6 @@
       }
 
       &--subtitle {
-         max-width: 810px;
-         width: 100%;
 
          &-text {
             font: rem(14px) $Regular;
@@ -31,6 +29,10 @@
          &-list {
             margin-right: 14px;
             border-radius: var(--border-radius);
+
+            &__btn {
+               white-space: nowrap;
+            }
 
             &__item {
                border-top: 1px solid #E1E1E1;
@@ -59,11 +61,10 @@
             }
 
             &__filter {
-               position: relative;
 
                &::before {
                   content: '';
-                  transition: .3s;
+                  transition: var(--transition-global);
                }
 
                &:hover {
@@ -95,9 +96,6 @@
             }
 
             &__calendar {
-               position: relative;
-               padding-left: 40px;
-
                &--icon {
                   position: absolute;
                   left: 15px;
@@ -106,8 +104,6 @@
 
                }
             }
-
-
          }
 
          &-dropdown {
@@ -133,9 +129,6 @@
                   color: var(--default_dark);
                }
             }
-
-
-
          }
       }
    }
