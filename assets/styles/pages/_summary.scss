@@ -48,18 +48,18 @@
                      }
 
                      &-number {
-                        font: 14px $Regular;
+                        font: rem(14px) $Regular;
                         color: var(--default_dark);
                      }
 
                      &-numberdown {
-                        font: 14px $Regular;
+                        font: rem(14px) $Regular;
                         color: #FF7D51;
                      }
                   }
 
                   &--plus {
-                     font: 11px $Regular;
+                     font: rem(11px) $Regular;
                      color: var(--primary_color_green-dark);
                   }
                }
@@ -90,8 +90,6 @@
    }
 
    &-grafic {
-      margin-top: 33px;
-
       &__block {
          &--details {
             margin: 31px auto 18px;

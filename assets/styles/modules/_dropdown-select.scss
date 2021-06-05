@@ -106,8 +106,6 @@
         background-color: var(--neutral_color_white);
         border: rem(1px) solid var(--grey_color_default-D3D3D3);
 
-
-
         &--selected {
             text-align: left;
             color: var(--neutral_color_black);
@@ -123,5 +121,39 @@
         font: rem(14px) $Regular;
         color: var(--neutral_color_black);
         margin-bottom: rem(8px);
+    }
+}
+
+.dropdown-btn {
+    background: var(--neutral_color_white);
+    box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
+    border-radius: 0px 0px 8px 8px;
+    padding: 20px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+
+
+
+    &__list {
+        &+& {
+            margin-top: 20px;
+        }
+
+        font: rem(15px) $Regular;
+        color: var(--default_dark);
+        transition: 0.3s;
+
+        &:active {
+            color: var(--primary_color_green-dark);
+        }
+
+        &:hover {
+            color: var(--primary_color_green-dark);
+        }
     }
 }

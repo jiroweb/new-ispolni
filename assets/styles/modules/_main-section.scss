@@ -7,6 +7,7 @@
       padding: 20px 30px;
       border: 1px solid #F2F2F7;
       border-radius: var(--border-radius);
+      margin-top: 30px;
 
       &--search {
          position: relative;
@@ -109,24 +110,31 @@
 
          }
 
-         &-dropdwon {
+         &-dropdown {
             padding: 5.34px 16px 5.34px 19px;
             border: 1px solid #E1E1E1;
             border-radius: var(--border-radius);
+            position: relative;
+
 
             &:hover {
                background: #F9F9FB;
             }
 
-            &__text {
-               font: rem(14px) $Medium;
-               color: var(--default_dark);
-               margin-right: 17px;
+            &__main {
+
+               &--text {
+                  font: rem(14px) $Medium;
+                  color: var(--default_dark);
+                  margin-right: 17px;
+               }
+
+               &--icon {
+                  color: var(--default_dark);
+               }
             }
 
-            &__icon {
-               color: var(--default_dark);
-            }
+
 
          }
       }

@@ -76,10 +76,11 @@
    }
 
    &-main {
-      margin-top: 30px;
 
       &__info {
          margin-right: 30px;
+         margin-top: 30px;
+
 
          &--block {
             width: 469px;
@@ -166,10 +167,6 @@
                   text-decoration-line: underline;
                   color: var(--primary_color_green-dark);
                }
-
-               &__input {
-                  max-width: 183px;
-               }
             }
 
             &-btn {
@@ -212,7 +209,7 @@
                   &--list {
                      &-item {
                         &__link {
-                           font-size: rem(14px);
+                           font: rem(14px) $Regular;
                         }
                      }
                   }

@@ -15,7 +15,7 @@
     }
 
     &-border {
-        border: 1px solid var(--default_light);
+        border: 1px solid #BBBBBB;
         background-color: var(--neutral_color_white);
         color: var(--default_dark);
 
@@ -52,7 +52,7 @@
     color: var(--neutral_color_white);
     width: 43px;
     height: 39px;
-    font-size: 17px;
+    font: rem(17px);
     position: absolute;
     right: 0;
 }

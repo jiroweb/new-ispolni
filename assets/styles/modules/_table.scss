@@ -1,98 +1,104 @@
 .table {
+   border: 1px solid #E1E1E1;
+   border-radius: 6px;
+   overflow: hidden;
    margin-top: 20px;
 
    &-block {
-      border: 1px solid #E1E1E1;
-      border-radius: 8px;
-      overflow-x: auto;
-      margin-bottom: 10px;
-      padding: 10px 20px;
+      height: 70vh;
 
-
-
-      &__main {
-         &--titles {
-            border-bottom: 1px solid #E1E1E1;
-            background-color: #F9F9FB;
-
-
-            &-list {
-               padding: 10px 35px 10px 10px;
-               font: rem(15px) $Medium;
-               color: var(--default_light);
-               position: relative;
-
-
-               &+& {
-                  border-left: 1px solid #E1E1E1;
-               }
-
-               &:first-child {
-                  padding-left: 20px;
-               }
-
-
-               &__icon {
-                  position: absolute;
-                  transform: translateY(-50%);
-                  top: 50%;
-                  right: 7px;
-                  color: var(--default_light);
-               }
-
-            }
-
-         }
-
-         &--form {
-            table-layout: fixed;
-            width: 100%;
-            display: table;
-            border-bottom: 1px solid #E1E1E1;
-
-            &:nth-child(odd) {
-               background-color: var(--neutral_color_white);
-            }
-
-            &:nth-last-child(even) {
-               background-color: #F9F9FB;
-            }
-
-            &-inside {
-               padding: 10px;
-
-               &:first-child {
-                  padding-left: 20px;
-               }
-
-            }
-
-         }
-
+      table {
          thead {
-            display: table;
-            table-layout: fixed;
-            width: 100%;
+            position: sticky;
+            top: 0;
 
+            tr {
+               background-color: #F9F9FB;
+
+               th {
+                  padding: 8px;
+                  font: rem(15px) $Medium;
+                  color: var(--default_light);
+
+                  .icon-filter {
+                     color: var(--default_light);
+                  }
+
+                  &.resizing {
+                     cursor: ew-resize;
+                  }
+
+                  &.noSelect {
+                     user-select: none;
+                  }
+
+                  .input-table {
+                     border: 1px solid #BDBDBD;
+                     border-radius: 4px;
+                     background: var(--neutral_color_white);
+                     color: var(--default_dark);
+                     font: rem(14px) $Regular;
+                     padding: 5px;
+                     width: 100%;
+
+                     &:focus {
+                        border: 1px solid var(--primary_color_green-dark);
+                     }
+
+                     &:hover:not(:disabled) {
+                        border: 1px solid var(--primary_color_green-dark);
+                     }
+                  }
+
+                  .table-line::before {
+                     content: '';
+                     position: absolute;
+                     top: 0;
+                     bottom: 0;
+                     left: -3px;
+                     right: -3px;
+                     background-color: transparent;
+                  }
+               }
+            }
          }
 
          tbody {
-            display: block;
-            height: 500px;
-            overflow: auto;
+            tr {
+
+
+               &:nth-child(odd) {
+                  background-color: var(--neutral_color_white);
+               }
+
+               &:nth-last-child(even) {
+                  background-color: #F9F9FB;
+               }
+
+               &:hover {
+                  background-color: #E1F7EA;
+               }
+
+               td {
+                  font: rem(14px) $Regular;
+                  color: var(--default_dark);
+                  padding: 10px;
+               }
+            }
          }
       }
 
       &__down {
-         padding: 10px 0;
+         padding: 10px 20px;
 
          &--btn {
             &-main {
+               padding: 10px 41px;
+
                &+& {
                   margin-left: 10px;
                }
             }
-
          }
 
          &--pages {
@@ -116,23 +122,5 @@
             }
          }
       }
-   }
-}
-
-.input-table {
-   border: 1px solid #BDBDBD;
-   border-radius: 4px;
-   background: var(--neutral_color_white);
-   color: var(--default_dark);
-   font: rem(14px) $Regular;
-   padding: 7px 5px;
-   width: 100%;
-
-   &:focus {
-      border: 1px solid var(--primary_color_green-dark);
-   }
-
-   &:hover:not(:disabled) {
-      border: 1px solid var(--primary_color_green-dark);
    }
 }

@@ -1,0 +1,26 @@
+.sales {
+   &-block {
+      &__search {
+         margin-top: 25px;
+
+         &--dropdowns {
+            &-main {
+               position: relative;
+
+               &+& {
+                  margin-left: 15px;
+               }
+
+               &__btn {
+                  width: 190px;
+
+                  &-icon {
+                     color: var(--primary_color_green-dark);
+                  }
+               }
+
+            }
+         }
+      }
+   }
+}

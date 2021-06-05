@@ -54,11 +54,12 @@ $(document).ready(function () {
          // clicks anywhere outside of the expand
          $('[data-outside-expand]').slideUp(250);
          $('[data-not-outside-expand]').attr('data-expand', 'false');
-         let arrow = $('[data-expand-icon]');
-         if (arrow.hasClass('rotate')) {
-            $(arrow).removeClass('rotate');
-         }
-         $(arrow).addClass('rotate');
+         // let arrow = $('[data-expand-icon]');
+         // if (arrow.hasClass('rotate')) {
+         //    $(arrow).removeClass('rotate');
+         // } else {
+         //    $(arrow).addClass('rotate');
+         // }
 
          // clicks anywhere outside of the modal
          $('[data-modal-box]').fadeOut(250)

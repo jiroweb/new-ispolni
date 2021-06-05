@@ -1,733 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Сводка</title>
+  <link rel="icon" href="./assets/img/favicon/favicon.svg">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
+  <header class="header">
+    <div class="header-block d-f j-c-b a-i-c container">
+      <div class="header-block__main d-f a-i-c">
+        <a class="header-block__main--logo" href="index.html">
+          <img src="./assets/img/header/logo-all.svg" alt="logo">
+        </a>
+        <ul class="header-block__main--menu d-f j-c-b a-i-c">
+          <li class="header-block__main--menu-item d-f a-i-c">
+            <a class="header-block__main--menu-item__link active" href="#">Кабинет WB</a>
+            <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+            <ul class="header-block__main--menu-item__dropdown">
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Сводка</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Продажи и заказы</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">География заказов</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Подключения</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-block__main--menu-item d-f a-i-c">
+            <a class="header-block__main--menu-item__link" href="#">Группы</a>
+          </li>
+          <li class="header-block__main--menu-item d-f a-i-c">
+            <a class="header-block__main--menu-item__link" href="#">Ozon</a>
+            <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+            <ul class="header-block__main--menu-item__dropdown">
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+              </li>
 
-  <!-- <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    table {
-      table-layout: fixed;
-    }
-
-    td,
-    th {
-      padding: 5px 15px;
-      text-align: left;
-    }
-
-    table,
-    th,
-    td {
-      border: 1px solid #000;
-    }
-
-    .table{
-      height: 500px;
-      overflow: scroll;
-    }
-
-    .table thead th{
-      position: sticky !important;
-      top: 0;
-    }
-  </style> -->
-
-  <!-- <style>
-    .table {
-      overflow-x: auto;
-    }
-
-    .table thead th {
-      position: sticky;
-      top: 0;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    th,
-    td {
-      padding: 8px 15px;
-      border: 2px solid #529432;
-    }
-
-    th {
-      background: #ABDD93;
-    }
-
-
-    .table-body {
-      height: 500px;
-    }
-  </style>
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <div class="table scrollbar">
-      <div class="table-header">
-        <table id="tableId" class="resizable">
-          <thead>
-            <tr>
-              <th></th>
-              <th colspan="3">Продажи</th>
-              <th colspan="2">Заказы</th>
-              <th colspan="2">Возвраты</th>
-              <th colspan="2">Логистика</th>
-            </tr>
-            <tr>
-              <th>Дата</th>
-              <th>шт</th>
-              <th>руб</th>
-              <th>Прибыль</th>
-              <th>шт</th>
-              <th>руб</th>
-              <th>шт</th>
-              <th>руб</th>
-              <th>Клиенту</th>
-              <th>От клиента</th>
-            </tr>
-            <tr>
-              <th><input type="date"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-              <th><input type="text"></th>
-            </tr>
-          </thead>
-        </table>
+            </ul>
+          </li>
+          <li class="header-block__main--menu-item d-f a-i-c">
+            <a class="header-block__main--menu-item__link" href="#">Кабинет WB</a>
+            <i class="icon icon-caret header-block__main--menu-item__icon"></i>
+            <ul class="header-block__main--menu-item__dropdown" data-dropdown-box>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Категории</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
+              </li>
+              <li class="header-block__main--menu-item__dropdown--section">
+                <a class="header-block__main--menu-item__dropdown--section-link" href="#">Рейтинг
+                  поставщиков</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <div class="table-body scrollbar">
-        <table class="resizable">
-          <tbody>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-            <tr>
-              <td>17.04.2021</td>
-              <td>40</td>
-              <td>654 869,33</td>
-              <td>565 664 999</td>
-              <td>2500</td>
-              <td>65 105,36</td>
-              <td>10</td>
-              <td>-1 500</td>
-              <td>2500</td>
-              <td>00,00</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="header-block__user d-f a-i-c">
+        <div class="header-block__user--search d-f a-i-c">
+          <input class="input-search header-block__user--search-form focus" type="text" placeholder="Поиск категории">
+          <i class="icon icon-loop header-block__user--search-icon"></i>
+        </div>
+        <div class="header-block__user--item d-f a-i-c">
+          <div class="header-block__user--item-photo">
+            <img src="./assets/img/header/Ellipse.png" alt="user">
+          </div>
+          <i class="icon icon-arrow header-block__user--item-icon"></i>
+        </div>
       </div>
     </div>
-  </div> -->
+  </header>
+  <section class="summary main-section container">
+    <div class="main-section__block">
+      <div class="table">
+        <div class="table-block scrollbar">
+          <table class="table-scroll small-first-col" id="myTable" data-table>
+            <thead>
+              <tr class="">
+                <th class=""></th>
+                <th class="" colspan="3">Продажи</th>
+                <th class="" colspan="2">Заказы</th>
+                <th class="" colspan="2">Возвраты</th>
+                <th class="" colspan="2">Логистика</th>
+              </tr>
+              <tr class="">
+                <th class="">Дата</th>
+                <th class="">шт</th>
+                <th class="">руб</th>
+                <th class="">Прибыль</th>
+                <th class="">шт</th>
+                <th class="">руб</th>
+                <th class="">шт</th>
+                <th class="">руб</th>
+                <th class="">Клиенту</th>
+                <th class="">От клиента</th>
+              </tr>
+              <tr class="">
+                <th class="">
+                  <input type="text" class="input-table cursor-pointer" name="daterange"></th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
+                      data-not-outside-expand data-expand="false"></button>
+                    <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside hidden>
+                      <div class="table-dropdown-box">
+                        test
+                      </div>
+                      <button data-expand-click>Отмена</button>
+                    </div>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
+                      data-not-outside-expand data-expand="false"></button>
+                    <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside hidden>
+                      <div class="table-dropdown-box">
+                        test
+                      </div>
+                      <button data-expand-click>Отмена</button>
+                    </div>
+                  </div>
+                </th>
+                <th class="">
+                  <input type="text" class="input-table">
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+                <th class="">
+                  <div class="d-f a-i-c">
+                    <input type="text" class="input-table">
+                    <button class="icon icon-filter"></button>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
+              <tr class="">
+                <td class="">17.04.2021</td>
+                <td class="">40</td>
+                <td class="">654 869,33</td>
+                <td class="">565 664 999</td>
+                <td class="">2500</td>
+                <td class="">65 105,36</td>
+                <td class="">10</td>
+                <td class="">-1 500</td>
+                <td class="">2500</td>
+                <td class="">00,00</td>
+              </tr>
 
+            </tbody>
 
-  <div class="table container">
-    <div class="table-block">
-      <table class="table-block__main scrollbar">
-        <thead>
-          <tr class="table-block__main--titles">
-            <th class="table-block__main--titles-list"></th>
-            <th class="table-block__main--titles-list" colspan="3">Продажи</th>
-            <th class="table-block__main--titles-list" colspan="2">Заказы</th>
-            <th class="table-block__main--titles-list" colspan="2">Возвраты</th>
-            <th class="table-block__main--titles-list" colspan="2">Логистика</th>
-          </tr>
-          <tr class="table-block__main--titles">
-            <th class="table-block__main--titles-list">Дата</th>
-            <th class="table-block__main--titles-list">шт</th>
-            <th class="table-block__main--titles-list">руб</th>
-            <th class="table-block__main--titles-list">Прибыль</th>
-            <th class="table-block__main--titles-list">шт</th>
-            <th class="table-block__main--titles-list">руб</th>
-            <th class="table-block__main--titles-list">шт</th>
-            <th class="table-block__main--titles-list">руб</th>
-            <th class="table-block__main--titles-list">Клиенту</th>
-            <th class="table-block__main--titles-list">От клиента</th>
-          </tr>
-          <tr class="table-block__main--titles">
-            <th class="table-block__main--titles-list">
-              <input type="date" class="input-table"></th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-            <th class="table-block__main--titles-list">
-              <input type="text" class="input-table">
-              <i class="icon icon-filter table-block__main--titles-list__icon"></i>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="scrollbar">
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-          <tr class="table-block__main--form">
-            <td class="table-block__main--form-inside">17.04.2021</td>
-            <td class="table-block__main--form-inside">40</td>
-            <td class="table-block__main--form-inside">654 869,33</td>
-            <td class="table-block__main--form-inside">565 664 999</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">65 105,36</td>
-            <td class="table-block__main--form-inside">10</td>
-            <td class="table-block__main--form-inside">-1 500</td>
-            <td class="table-block__main--form-inside">2500</td>
-            <td class="table-block__main--form-inside">00,00</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-      <div class="table-block__down d-f j-c-b a-i-c">
-        <div class="table-block__down--btn d-f">
-          <button class="btn btn-background table-block__down--btn-main">Скачать CSV</button>
-          <button class="btn btn-background table-block__down--btn-main">Скачать Excel(.xlsx)</button>
+          </table>
         </div>
-        <div class="table-block__down--pages d-f a-i-c">
-          <p class="table-block__down--pages-info">1 к 100 из 250</p>
-          <div class="table-block__down--pages-part d-f a-i-c">
-            <button class="icon icon-arrow-left-start table-block__down--pages-part__btn"></button>
-            <button class="icon icon-arrow-left table-block__down--pages-part__btn"></button>
-            <p class="table-block__down--pages-part__text">Страница 1 из 3</p>
-            <button class="icon icon-arrow-right table-block__down--pages-part__btn"></button>
-            <button class="icon icon-arrow-right-end table-block__down--pages-part__btn"></button>
+        <div class="table-block__down d-f j-c-b a-i-c">
+          <div class="table-block__down--btn d-f">
+            <button class="btn btn-background table-block__down--btn-main">Скачать CSV</button>
+            <button class="btn btn-background table-block__down--btn-main">Скачать Excel(.xlsx)</button>
+          </div>
+          <div class="table-block__down--pages d-f a-i-c">
+            <p class="table-block__down--pages-info">1 к 100 из 250</p>
+            <div class="table-block__down--pages-part d-f a-i-c">
+              <button class="icon icon-arrow-left-start table-block__down--pages-part__btn"></button>
+              <button class="icon icon-arrow-left table-block__down--pages-part__btn"></button>
+              <p class="table-block__down--pages-part__text">Страница 1 из 3</p>
+              <button class="icon icon-arrow-right table-block__down--pages-part__btn"></button>
+              <button class="icon icon-arrow-right-end table-block__down--pages-part__btn"></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-
-
-
-  <script src="./assets/js/jquery-3.2.1.min.js"></script>
-  <script src="./assets/js/resizable.js"></script>
-
+  </section>
 </body>
+
+<!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
+<script src="./assets/js/jquery-3.2.1.min.js"></script>
+<script src="./assets/js/resizable.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<!-- ====================== -SCRIPT-PLUGIN-END- ====================== -->
+
+<!-- ======================= -SCRIPT-MY-START- ======================= -->
+<script src="./assets/js/scripts.js"></script>
+<!-- ======================== -SCRIPT-MY-END- ======================== -->
+
 
 </html>
