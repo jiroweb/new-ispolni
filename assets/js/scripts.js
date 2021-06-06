@@ -1,35 +1,36 @@
 $(document).ready(function () {
    // Function for expand ui ===== -- Start
    $('body').on('click', '[data-expand-click]', function () {
-      let this_data = $(this).attr('data-expand');
-      let this_child = $(this).parent().find('[data-expand-box]:first');
-      $('[data-outside-expand]').slideUp(250);
-      $('[data-not-outside-expand]').attr('data-expand', 'false');
-      let arrow = $(this).find('[data-expand-icon]');
-      if (arrow.hasClass('rotate')) {
-         $(arrow).removeClass('rotate');
-      } else {
-         $(arrow).addClass('rotate');
-      }
+      let this_data = $(this).attr('data-expand')
+      let this_child = $(this).parent().find('[data-expand-box]:first')
+      $('[data-outside-expand]').slideUp(250)
+      $('[data-not-outside-expand]').attr('data-expand', 'false')
+      $('[data-expand-outside-icon]').removeClass('rotate')
+      let arrow = $(this).find('[data-expand-icon]')
       if (this_data === 'true') {
-         $(this).attr('data-expand', 'false');
+         $(this).attr('data-expand', 'false')
          this_child.slideUp(250);
+         $(arrow).removeClass('rotate')
 
       } else if (this_data === 'false') {
          this_child.slideDown(250);
-         $(this).attr('data-expand', 'true');
+         $(this).attr('data-expand', 'true')
+         $(arrow).addClass('rotate')
       } else {
          this_child.slideUp(250);
       }
    });
+   $('body').on('click', '[data-expand-click-icon]', function () {
+      $(this).toggleClass('rotate')
+   })
    // Function for expand ui ===== -- End
 
    // Function for change active ui ===== -- Start
    $('body').on('click', '[data-change-active]', function () {
-      let thic_parent = $(this).parent();
-      let this_active = $(thic_parent).find('[data-change-active]');
-      $(this_active).removeClass('active');
-      $(this).addClass('active');
+      let thic_parent = $(this).parent()
+      let this_active = $(thic_parent).find('[data-change-active]')
+      $(this_active).removeClass('active')
+      $(this).addClass('active')
    });
    // Function for change active ui ===== -- End
 
@@ -53,14 +54,8 @@ $(document).ready(function () {
       if (!$(e.target).closest('[data-not-outside]').length) {
          // clicks anywhere outside of the expand
          $('[data-outside-expand]').slideUp(250);
-         $('[data-not-outside-expand]').attr('data-expand', 'false');
-         // let arrow = $('[data-expand-icon]');
-         // if (arrow.hasClass('rotate')) {
-         //    $(arrow).removeClass('rotate');
-         // } else {
-         //    $(arrow).addClass('rotate');
-         // }
-
+         $('[data-not-outside-expand]').attr('data-expand', 'false')
+         $('[data-expand-outside-icon]').removeClass('rotate')
          // clicks anywhere outside of the modal
          $('[data-modal-box]').fadeOut(250)
       }

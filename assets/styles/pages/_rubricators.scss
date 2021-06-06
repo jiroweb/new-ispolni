@@ -3,11 +3,13 @@
       padding-top: 15px;
 
       &__list {
+
          &--item {
+            user-select: none;
+
             &-link {
                border-radius: var(--border-radius);
                background-color: var(--neutral_color_white);
-               transition: var(--transition-global);
 
                &+& {
                   margin-top: 10px;
@@ -15,9 +17,8 @@
 
                &__main {
                   position: relative;
-                  padding: 9px 17px 9px 20px;
-
-
+                  padding: 10px 20px;
+                  transition: var(--transition-global);
 
                   &--title {
                      font: rem(15px) $Regular;
@@ -36,12 +37,13 @@
 
 
                &__subblock {
-                  top: 100%;
-                  width: 100%;
-                  left: 0;
+                  padding: 0 40px 10px;
 
                   &--part {
-                     padding: 9px 40px;
+                     clear: both;
+
+                     // margin: 0 -40px;
+                     padding: 10px 0;
 
                      &-title {
                         font: rem(15px) $Regular;
@@ -50,25 +52,28 @@
 
                         &:hover {
                            color: var(--primary_color_green-dark);
+                           transition: var(--transition-global);
                         }
                      }
 
                      &-icon {
                         color: var(--primary_color_green-dark);
-
+                        float: right;
                      }
 
+                     &-main {
+                        padding: 10px 20px 0;
 
+                        &__url {
+                           &+& {
+                              margin-top: 10px;
+                           }
+                        }
+                     }
                   }
-
-
                }
             }
          }
-      }
-
-      .rotate {
-         transform: rotate(180deg);
       }
    }
 }
