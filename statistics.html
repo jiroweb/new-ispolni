@@ -292,7 +292,7 @@
                   <ul class="summary-grafic__block--details d-f a-i-c j-c-c">
                      <li class="summary-grafic__block--details-item d-f a-i-c">
                         <label class="checked d-f j-c-c a-i-c">
-                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <input type="checkbox" checked="checked" class="checkbox">
                            <span class="checked-checkbox"></span>
                         </label>
                         <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
@@ -300,7 +300,7 @@
                      </li>
                      <li class="summary-grafic__block--details-item d-f a-i-c">
                         <label class="checked d-f j-c-c a-i-c">
-                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <input type="checkbox" checked="checked" class="checkbox">
                            <span class="checked-checkbox"></span>
                         </label>
                         <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
@@ -309,7 +309,7 @@
                      </li>
                      <li class="summary-grafic__block--details-item d-f a-i-c">
                         <label class="checked d-f j-c-c a-i-c">
-                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <input type="checkbox" checked="checked" class="checkbox">
                            <span class="checked-checkbox"></span>
                         </label>
                         <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
@@ -318,7 +318,7 @@
                      </li>
                      <li class="summary-grafic__block--details-item d-f a-i-c">
                         <label class="checked d-f j-c-c a-i-c">
-                           <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                           <input type="checkbox" checked="checked" class="checkbox">
                            <span class="checked-checkbox"></span>
                         </label>
                         <p class="summary-grafic__block--details-item__text">Продажи (₽)</p>
@@ -336,12 +336,42 @@
                         <table class="table-scroll small-first-col" id="myTable" data-table>
                            <thead>
                               <tr class="">
-                                 <th class="">Дата</th>
-                                 <th class="">Продажи</th>
-                                 <th class="">Остаток</th>
-                                 <th class="">Цена</th>
-                                 <th class="">Со скидкой</th>
-                                 <th class="">Сумма продаж</th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Дата</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>
+                                 </th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Продаж</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>и
+                                 </th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Остаток</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>
+                                 </th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Цена</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>
+                                 </th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Со скидкой</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>
+                                 </th>
+                                 <th class="">
+                                    <div class="thead-dropdown d-f j-c-b a-i-c">
+                                       <p>Сумма продаж</p>
+                                       <button class="icon icon-burger thead-dropdown__icon"></button>
+                                    </div>
+                                 </th>
                               </tr>
                               <tr class="">
                                  <th class="">
@@ -363,25 +393,57 @@
                                  <th class="">
                                     <div class="d-f a-i-c">
                                        <input type="text" class="input-table">
-                                       <button class="icon icon-filter"></button>
+                                       <button class="icon icon-filter cursor-pointer" data-expand-click
+                                          data-not-outside data-not-outside-expand data-expand="false"></button>
+                                       <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside
+                                          hidden>
+                                          <div class="table-dropdown-box">
+                                             test
+                                          </div>
+                                          <button data-expand-click>Отмена</button>
+                                       </div>
                                     </div>
                                  </th>
                                  <th class="">
                                     <div class="d-f a-i-c">
                                        <input type="text" class="input-table">
-                                       <button class="icon icon-filter"></button>
+                                       <button class="icon icon-filter cursor-pointer" data-expand-click
+                                          data-not-outside data-not-outside-expand data-expand="false"></button>
+                                       <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside
+                                          hidden>
+                                          <div class="table-dropdown-box">
+                                             test
+                                          </div>
+                                          <button data-expand-click>Отмена</button>
+                                       </div>
                                     </div>
                                  </th>
                                  <th class="">
                                     <div class="d-f a-i-c">
                                        <input type="text" class="input-table">
-                                       <button class="icon icon-filter"></button>
+                                       <button class="icon icon-filter cursor-pointer" data-expand-click
+                                          data-not-outside data-not-outside-expand data-expand="false"></button>
+                                       <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside
+                                          hidden>
+                                          <div class="table-dropdown-box">
+                                             test
+                                          </div>
+                                          <button data-expand-click>Отмена</button>
+                                       </div>
                                     </div>
                                  </th>
                                  <th class="">
                                     <div class="d-f a-i-c">
                                        <input type="text" class="input-table">
-                                       <button class="icon icon-filter"></button>
+                                       <button class="icon icon-filter cursor-pointer" data-expand-click
+                                          data-not-outside data-not-outside-expand data-expand="false"></button>
+                                       <div class="table-dropdown" data-expand-box data-outside-expand data-not-outside
+                                          hidden>
+                                          <div class="table-dropdown-box">
+                                             test
+                                          </div>
+                                          <button data-expand-click>Отмена</button>
+                                       </div>
                                     </div>
                                  </th>
 
@@ -502,7 +564,7 @@
                                     <i class="icon icon-arrow table-block__sidebar--list-main__parts--search-icon"></i>
                                     <label
                                        class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__parts--search-checked">
-                                       <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                       <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
                                     </label>
                                     <input type="text" class="input" placeholder="Поиск">
@@ -512,7 +574,7 @@
                                  <div class="table-block__sidebar--list-main__items--checkbox d-f">
                                     <label
                                        class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__parts--search-checked">
-                                       <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                       <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
                                     </label>
                                     <p class="table-block__sidebar--list-main__parts--items-single__text">Дата</p>
@@ -523,7 +585,7 @@
                                           class="icon icon-arrow table-block__sidebar--list-main__items--checkbox-dropdown__icon"></i>
                                        <label
                                           class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-dropdown__checked">
-                                          <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                          <input type="checkbox" checked="checked" class="checkbox">
                                           <span class="checked-checkbox"></span>
                                        </label>
                                        <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы</p>
@@ -533,7 +595,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -543,7 +605,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -557,7 +619,7 @@
                                           class="icon icon-arrow table-block__sidebar--list-main__items--checkbox-dropdown__icon"></i>
                                        <label
                                           class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-dropdown__checked">
-                                          <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                          <input type="checkbox" checked="checked" class="checkbox">
                                           <span class="checked-checkbox"></span>
                                        </label>
                                        <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы</p>
@@ -567,7 +629,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -577,7 +639,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -591,7 +653,7 @@
                                           class="icon icon-arrow table-block__sidebar--list-main__items--checkbox-dropdown__icon"></i>
                                        <label
                                           class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-dropdown__checked">
-                                          <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                          <input type="checkbox" checked="checked" class="checkbox">
                                           <span class="checked-checkbox"></span>
                                        </label>
                                        <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы</p>
@@ -601,7 +663,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -611,7 +673,7 @@
                                           class="table-block__sidebar--list-main__items--checkbox-underpart__block d-f">
                                           <label
                                              class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__items--checkbox-underpart__block--checked">
-                                             <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                             <input type="checkbox" checked="checked" class="checkbox">
                                              <span class="checked-checkbox"></span>
                                           </label>
                                           <p class="table-block__sidebar--list-main__parts--items-single__text">Заказы
@@ -633,7 +695,7 @@
                                     <i class="icon icon-arrow table-block__sidebar--list-main__parts--search-icon"></i>
                                     <label
                                        class="checked d-f j-c-c a-i-c table-block__sidebar--list-main__parts--search-checked">
-                                       <input id="asd" type="checkbox" checked="checked" class="checkbox">
+                                       <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
                                     </label>
                                     <input type="text" class="input" placeholder="Поиск">
