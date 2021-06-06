@@ -92,5 +92,15 @@
 
          }
       }
+
+      &__btn {
+         margin-top: 20px;
+
+         &--main {
+            &+& {
+               margin-left: 10px;
+            }
+         }
+      }
    }
 }

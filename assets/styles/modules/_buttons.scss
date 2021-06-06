@@ -4,6 +4,8 @@
     border-radius: var(--border-radius);
     padding: 10px 25px;
     text-align: center;
+    white-space: nowrap;
+
 
     &-background {
         background-color: var(--primary_color_green-dark);
@@ -55,4 +57,5 @@
     font: rem(17px);
     position: absolute;
     right: 0;
+    white-space: nowrap;
 }

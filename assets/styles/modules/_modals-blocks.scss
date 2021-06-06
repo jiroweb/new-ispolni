@@ -1,4 +1,4 @@
-.groups-input {
+.groups-modals {
    max-width: 593px;
    width: 100%;
    padding: 30px;
@@ -22,10 +22,30 @@
 
    }
 
-   &__main {
-      padding-top: 19px;
-      padding-bottom: 19px;
+   &__dropdown {
+      border: 1px solid #E1E1E1;
+      background-color: var(--neutral_color_white);
+      border-radius: var(--border-radius);
+      padding: 10px 20px;
+      position: relative;
+
+      &--btn {
+         width: 100%;
+
+         &-text {
+            color: #BBBBBB;
+            font: rem(14px) $Regular;
+
+         }
+
+         &-icon {
+            color: #808080;
+         }
+      }
+
+
    }
+
 }
 
 
@@ -61,5 +81,15 @@
       }
 
    }
+
+}
+
+.modal-block {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   background-color: rgba(0, 0, 0, 0.2);
 
 }
