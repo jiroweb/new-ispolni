@@ -2,3 +2,36 @@
     width: $width;
     height: $height;
 }
+
+$margins: 100;
+$margin-size: 1px;
+
+@mixin margin-x {
+    $margin: null;
+
+    @for $i from 1 through $margins {
+
+        .mt-#{$i} {
+            margin-top: $margin-size * $i;
+        }
+
+        .mr-#{$i} {
+            margin-right: $margin-size * $i;
+        }
+
+        .mb-#{$i} {
+            margin-bottom: $margin-size * $i;
+        }
+
+        .ml-#{$i} {
+            margin-left: $margin-size * $i;
+        }
+
+        $margin: append($margin, unquote(".mr-#{$i}"), comma);
+        $margin: append($margin, unquote(".mt-#{$i}"), comma);
+        $margin: append($margin, unquote(".mb-#{$i}"), comma);
+        $margin: append($margin, unquote(".ml-#{$i}"), comma);
+    }
+}
+
+@include margin-x;

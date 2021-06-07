@@ -46,6 +46,29 @@ html {
 // section-title -- END
 
 
+// line-clamp -- START
+.line-clamp {
+   display: -webkit-box;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   /*! autoprefixer: off */
+   -webkit-box-orient: vertical;
+
+   /*! autoprefixer: off */
+
+   &_2 {
+      -webkit-line-clamp: 2;
+   }
+
+   &_3 {
+
+      -webkit-line-clamp: 3;
+   }
+}
+
+// line-clamp -- END
+
+
 // overflow-hidden -- START
 .overflow-hidden,
 .modal-overflow {
@@ -95,5 +118,4 @@ html {
 '../pages/groups',
 '../pages/inside-group',
 '../pages/rating',
-'../pages/sales-orders',
 '../pages/statistics';

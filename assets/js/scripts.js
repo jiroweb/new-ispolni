@@ -3,19 +3,47 @@ $(document).ready(function () {
    $('body').on('click', '[data-expand-click]', function () {
       let this_data = $(this).attr('data-expand')
       let this_child = $(this).parent().find('[data-expand-box]:first')
-      $('[data-outside-expand]').slideUp(250)
-      $('[data-not-outside-expand]').attr('data-expand', 'false')
-      $('[data-expand-outside-icon]').removeClass('rotate')
+      $('[data-outside-expand], [data-sub-outside-expand]').slideUp(250)
+      $('[data-not-outside-expand], [data-sub-not-outside-expand]').attr('data-expand', 'false')
+      $('[data-expand-outside-icon], [data-sub-expand-outside-icon]').removeClass('rotate')
+      $('[data-table-sidebar-filter]').removeClass('active')
       let arrow = $(this).find('[data-expand-icon]')
+      let tableSidebarFilter = $(this).parent().find('[data-table-sidebar-filter]')
       if (this_data === 'true') {
          $(this).attr('data-expand', 'false')
          this_child.slideUp(250);
          $(arrow).removeClass('rotate')
+         $(tableSidebarFilter).removeClass('active')
 
       } else if (this_data === 'false') {
          this_child.slideDown(250);
          $(this).attr('data-expand', 'true')
          $(arrow).addClass('rotate')
+         $(tableSidebarFilter).addClass('active')
+      } else {
+         this_child.slideUp(250);
+      }
+   });
+
+   $('body').on('click', '[data-sub-expand-click]', function () {
+      let this_data = $(this).attr('data-expand')
+      let this_child = $(this).parent().find('[data-expand-box]:first')
+      $('[data-sub-outside-expand]').slideUp(250)
+      $('[data-sub-not-outside-expand]').attr('data-expand', 'false')
+      // $('[data-sub-expand-outside-icon]').removeClass('rotate')
+      let arrow = $(this).find('[data-sub-expand-icon]')
+      // let tableSidebarFilter = $(this).parent().find('[data-table-sidebar-filter]')
+      if (this_data === 'true') {
+         $(this).attr('data-expand', 'false')
+         this_child.slideUp(250);
+         $(arrow).removeClass('rotate')
+         // $(tableSidebarFilter).removeClass('active')
+
+      } else if (this_data === 'false') {
+         this_child.slideDown(250);
+         $(this).attr('data-expand', 'true')
+         $(arrow).addClass('rotate')
+         // $(tableSidebarFilter).addClass('active')
       } else {
          this_child.slideUp(250);
       }
@@ -53,9 +81,13 @@ $(document).ready(function () {
    $(window).on('click', function (e) {
       if (!$(e.target).closest('[data-not-outside]').length) {
          // clicks anywhere outside of the expand
-         $('[data-outside-expand]').slideUp(250);
-         $('[data-not-outside-expand]').attr('data-expand', 'false')
-         $('[data-expand-outside-icon]').removeClass('rotate')
+         $('[data-outside-expand], [data-sub-outside-expand]').slideUp(250);
+         $('[data-not-outside-expand], [data-sub-not-outside-expand]').attr('data-expand', 'false')
+         $('[data-expand-outside-icon], [data-sub-expand-outside-icon]').removeClass('rotate')
+
+         // clicks anywhere outside of the table side bar filter
+         $('[data-table-sidebar-filter]').removeClass('active')
+
          // clicks anywhere outside of the modal
          $('[data-modal-box]').fadeOut(250)
       }
