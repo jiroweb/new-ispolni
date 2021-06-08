@@ -53,12 +53,14 @@
    <div data-modal-box data-modal-name="addItems" hidden class="modal-block d-f j-c-c a-i-c">
       <div class="groups-modals" data-not-outside>
          <p class="groups-modals__title">Добавить товары в группу</p>
-         <div class="groups-modals__dropdown" data-expand-click data-expand="false">
+         <div class="groups-modals__dropdown" data-expand-click data-expand="false" data-not-outside-expand
+            data-not-outside>
             <button class="groups-modals__dropdown--btn d-f a-i-c j-c-b" data-not-outside>
                <p class="groups-modals__dropdown--btn-text">Выберите группу</p>
-               <i class="icon icon-arrow groups-modals__dropdown--btn-icon" data-expand-icon></i>
+               <i class="icon icon-arrow groups-modals__dropdown--btn-icon" data-expand-icon
+                  data-expand-outside-icon></i>
             </button>
-            <ul class="dropdown-list expand-block d-none" hidden data-expand-box data-not-outside-expand>
+            <ul class="dropdown-list expand-block d-none" hidden data-expand-box data-sub-outside-expand>
                <li class="dropdown-list__item cursor-pointer">
                   <p class=" dropdown-list__item--link">ATIKO Baby
                   </p>

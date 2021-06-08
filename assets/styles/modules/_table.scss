@@ -278,6 +278,8 @@
 
                   &-checked {
                      margin-right: 16px;
+
+
                   }
                }
             }
@@ -297,11 +299,15 @@
                      &__icon {
                         position: absolute;
                         left: -34px;
+                        top: 50%;
+                        transform: translateY(-50%);
                      }
 
                      &__checked {
                         margin-right: 10px;
                      }
+
+
 
                      &:hover {
                         color: var(--primary_color_green-dark);
@@ -310,6 +316,12 @@
                      &:active {
                         color: var(--primary_color_green-dark);
                      }
+                  }
+
+                  &-text {
+                     font: rem(15px) $Medium;
+                     color: var(--default_light);
+                     margin-left: 10px;
                   }
 
                   &-underpart {
@@ -334,8 +346,9 @@
                         &--choose {
                            position: absolute;
                            width: 180px;
-
                            left: 10px;
+                           z-index: 999;
+                           background-color: var(--neutral_color_white);
 
                            &-dropdown {
                               border-radius: var(--border-radius);
@@ -399,7 +412,7 @@
                      color: var(--default_light);
 
                      &__text {
-                        font: rem(14px) $Regular;
+                        font: rem(15px) $Medium;
                      }
 
                      &:hover {
