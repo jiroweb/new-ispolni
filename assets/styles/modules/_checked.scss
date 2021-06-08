@@ -8,7 +8,6 @@
         box-sizing: border-box;
         border-radius: 2px;
 
-
         &:hover {
             border-color: var(--primary_color_green-dark);
         }
@@ -31,7 +30,6 @@
             transform: rotate(45deg);
         }
     }
-
 
     &-switch {
         @include wh(60px, 25px);

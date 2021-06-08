@@ -9,6 +9,8 @@
       height: 525px;
       min-height: 70vh;
       padding-right: 30px;
+      border-bottom: 1px solid #E1E1E1;
+
 
       table {
          thead {
@@ -190,6 +192,7 @@
          position: relative;
          z-index: 999;
 
+
          &--btn {
             &-main {
                &+& {
@@ -299,8 +302,7 @@
                      &__icon {
                         position: absolute;
                         left: -34px;
-                        top: 50%;
-                        transform: translateY(-50%);
+                        top: -4px;
                      }
 
                      &__checked {
