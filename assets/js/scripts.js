@@ -77,6 +77,26 @@ $(document).ready(function () {
    })
    // Function for modal ui ===== -- End
 
+   // Function for table hover img tooltip ui ===== -- Start
+   $('body').on('mouseenter', '[data-src-tooltip]', function () {
+      let srcImg = $(this).data('img')
+      let doc = document.documentElement;
+      let top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+      let left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
+      let offset_y = $(this).offset().top - top * 2;
+      let offset_x = $(this).offset().left - left + 40;
+
+      $('body').append(
+         `<div class="table-img-tooltip" data-img-tooltip style="top: ${offset_y + "px"}; left: ${offset_x + "px"}">
+               <img src="${srcImg}">
+            </div>
+            `)
+   });
+   $('body').on('mouseleave', '[data-src-tooltip]', function () {
+      $('[data-img-tooltip]').remove();
+   });
+   // Function for table hover img tooltip ui ui ===== -- End
+
    // Function for window clicks anywhere outside blocks ui ===== -- Start
    $(window).on('click', function (e) {
       if (!$(e.target).closest('[data-not-outside]').length) {
@@ -95,26 +115,6 @@ $(document).ready(function () {
    // Function for window clicks anywhere outside blocks ui ===== -- End
 
 
-   // tooltip function
-   $('body').on('mouseenter', '[data-src-tooltip]', function () {
-      let srcImg = $(this).data('img')
-      let doc = document.documentElement;
-      let top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
-      let left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
-      let offset_y = $(this).offset().top - top * 2.2;
-      let offset_x = $(this).offset().left - left + 40;
-
-      $('body').append(
-         `<div class="table-img-tooltip" data-img-tooltip style="top: ${offset_y + "px"}; left: ${offset_x + "px"}">
-            <img src="${srcImg}">
-         </div>
-         `)
-   });
-   $('body').on('mouseleave', '[data-src-tooltip]', function () {
-      $('[data-img-tooltip]').remove();
-   });
-
-
    // Function for daterangepicker ui ===== -- Start
    $('input[name="daterange"]').daterangepicker({
       "locale": {
@@ -122,9 +122,6 @@ $(document).ready(function () {
          "separator": " - ",
          "applyLabel": "Применить",
          "cancelLabel": "Закрыть ",
-         // "fromLabel": "From",
-         // "toLabel": "To",
-         // "customRangeLabel": "Custom",
          "daysOfWeek": [
             'Вс',
             'Пн',
@@ -153,19 +150,3 @@ $(document).ready(function () {
    })
    // Function for daterangepicker ui ===== -- End
 })
-
-function myFunction() {
-   var input, filter, ul, li, a, i;
-   input = document.getElementById("filterCompany");
-   filter = input.value.toUpperCase();
-   ul = document.getElementById("filterList");
-   li = ul.getElementsByTagName("li");
-   for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("div")[0];
-      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-         li[i].style.display = "";
-      } else {
-         li[i].style.display = "none";
-      }
-   }
-}
