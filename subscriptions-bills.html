@@ -9,7 +9,7 @@
    <meta name="keywords" content="Ваши ключевые слова">
    <meta name="description" content="Описание Вашей страницы">
    <!-- ==================== -META-TAG-SEO-END- ==================== -->
-   <title>Сводка</title>
+   <title>Подписки и счета</title>
    <link rel="icon" href="./assets/img/favicon/favicon.svg">
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -77,7 +77,7 @@
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
                <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
-               <i class="icon icon-loop header-block__user--search-icon"></i>
+               <button class="icon icon-loop header-block__user--search-icon"></button>
             </div>
             <div class="header-block__user--item cursor-pointer d-f a-i-c">
                <div class="header-block__user--item-photo">
@@ -88,324 +88,51 @@
          </div>
       </div>
    </header>
-   <section class="summary main-section container">
-      <div class="main-section__block d-f j-c-b a-i-c">
-         <h4 class="section-title">Сводка</h4>
-         <div class="main-section__block--dates d-f">
-            <div class="main-section__block--dates-list d-f a-i-c">
-               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                  data-change-active>Сегодня</button>
-               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                  data-change-active>Вчера</button>
-               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                  data-change-active>Неделя</button>
-               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter active"
-                  data-change-active>Месяц
-               </button>
-               <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                  data-change-active>30
-                  дней</button>
-               <div class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
-                  <i class="icon icon-calendar main-section__block--dates-list__calendar--icon cursor-pointer"></i>
-                  <input class="input-calendar cursor-pointer" name="daterange" type="text"
-                     placeholder="01.04.2021 - 17.04.2021">
-               </div>
-            </div>
-            <div class="main-section__block--dates-dropdown d-f">
-               <div data-expand-click data-expand="false" data-not-outside-expand data-not-outside
-                  class="main-section__block--dates-dropdown__main d-f a-i-c cursor-pointer">
-                  <p class="main-section__block--dates-dropdown__main--text">Все ключи API</p>
-                  <i class="icon icon-arrow main-section__block--dates-dropdown__main--icon" data-expand-icon
-                     data-expand-outside-icon></i>
-               </div>
-               <ul class="dropdown-list expand-block d-none" hidden data-expand-box data-sub-outside-expand>
-                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link"> По датам</a></li>
-                  <li class="dropdown-list__item active"> <a href="#" class="dropdown-list__item--link">По
-                        артикулам</a>
-                  </li>
-                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По SKU</a></li>
-                  <li class="dropdown-list__item"> <a href="#" class="dropdown-list__item--link">По брендам</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <div class="summary-results g-t-c-5 d-g g-g-20">
-         <div class="summary-results__block summary-results__green">
-            <div class="summary-results__block--item">
-               <div class="summary-results__block--item-title d-f j-c-b">
-                  <button class="icon icon-menu-dots summary-results__block--item-title__icon"></button>
-                  <h5 class="summary-results__block--item-title__text">Продажи</h5>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Сумма</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
-                  </div>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Количество</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="summary-results__block summary-results__pink">
-            <div class="summary-results__block--item">
-               <div class="summary-results__block--item-title d-f j-c-b">
-                  <button class="icon icon-menu-dots summary-results__block--item-title__icon"></button>
-                  <h5 class="summary-results__block--item-title__text">Заказы</h5>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Сумма</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
-                  </div>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Количество</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="summary-results__block summary-results__orange">
-            <div class="summary-results__block--item">
-               <div class="summary-results__block--item-title d-f j-c-b">
-                  <button class="icon icon-menu-dots summary-results__block--item-title__icon"></button>
-                  <h5 class="summary-results__block--item-title__text">Возвраты</h5>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Сумма</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow summary-results__block--item-list__sum--all-icondown"></i>
-                        <p class="summary-results__block--item-list__sum--all-numberdown">-66 006 ₽</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
-                  </div>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Количество</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow summary-results__block--item-list__sum--all-icondown"></i>
-                        <p class="summary-results__block--item-list__sum--all-numberdown">37 197 шт</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">-482 шт</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="summary-results__block summary-results__blue">
-            <div class="summary-results__block--item">
-               <div class="summary-results__block--item-title d-f j-c-b">
-                  <button class="icon icon-menu-dots summary-results__block--item-title__icon"></button>
-                  <h5 class="summary-results__block--item-title__text">Логистика</h5>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Сумма</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
-                  </div>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Количество</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="summary-results__block summary-results__yellow">
-            <div class="summary-results__block--item">
-               <div class="summary-results__block--item-title d-f j-c-b">
-                  <button class="icon icon-menu-dots summary-results__block--item-title__icon"></button>
-                  <h5 class="summary-results__block--item-title__text">Прибыль и комиссия</h5>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Сумма</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">10 813 019 ₽</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+2 066 502 ₽</p>
-                  </div>
-               </div>
-               <div class="summary-results__block--item-list d-f j-c-b">
-                  <p class="summary-results__block--item-list__text">Количество</p>
-                  <div class="summary-results__block--item-list__sum">
-                     <div class="summary-results__block--item-list__sum--all d-f a-i-c">
-                        <i class="icon icon-arrow-up summary-results__block--item-list__sum--all-icon"></i>
-                        <p class="summary-results__block--item-list__sum--all-number">37 197 шт</p>
-                     </div>
-                     <p class="summary-results__block--item-list__sum--plus">+19 910 шт</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="main-section__block summary-graphic">
-         <div class="d-f j-c-b a-i-c">
-            <h4 class="section-title">Отображение на графике</h4>
+   <section class="main-section container summary">
+        <div class="main-section__block border-style">
+           <div class=" d-f j-c-b a-i-c">
+               <h4 class="section-title">Ваша подписка
+                   </h4>
             <div class="main-section__block--dates d-f">
-               <div class="main-section__block--dates-list d-f a-i-c">
-                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                     data-change-active>Сегодня
-                  </button>
-                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                     data-change-active>Вчера</button>
-                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                     data-change-active>Неделя
-                  </button>
-                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter active"
-                     data-change-active>
-                     Месяц
-                  </button>
-                  <button class="main-section__block--dates-list__item main-section__block--dates-list__filter"
-                     data-change-active>30 дней
-                  </button>
-                  <div
-                     class="main-section__block--dates-list__item main-section__block--dates-list__calendar d-f a-i-c">
-                     <i class="icon icon-calendar cursor-pointer main-section__block--dates-list__calendar--icon"></i>
-                     <input class="input-calendar cursor-pointer" name="daterange" type="text"
-                        placeholder="01.04.2021 - 17.04.2021">
+               <button class="btn btn-color ">Промокод на подпику</button>
+            </div>
+         </div>
+            <div class="subscriptions-bills d-f j-c-b">
+               <div class="subscriptions-bills__list">
+                  <div class="subscriptions-bills__list--item d-g g-t-c-2 g-g-10">
+                     <span class="subscriptions-bills__list--item-name">Тариф:</span>
+                     <p class="font-green subscriptions-bills__list--item-info">Профессиональный</p>
+                  </div>
+                  <div class="subscriptions-bills__list--item d-g g-t-c-2 g-g-10">
+                     <span class="subscriptions-bills__list--item-name">Запросов за сегодня:</span>
+                     <p class="subscriptions-bills__list--item-info">49 из 2500 доступных в сутки</p>
                   </div>
                </div>
-            </div>
-         </div>
-         <div class="summary-graphic__block">
-            <ul class="summary-graphic__block--details d-f a-i-c j-c-c">
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span class="summary-graphic__block--details-item__circle"></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__square summary-graphic__block--details-item__green"></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__circle summary-graphic__block--details-item__circlepink "></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__square summary-graphic__block--details-item__squarepink"></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__circle summary-graphic__block--details-item__circleorange"></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__square summary-graphic__block--details-item__squarered"></span>
-               </li>
-               <li class="summary-graphic__block--details-item d-f a-i-c">
-                  <label class="checked d-f j-c-c a-i-c">
-                     <input type="checkbox" checked="checked" class="checkbox">
-                     <span class="checked-checkbox"></span>
-                     <p class="summary-graphic__block--details-item__text">Продажи (₽)</p>
-                  </label>
-                  <span
-                     class="summary-graphic__block--details-item__circle summary-graphic__block--details-item__circleyellow"></span>
-               </li>
-            </ul>
-            <div class="summary-graphic__block--info">
-               <img src="./assets/img/summary/Chart.png" alt="summary">
-            </div>
-         </div>
+               <div class="subscriptions-bills__list">
+                  <div class="subscriptions-bills__list--item d-g g-t-c-2 g-g-10">
+                     <span class="subscriptions-bills__list--item-name">Запросов от расширения за сегодня:</span>
+                     <p class="subscriptions-bills__list--item-info">0 из 2500 доступных в сутки</p>
+                  </div>
+                  <div class="subscriptions-bills__list--item d-g g-t-c-2 g-g-10">
+                     <span class="subscriptions-bills__list--item-name">Дата окончания подписки:</span>
+                     <p class="subscriptions-bills__list--item-info">11.10.2021 в 16:25:21</p>
+                  </div>
+               </div>
 
-      </div>
+               <div class="subscriptions-bills__list d-f j-c-b">
+                  <button class="btn btn-yellow subscriptions-bills__list--btn">Повысить тариф</button>
+                  <button class="btn btn-background subscriptions-bills__list--btn">Продлить подписку</button>
+               </div>
 
-      <div class="main-section__block">
-         <h4 class="section-title">Продажи по дням</h4>
+             
+            </div>
+        </div>
+        <div class="main-section__block">
          <div class="table">
             <div class="d-f table-block ">
                <div class="scrollbar">
                   <table class="table-scroll small-first-col" id="myTable" data-table>
                      <thead>
-                        <tr>
-                           <th></th>
-                           <th colspan="3">
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Продажи</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th colspan="2">
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Заказы</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th colspan="2">
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Возвраты</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th colspan="2">
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Логистика</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                        </tr>
                         <tr>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
@@ -415,56 +142,37 @@
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>шт</p>
+                                 <p>Номер</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>руб</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th>
-
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Прибыль</p>
+                                 <p>Тариф</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>шт</p>
+                                 <p>Срок</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>руб</p>
+                                 <p>Сумма</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>шт</p>
+                                 <p>Оплачено</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
                            <th>
                               <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>руб</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th>
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>Клиенту</p>
-                                 <button class="icon icon-burger thead-dropdown__icon"></button>
-                              </div>
-                           </th>
-                           <th>
-                              <div class="thead-dropdown d-f j-c-b a-i-c">
-                                 <p>От клиента</p>
+                                 <p>Документы</p>
                                  <button class="icon icon-burger thead-dropdown__icon"></button>
                               </div>
                            </th>
@@ -539,9 +247,6 @@
                               </div>
                            </th>
                            <th>
-                              <input type="text" class="input-table">
-                           </th>
-                           <th>
                               <div class="d-f a-i-c">
                                  <input type="text" class="input-table">
                                  <div class="dropdown d-f a-i-c">
@@ -608,381 +313,104 @@
                               </div>
                            </th>
                            <th>
-                              <div class="d-f a-i-c">
-                                 <input type="text" class="input-table">
-                                 <div class="dropdown d-f a-i-c">
-                                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
-                                       data-not-outside-expand data-expand="false"></button>
-                                    <div class="dropdown-list" data-expand-box data-outside-expand data-not-outside
-                                       hidden>
-                                       <div class="dropdown">
-                                          <button class="dropdown-btn d-f j-c-b a-i-c" data-sub-expand-click
-                                             data-sub-not-outside-expand data-not-outside data-expand="false">
-                                             <p class="dropdown-btn__selected">По артикулам</p>
-                                             <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                data-sub-expand-outside-icon></i>
-                                          </button>
-                                          <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                             <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По
-                                                артикулам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По SKU</span></li>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                          </div>
-                                       </div>
-                                       <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                       <div class="filter-btn d-f j-c-e">
-                                          <button class="btn btn-color mr-10" data-expand-click>Отмена</button>
-                                          <button class="btn btn-background filter-btn--approve"
-                                             data-close-modal>Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                              <input type="text" class="input-table cursor-pointer" name="daterange"></th>
+                           <th>            
                            </th>
-                           <th>
-                              <div class="d-f a-i-c">
-                                 <input type="text" class="input-table">
-                                 <div class="dropdown d-f a-i-c">
-                                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
-                                       data-not-outside-expand data-expand="false"></button>
-                                    <div class="dropdown-list" data-expand-box data-outside-expand data-not-outside
-                                       hidden>
-                                       <div class="dropdown">
-                                          <button class="dropdown-btn d-f j-c-b a-i-c" data-sub-expand-click
-                                             data-sub-not-outside-expand data-not-outside data-expand="false">
-                                             <p class="dropdown-btn__selected">По артикулам</p>
-                                             <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                data-sub-expand-outside-icon></i>
-                                          </button>
-                                          <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                             <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По
-                                                артикулам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По SKU</span></li>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                          </div>
-                                       </div>
-                                       <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                       <div class="filter-btn d-f j-c-e">
-                                          <button class="btn btn-color mr-10" data-expand-click>Отмена</button>
-                                          <button class="btn btn-background filter-btn--approve"
-                                             data-close-modal>Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </th>
-                           <th>
-                              <div class="d-f a-i-c">
-                                 <input type="text" class="input-table">
-                                 <div class="dropdown d-f a-i-c">
-                                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
-                                       data-not-outside-expand data-expand="false"></button>
-                                    <div class="dropdown-list" data-expand-box data-outside-expand data-not-outside
-                                       hidden>
-                                       <div class="dropdown">
-                                          <button class="dropdown-btn d-f j-c-b a-i-c" data-sub-expand-click
-                                             data-sub-not-outside-expand data-not-outside data-expand="false">
-                                             <p class="dropdown-btn__selected">По артикулам</p>
-                                             <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                data-sub-expand-outside-icon></i>
-                                          </button>
-                                          <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                             <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По
-                                                артикулам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По SKU</span></li>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                          </div>
-                                       </div>
-                                       <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                       <div class="filter-btn d-f j-c-e">
-                                          <button class="btn btn-color mr-10" data-expand-click>Отмена</button>
-                                          <button class="btn btn-background filter-btn--approve"
-                                             data-close-modal>Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </th>
-                           <th>
-                              <div class="d-f a-i-c">
-                                 <input type="text" class="input-table">
-                                 <div class="dropdown d-f a-i-c">
-                                    <button class="icon icon-filter cursor-pointer" data-expand-click data-not-outside
-                                       data-not-outside-expand data-expand="false"></button>
-                                    <div class="dropdown-list" data-expand-box data-outside-expand data-not-outside
-                                       hidden>
-                                       <div class="dropdown">
-                                          <button class="dropdown-btn d-f j-c-b a-i-c" data-sub-expand-click
-                                             data-sub-not-outside-expand data-not-outside data-expand="false">
-                                             <p class="dropdown-btn__selected">По артикулам</p>
-                                             <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                data-sub-expand-outside-icon></i>
-                                          </button>
-                                          <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                             <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По
-                                                артикулам</span>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По SKU</span></li>
-                                             <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                          </div>
-                                       </div>
-                                       <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                       <div class="filter-btn d-f j-c-e">
-                                          <button class="btn btn-color mr-10" data-expand-click>Отмена</button>
-                                          <button class="btn btn-background filter-btn--approve"
-                                             data-close-modal>Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </th>
+                          
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
                         <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
+                           <td>1621287663</td>
+                           <td>21-2395М от 14.04.2021</td>
+                           <td>Расширенный</td>
+                           <td>1</td>
+                           <td>18500</td>
+                           <td>Расширенный</td>
+                           <td><i class="icon icon-file" style="color: #808080;"></i></td>
                         </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-                        <tr>
-                           <td>17.04.2021</td>
-                           <td>40</td>
-                           <td>654 869,33</td>
-                           <td>565 664 999</td>
-                           <td>2500</td>
-                           <td>65 105,36</td>
-                           <td>10</td>
-                           <td>-1 500</td>
-                           <td>2500</td>
-                           <td>00,00</td>
-                        </tr>
-
+                
                      </tbody>
 
                   </table>
@@ -1289,9 +717,12 @@
             </div>
          </div>
       </div>
+
    </section>
 
 </body>
+
+
 
 <!-- ===================== -SCRIPT-PLUGIN-START- ===================== -->
 <script src="./assets/js/jquery-3.2.1.min.js"></script>

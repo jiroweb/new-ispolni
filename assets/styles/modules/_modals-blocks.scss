@@ -91,5 +91,84 @@
    right: 0px;
    bottom: 0px;
    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.user-dropdown {
+   width: 209px;
+   box-shadow: 0px 4px 32px rgba(138, 138, 138, 0.1);
+   border-radius: 0px 0px 8px 8px;
+   background: var(--neutral_color_white);
+   padding-right: 20px;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   transition: var(--transition-global);
+   z-index: 99;
+
+
+   &__name {
+      background: var(--primary_color_green-dark);
+      border-radius: 0px 8px 8px 0px;
+      padding: 11px 22px 14px 20px;
+      position: relative;
+
+      &--circle {
+         width: 19px;
+         height: 19px;
+         background-color: var(--neutral_color_white);
+         border-radius: 50%;
+         position: absolute;
+         right: -9px;
+         top: 50%;
+         transform: translateY(-50%);
+
+
+         &::before {
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 9px;
+            background-color: var(--primary_color_green-dark);
+            border-radius: 50%;
+         }
+      }
+
+      &--details {
+         font: rem(16px) $Bold;
+         color: var(--neutral_color_white);
+         padding-bottom: 4px;
+      }
+
+      &--info {
+         font: rem(13px) $Regular;
+         color: var(--neutral_color_white);
+      }
+   }
+
+   &__list {
+      padding: 20px 0 20px 20px;
+
+      &--item {
+         &+& {
+            padding-top: 15px;
+         }
+
+         &:hover &-main {
+            color: var(--primary_color_green-dark);
+         }
+
+         &-main {
+            color: var(--default_dark);
+            font: rem(14px) $Regular;
+
+            &__icon {
+               color: #BBBBBB;
+               font-size: 14px;
+               margin-right: 15px;
+            }
+         }
+
+      }
+   }
 
 }

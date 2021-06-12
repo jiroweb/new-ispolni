@@ -120,6 +120,7 @@
                   }
 
 
+
                }
 
                .table-img {
@@ -459,4 +460,12 @@
          }
       }
    }
+
+   .green-bg {
+      background: rgba(225, 247, 234, 0.5);
+   }
+}
+
+.font-green {
+   color: var(--primary_color_green-dark) !important;
 }

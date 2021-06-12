@@ -1,0 +1,29 @@
+.subscriptions-bills {
+   margin-top: 50px;
+
+   &__list {
+
+      &--item {
+         margin-bottom: 20px;
+
+         &-name {
+            font: rem(11px) $Bold;
+            color: #BBBBBB;
+         }
+
+         &-info {
+            font: rem(14px) $Regular;
+            color: var(--default_dark);
+            margin-left: 10px;
+         }
+      }
+
+      &--btn {
+         height: 40px;
+
+         &+& {
+            margin-left: 20px;
+         }
+      }
+   }
+}

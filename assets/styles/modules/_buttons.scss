@@ -45,6 +45,16 @@
             background-color: #f37058;
         }
     }
+
+    &-yellow {
+        background-color: #FFC212;
+        color: var(--neutral_color_white);
+
+        &:hover {
+            background-color: #f7c739;
+        }
+    }
+
 }
 
 .search-btn {

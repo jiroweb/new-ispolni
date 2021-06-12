@@ -1,5 +1,25 @@
 @import '../fonts/icons/icons';
 
+.icon-file:before {
+  content: "\e916";
+}
+
+.icon-coin:before {
+  content: "\e912";
+}
+
+.icon-user:before {
+  content: "\e913";
+}
+
+.icon-history:before {
+  content: "\e914";
+}
+
+.icon-door-open:before {
+  content: "\e915";
+}
+
 .icon-close:before {
   content: "\e911";
 }

@@ -93,11 +93,13 @@
    &-graphic {
       &__block {
          &--details {
-            margin: 31px auto 18px;
+            margin: 31px 60px 0;
 
             &-item {
-               &+& {
-                  margin-left: 42px;
+               margin-bottom: 20px;
+
+               &:not(:last-child) {
+                  margin-right: 42px;
                }
 
                &__text {
@@ -141,6 +143,18 @@
 
                &__circleyellow {
                   background: #FFC212;
+               }
+
+               &__circlepurpel {
+                  background: #9064F6;
+               }
+
+               &__circleblue {
+                  background: #0AAFFF;
+               }
+
+               &__circlered {
+                  background: #EB5757;
                }
             }
          }
