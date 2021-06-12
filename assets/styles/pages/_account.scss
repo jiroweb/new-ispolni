@@ -2,15 +2,23 @@
    border-top: 5px solid var(--primary_color_green-dark);
    position: relative;
 
-   &::before {
-      position: absolute;
-      content: "";
+   &__main {
       height: 1px;
-      width: 100%;
+      width: 126%;
+      left: -20%;
       background-color: #F2F2F7;
-      left: 0;
-      top: 80px;
+      margin-top: 20px;
+      position: relative;
    }
+}
+
+.border-style__menu {
+   height: 1px;
+   width: 126%;
+   left: -20%;
+   background-color: #F2F2F7;
+   margin-top: 2px;
+   position: relative;
 }
 
 .account-block {

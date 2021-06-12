@@ -100,10 +100,10 @@
    background: var(--neutral_color_white);
    padding-right: 20px;
    position: absolute;
-   top: 100%;
+   top: calc(100% + 13px);
    right: 0;
    transition: var(--transition-global);
-   z-index: 99;
+   z-index: 99999;
 
 
    &__name {

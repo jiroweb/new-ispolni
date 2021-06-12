@@ -53,7 +53,6 @@
                      <li class="header-block__main--menu-item__dropdown--section">
                         <a class="header-block__main--menu-item__dropdown--section-link" href="#">Поиск</a>
                      </li>
-
                   </ul>
                </li>
                <li class="header-block__main--menu-item d-f a-i-c">
@@ -77,13 +76,47 @@
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
                <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
-               <i class="icon icon-loop header-block__user--search-icon cursor-pointer"></i>
+               <button class="icon icon-loop header-block__user--search-icon"></button>
             </div>
-            <div class="header-block__user--item cursor-pointer d-f a-i-c">
+            <div class="header-block__user--item cursor-pointer d-f a-i-c" data-expand-click data-expand="false" data-not-outside-expand data-not-outside>
                <div class="header-block__user--item-photo">
                   <img src="./assets/img/header/Ellipse.png" alt="user">
                </div>
-               <i class="icon icon-arrow header-block__user--item-icon"></i>
+               <i class="icon icon-arrow header-block__user--item-icon"data-expand-icon
+               data-expand-outside-icon></i>
+<div class="user-dropdown" hidden data-expand-box data-sub-outside-expand>
+   <div class="user-dropdown__name">
+      <span class="user-dropdown__name--circle d-f j-c-c a-i-c"></span>
+      <p class="user-dropdown__name--details">Алексей</p>
+      <span class="user-dropdown__name--info">Подписка до 11.10.2021</span>
+   </div>
+   <ul class="user-dropdown__list">
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+              <i class="icon icon-coin user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Подписка и счета</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-user user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Аккаунт</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-history user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">История запросов</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-door-open user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Выход</p>
+         </a>
+      </li>
+   </ul>
+</div>
             </div>
          </div>
       </div>

@@ -9,7 +9,7 @@
    <meta name="keywords" content="Ваши ключевые слова">
    <meta name="description" content="Описание Вашей страницы">
    <!-- ==================== -META-TAG-SEO-END- ==================== -->
-   <title>Ключи API</title>
+   <title>Account</title>
    <link rel="icon" href="./assets/img/favicon/favicon.svg">
    <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -75,15 +75,48 @@
          </div>
          <div class="header-block__user d-f a-i-c">
             <div class="header-block__user--search d-f a-i-c">
-               <input class="input header-block__user--search-form focus" type="text"
-                  placeholder="Поиск категории cursor-pointer">
+               <input class="input header-block__user--search-form focus" type="text" placeholder="Поиск категории">
                <button class="icon icon-loop header-block__user--search-icon"></button>
             </div>
-            <div class="header-block__user--item cursor-pointer d-f a-i-c">
+            <div class="header-block__user--item cursor-pointer d-f a-i-c" data-expand-click data-expand="false" data-not-outside-expand data-not-outside>
                <div class="header-block__user--item-photo">
                   <img src="./assets/img/header/Ellipse.png" alt="user">
                </div>
-               <i class="icon icon-arrow header-block__user--item-icon"></i>
+               <i class="icon icon-arrow header-block__user--item-icon"data-expand-icon
+               data-expand-outside-icon></i>
+<div class="user-dropdown" hidden data-expand-box data-sub-outside-expand>
+   <div class="user-dropdown__name">
+      <span class="user-dropdown__name--circle d-f j-c-c a-i-c"></span>
+      <p class="user-dropdown__name--details">Алексей</p>
+      <span class="user-dropdown__name--info">Подписка до 11.10.2021</span>
+   </div>
+   <ul class="user-dropdown__list">
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+              <i class="icon icon-coin user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Подписка и счета</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-user user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Аккаунт</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-history user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">История запросов</p>
+         </a>
+      </li>
+      <li class="user-dropdown__list--item">
+         <a href="#" class="user-dropdown__list--item-main d-f a-i-c">       
+            <i class="icon icon-door-open user-dropdown__list--item-main__icon"></i>
+              <p class="user-dropdown__list--item-main__text">Выход</p>
+         </a>
+      </li>
+   </ul>
+</div>
             </div>
          </div>
       </div>
@@ -92,6 +125,7 @@
       <div class="account-block  main-section__block border-style">
          <h4 class="section-title">Панель управления</h4>
          <span class="main-section__block--subtitle-text">Для изменения параметров учетной записи.</span>   
+         <div class="border-style__main"></div>
          <div class="account-block__main d-g g-t-c-2 g-g-60">
             <div class="account-block__main--list">
                <div class="account-block__main--list-item">
@@ -126,7 +160,9 @@
                <h4 class="section-title">Настройки интеграции</h4>
             <span class="main-section__block--subtitle-text">API токен
             </span>   
-         <div class="account-block__main">
+            <div class="border-style__main"></div>
+
+            <div class="account-block__main">
             <div class="account-block__main--list">
                <div class="account-block__main--list-item">
                   <p class="account-block__main--list-item__text">API токен
@@ -135,12 +171,10 @@
                   </div>
                   <div class="account-block__main--list-btn d-f j-c-e">
                      <button class="btn btn-background">Сменить API токен</button>
-                  </div>
-               
+                  </div>         
             </div>
             </div>
          </div>
- 
    </section>
 </body>
 
