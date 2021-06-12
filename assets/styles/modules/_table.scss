@@ -263,7 +263,6 @@
             width: 200px;
             right: 31px;
             height: 100%;
-            padding: 10px 0;
             border-left: 1px solid #E1E1E1;
             border-bottom: 1px solid #E1E1E1;
             background-color: var(--neutral_color_white);
@@ -271,26 +270,24 @@
             &__parts {
                width: 100%;
                border-bottom: 1px solid #E1E1E1;
+               padding: 10px;
 
                &--search {
-                  padding: 0 20px 10px 10px;
-
 
                   &-icon {
                      color: var(--default_light);
-                     margin-right: 10px;
                   }
 
                   &-checked {
                      margin-right: 16px;
-
-
+                     margin-left: 7px;
                   }
                }
             }
 
             &__items {
-               padding: 13px 10px 0 43px;
+               height: calc(100% - 40px);
+               padding: 10px 10px 10px 20px;
 
                &--checkbox {
                   &+& {
@@ -301,11 +298,7 @@
                      position: relative;
                      color: var(--default_light);
 
-                     &__icon {
-                        position: absolute;
-                        left: -34px;
-                        top: -4px;
-                     }
+                     &__icon {}
 
                      &__checked {
                         margin-right: 10px;
@@ -344,63 +337,8 @@
                         &--checked {
                            margin-right: 10px;
                         }
-
-                        &--choose {
-                           position: absolute;
-                           width: 180px;
-                           left: 10px;
-                           z-index: 999;
-                           background-color: var(--neutral_color_white);
-
-                           &-dropdown {
-                              border-radius: var(--border-radius);
-                              border: 1px solid #E1E1E1;
-                              padding: 7px;
-                              color: var(--default_light);
-
-                              &__text {
-                                 font: rem(14px) $Regular;
-                              }
-                           }
-
-                           &-input {
-                              margin: 10px 0;
-
-                           }
-
-                           &-btn {
-                              &__main {
-                                 border-radius: var(--border-radius);
-                                 font: rem(14px) $Medium;
-                              }
-
-                              &__cancel {
-                                 padding: 6px 14.5px;
-                                 margin-right: 10px;
-                                 background-color: #E1E1E1;
-                                 color: var(--default_light);
-
-                                 &:hover {
-                                    background-color: rgba(#E1E1E1, 0.8);
-
-                                 }
-                              }
-
-                              &__approve {
-                                 padding: 6px 14.5px;
-                                 background-color: var(--primary_color_green-dark);
-                                 color: var(--neutral_color_white);
-
-                                 &:hover {
-                                    background-color: #6cce98;
-                                 }
-                              }
-                           }
-                        }
                      }
                   }
-
-
                }
             }
 
@@ -442,21 +380,9 @@
                            border: 1px solid var(--primary_color_green-dark);
                         }
                      }
-
                   }
                }
             }
-         }
-
-      }
-
-      &__dropdown {
-         margin-left: -68px;
-         padding: 7px;
-         position: relative;
-
-         &--btn {
-            min-width: auto;
          }
       }
    }
