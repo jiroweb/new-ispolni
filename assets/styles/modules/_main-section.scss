@@ -16,7 +16,6 @@
       }
 
       &--subtitle {
-
          &-text {
             font: rem(14px) $Regular;
             line-height: rem(22px);
@@ -27,7 +26,6 @@
 
       &--dates {
          &-list {
-            margin-right: 14px;
             border-radius: var(--border-radius);
 
             &__btn {
@@ -109,6 +107,8 @@
             border: 1px solid #E1E1E1;
             border-radius: var(--border-radius);
             position: relative;
+            margin-left: 14px;
+
 
             &:hover {
                background: #F9F9FB;

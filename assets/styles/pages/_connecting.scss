@@ -54,8 +54,9 @@
                margin-top: 17px;
 
                &__title {
-                  font: rem(12px) $Regular;
+                  font: rem(12px) $Bold;
                   color: #BBBBBB;
+                  text-transform: uppercase;
                }
 
                &__main {
