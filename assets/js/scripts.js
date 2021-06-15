@@ -3,7 +3,7 @@ $(document).ready(function () {
    $('body').on('click', '[data-expand-click]', function () {
       let this_data = $(this).attr('data-expand')
       let this_child = $(this).parent().find('[data-expand-box]:first')
-      $('[data-outside-expand], [data-sub-outside-expand]').slideUp(250)
+      $('[data-outside-expand], [data-sub-outside-expand]').hide()
       $('[data-not-outside-expand], [data-sub-not-outside-expand]').attr('data-expand', 'false')
       $('[data-expand-outside-icon], [data-sub-expand-outside-icon]').removeClass('rotate')
       $('[data-table-sidebar-filter]').removeClass('active')
@@ -11,41 +11,41 @@ $(document).ready(function () {
       let tableSidebarFilter = $(this).parent().find('[data-table-sidebar-filter]')
       if (this_data === 'true') {
          $(this).attr('data-expand', 'false')
-         this_child.slideUp(250);
+         this_child.hide();
          $(arrow).removeClass('rotate')
          $(tableSidebarFilter).removeClass('active')
 
       } else if (this_data === 'false') {
-         this_child.slideDown(250);
+         this_child.show();
          $(this).attr('data-expand', 'true')
          $(arrow).addClass('rotate')
          $(tableSidebarFilter).addClass('active')
       } else {
-         this_child.slideUp(250);
+         this_child.hide();
       }
    });
 
    $('body').on('click', '[data-sub-expand-click]', function () {
       let this_data = $(this).attr('data-expand')
       let this_child = $(this).parent().find('[data-expand-box]:first')
-      $('[data-sub-outside-expand]').slideUp(250)
+      $('[data-sub-outside-expand]').hide()
       $('[data-sub-not-outside-expand]').attr('data-expand', 'false')
       // $('[data-sub-expand-outside-icon]').removeClass('rotate')
       let arrow = $(this).find('[data-sub-expand-icon]')
       // let tableSidebarFilter = $(this).parent().find('[data-table-sidebar-filter]')
       if (this_data === 'true') {
          $(this).attr('data-expand', 'false')
-         this_child.slideUp(250);
+         this_child.hide();
          $(arrow).removeClass('rotate')
          // $(tableSidebarFilter).removeClass('active')
 
       } else if (this_data === 'false') {
-         this_child.slideDown(250);
+         this_child.show();
          $(this).attr('data-expand', 'true')
          $(arrow).addClass('rotate')
          // $(tableSidebarFilter).addClass('active')
       } else {
-         this_child.slideUp(250);
+         this_child.hide();
       }
    });
    $('body').on('click', '[data-expand-click-icon]', function () {
@@ -68,12 +68,12 @@ $(document).ready(function () {
       let modalName = $(this).data('modalName')
       $(findModal).each(function () {
          if ($(this).data('modalName') === modalName) {
-            $(this).fadeIn(250)
+            $(this).show()
          }
       })
    })
    $('body').on('click', '[data-close-modal]', function () {
-      $('body').find('[data-modal-box]').fadeOut(250)
+      $('body').find('[data-modal-box]').hide()
    })
    // Function for modal ui ===== -- End
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
    $(window).on('click', function (e) {
       if (!$(e.target).closest('[data-not-outside]').length) {
          // clicks anywhere outside of the expand
-         $('[data-outside-expand], [data-sub-outside-expand]').slideUp(250);
+         $('[data-outside-expand], [data-sub-outside-expand]').hide();
          $('[data-not-outside-expand], [data-sub-not-outside-expand]').attr('data-expand', 'false')
          $('[data-expand-outside-icon], [data-sub-expand-outside-icon]').removeClass('rotate')
 
@@ -109,7 +109,7 @@ $(document).ready(function () {
          $('[data-table-sidebar-filter]').removeClass('active')
 
          // clicks anywhere outside of the modal
-         $('[data-modal-box]').fadeOut(250)
+         $('[data-modal-box]').hide()
       }
    });
    // Function for window clicks anywhere outside blocks ui ===== -- End
