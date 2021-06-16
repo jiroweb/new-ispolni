@@ -313,6 +313,7 @@
                   }
 
                   &-underpart {
+                     width: 100%;
                      padding-left: 50px;
 
                      &__block {
@@ -332,10 +333,13 @@
             }
 
             &__settings {
+               height: 100%;
                padding: 20px 10px;
 
                &--block {
-                  margin-bottom: 20px;
+                  &+& {
+                     margin-top: 20px;
+                  }
 
                   &-list {
                      color: var(--default_light);
@@ -365,7 +369,8 @@
                         margin-top: 10px;
                         background-color: var(--neutral_color_white);
 
-                        &:hover {
+                        &:hover,
+                        &.active {
                            border: 1px solid var(--primary_color_green-dark);
                         }
                      }
