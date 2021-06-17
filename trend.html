@@ -666,12 +666,11 @@
                            <i class="icon icon-burger table-sidebar--list-item__icon"></i>
                            <p class="table-sidebar--list-item__text">Столбцы</p>
                         </div>
-                        <div class="table-sidebar--list-main scrollbar" hidden data-expand-box data-outside-expand
-                           data-not-outside>
+                        <div class="table-sidebar--list-main " hidden data-expand-box data-outside-expand data-not-outside>
                            <div class="table-sidebar--list-main__parts">
                               <div class="table-sidebar--list-main__parts--search d-f a-i-c j-c-b">
-                                 <i
-                                    class="icon icon-arrow table-sidebar--list-main__parts--search-icon cursor-pointer rotate"></i>
+                                 <i class="icon icon-arrow table-sidebar--list-main__parts--search-icon cursor-pointer rotate"
+                                    data-toggle-click data-toggle="true" data-toggle-icon></i>
                                  <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
                                     <input type="checkbox" checked="checked" class="checkbox">
                                     <span class="checked-checkbox"></span>
@@ -679,92 +678,119 @@
                                  <input type="text" class="input" placeholder="Поиск">
                               </div>
                            </div>
-                           <div class="table-sidebar--list-main__items">
+                           <div class="table-sidebar--list-main__items scrollbar" data-toggle-box>
                               <div class="table-sidebar--list-main__items--checkbox d-f">
-                                 <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
+                                 <label class="checked d-f j-c-c a-i-c ">
                                     <input type="checkbox" checked="checked" class="checkbox">
                                     <span class="checked-checkbox"></span>
                                     <p class="table-sidebar--list-main__items--checkbox-text">Дата</p>
                                  </label>
                               </div>
                               <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f">
-                                    <i
-                                       class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"></i>
-                                    <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"
+                                       data-sub-expand-click data-expand="true" data-expand-click-icon data-not-outside></i>
+                                    <label class="checked d-f j-c-c a-i-c ">
                                        <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
                                        <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
                                     </label>
-                                 </div>
-                                 <div class="table-sidebar--list-main__items--checkbox-underpart">
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
-                                    </div>
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">руб</p>
+                                          </label>
+                                       </div>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">шт</p>
+                                          </label>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f">
-                                    <i
-                                       class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"></i>
-                                    <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer"
+                                       data-sub-expand-click data-expand="false" data-expand-click-icon data-not-outside></i>
+                                    <label class="checked d-f j-c-c a-i-c ">
                                        <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
-                                       <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
+                                       <p class="table-sidebar--list-main__items--checkbox-text">Возвраты</p>
                                     </label>
-                                 </div>
-                                 <div class="table-sidebar--list-main__items--checkbox-underpart">
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
-                                    </div>
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box hidden>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">1</p>
+                                          </label>
+                                       </div>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">2</p>
+                                          </label>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f">
-                                    <i
-                                       class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"></i>
-                                    <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer"
+                                       data-sub-expand-click data-expand="false" data-expand-click-icon data-not-outside></i>
+                                    <label class="checked d-f j-c-c a-i-c ">
                                        <input type="checkbox" checked="checked" class="checkbox">
                                        <span class="checked-checkbox"></span>
-                                       <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
+                                       <p class="table-sidebar--list-main__items--checkbox-text">Логистика</p>
                                     </label>
-                                 </div>
-                                 <div class="table-sidebar--list-main__items--checkbox-underpart">
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box hidden>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">1</p>
+                                          </label>
+                                       </div>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">2</p>
+                                          </label>
+                                       </div>
                                     </div>
-                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
-                                       <label class="checked d-f j-c-c a-i-c table-sidebar--list-main__parts--search-checked">
-                                          <input type="checkbox" checked="checked" class="checkbox">
-                                          <span class="checked-checkbox"></span>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                       </label>
+                                 </div>
+                              </div>
+                              <div class="table-sidebar--list-main__items--checkbox">
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer"
+                                       data-sub-expand-click data-expand="false" data-expand-click-icon data-not-outside></i>
+                                    <label class="checked d-f j-c-c a-i-c ">
+                                       <input type="checkbox" checked="checked" class="checkbox">
+                                       <span class="checked-checkbox"></span>
+                                       <p class="table-sidebar--list-main__items--checkbox-text">Продажи</p>
+                                    </label>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box hidden>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">1</p>
+                                          </label>
+                                       </div>
+                                       <div class="table-sidebar--list-main__items--checkbox-underpart__block d-f">
+                                          <label class="checked d-f j-c-c a-i-c ">
+                                             <input type="checkbox" checked="checked" class="checkbox">
+                                             <span class="checked-checkbox"></span>
+                                             <p class="table-sidebar--list-main__items--checkbox-text">2</p>
+                                          </label>
+                                       </div>
                                     </div>
                                  </div>
                               </div>
@@ -777,121 +803,156 @@
                            <i class="icon icon-filter table-sidebar--list-item__icon"></i>
                            <p class="table-sidebar--list-item__text">Фильтры</p>
                         </div>
-                        <div class="table-sidebar--list-main scrollbar" hidden data-expand-box data-outside-expand
-                           data-not-outside>
+                        <div class="table-sidebar--list-main " hidden data-expand-box data-outside-expand data-not-outside>
                            <div class="table-sidebar--list-main__parts">
                               <div class="table-sidebar--list-main__parts--search d-f a-i-c j-c-b">
-                                 <i
-                                    class="icon icon-arrow table-sidebar--list-main__parts--search-icon cursor-pointer rotate"></i>
+                                 <i class="icon icon-arrow table-sidebar--list-main__parts--search-icon cursor-pointer rotate"
+                                    data-toggle-click data-toggle="true" data-toggle-icon></i>
                                  <input type="text" class="input" placeholder="Поиск">
                               </div>
                            </div>
-                           <div class="table-sidebar--list-main__items">
+                           <div class="table-sidebar--list-main__items scrollbar" data-toggle-box>
                               <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown cursor-pointer d-f a-i-c">
-                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon"></i>
-                                    <p class="table-sidebar--list-main__items--checkbox-text">Дата</p>
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w cursor-pointer"
+                                    data-sub-expand-click data-expand="true">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon  rotate"
+                                       data-sub-expand-icon></i>
+                                    <p class="table-sidebar--list-main__items--checkbox-text d-f a-i-c">Дата</p>
                                  </div>
-                              </div>
-                              <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown cursor-pointer d-f a-i-c">
-                                    <i
-                                       class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"></i>
-                                    <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
-                                 </div>
-                                 <div class="table-sidebar--list-main__items--checkbox-underpart">
-                                    <div
-                                       class="table-sidebar--list-main__items--checkbox-underpart__block cursor-pointer d-f a-i-c">
-                                       <i
-                                          class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon"></i>
-                                       <p class="table-sidebar--list-main__items--checkbox-text">руб</p>
-                                    </div>
+                                 <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box>
                                     <div class="table-sidebar--list-main__items--checkbox-underpart__block">
-                                       <div class="d-f a-i-c cursor-pointer">
-                                          <i
-                                             class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon"></i>
-                                          <p class="table-sidebar--list-main__items--checkbox-text">шт</p>
-                                       </div>
-                                       <div class="dropdown d-f a-i-c">
-                                          <div class="dropdown-list table-sidebar__dropdown">
-                                             <div class="dropdown">
-                                                <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
-                                                   data-sub-expand-click data-sub-not-outside-expand data-not-outside
-                                                   data-expand="false">
-                                                   <p class="dropdown-btn__selected">По артикулам</p>
-                                                   <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                      data-sub-expand-outside-icon></i>
-                                                </button>
-                                                <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                                   <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По
-                                                      артикулам</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                                </div>
+                                       
+                                       <div class="table-sidebar__dropdown" >
+                                          <div class="dropdown">
+                                             <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
+                                                data-sub-expand-click data-sub-not-outside-expand data-not-outside
+                                                data-expand="false">
+                                                <p class="dropdown-btn__selected">По артикулам</p>
+                                                <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
+                                                   data-sub-expand-outside-icon></i>
+                                             </button>
+                                             <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
+                                                <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По
+                                                   артикулам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
                                              </div>
-                                             <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                             <div class="filter-btn d-f j-c-e">
-                                                <button class="btn btn-color mr-10 sidebar-btn"
-                                                   data-expand-click>Отмена</button>
-                                                <button class="btn btn-background filter-btn--approve sidebar-btn"
-                                                   data-close-modal>Сохранить</button>
-                                             </div>
+                                          </div>
+                                          <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
+                                          <div class="d-f">
+                                             <button class="btn btn-color mr-10 sidebar-btn">Отмена</button>
+                                             <button class="btn btn-background sidebar-btn">Сохранить</button>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="table-sidebar--list-main__items--checkbox">
-                                 <div class="table-sidebar--list-main__items--checkbox-dropdown cursor-pointer d-f a-i-c">
-                                    <i
-                                       class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon cursor-pointer rotate"></i>
-                                    <p class="table-sidebar--list-main__items--checkbox-text">Заказы</p>
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w cursor-pointer"
+                                    data-sub-expand-click data-expand="true">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon  rotate"
+                                       data-sub-expand-icon></i>
+                                    <p class="table-sidebar--list-main__items--checkbox-text d-f a-i-c">Заказы</p>
                                  </div>
-                                 <div class="table-sidebar--list-main__items--checkbox-underpart">
-                                    <div
-                                       class="table-sidebar--list-main__items--checkbox-underpart__block cursor-pointer d-f a-i-c">
-                                       <i
-                                          class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon"></i>
-                                       <p class="table-sidebar--list-main__items--checkbox-text">руб</p>
+                                 <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block">
+                                       <div class="d-f a-i-c cursor-pointer" data-sub-expand-click data-expand="false">
+                                          <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon"
+                                             data-sub-expand-icon></i>
+                                          <p class="table-sidebar--list-main__items--checkbox-text">руб</p>
+                                       </div>
+                                       <div class="table-sidebar__dropdown" data-expand-box hidden>
+                                          <div class="dropdown">
+                                             <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
+                                                data-sub-expand-click data-sub-not-outside-expand data-not-outside
+                                                data-expand="false">
+                                                <p class="dropdown-btn__selected">По артикулам</p>
+                                                <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
+                                                   data-sub-expand-outside-icon></i>
+                                             </button>
+                                             <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
+                                                <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По
+                                                   артикулам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
+                                             </div>
+                                          </div>
+                                          <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
+                                          <div class="d-f">
+                                             <button class="btn btn-color mr-10 sidebar-btn">Отмена</button>
+                                             <button class="btn btn-background sidebar-btn">Сохранить</button>
+                                          </div>
+                                       </div>
                                     </div>
                                     <div class="table-sidebar--list-main__items--checkbox-underpart__block">
-                                       <div class="d-f a-i-c cursor-pointer">
-                                          <i
-                                             class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon"></i>
+                                       <div class="d-f a-i-c cursor-pointer" data-sub-expand-click data-expand="true">
+                                          <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-underpart__block--icon rotate"
+                                             data-sub-expand-icon></i>
                                           <p class="table-sidebar--list-main__items--checkbox-text">шт</p>
                                        </div>
-                                       <div class="dropdown d-f a-i-c">
-                                          <div class="dropdown-list table-sidebar__dropdown">
-                                             <div class="dropdown">
-                                                <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
-                                                   data-sub-expand-click data-sub-not-outside-expand data-not-outside
-                                                   data-expand="false">
-                                                   <p class="dropdown-btn__selected">По артикулам</p>
-                                                   <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
-                                                      data-sub-expand-outside-icon></i>
-                                                </button>
-                                                <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
-                                                   <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По
-                                                      артикулам</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
-                                                   <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
-                                                </div>
+                                       <div class="table-sidebar__dropdown" data-expand-box>
+                                          <div class="dropdown">
+                                             <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
+                                                data-sub-expand-click data-sub-not-outside-expand data-not-outside
+                                                data-expand="false">
+                                                <p class="dropdown-btn__selected">По артикулам</p>
+                                                <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
+                                                   data-sub-expand-outside-icon></i>
+                                             </button>
+                                             <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
+                                                <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По
+                                                   артикулам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
                                              </div>
-                                             <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
-                                             <div class="filter-btn d-f j-c-e">
-                                                <button class="btn btn-color mr-10 sidebar-btn"
-                                                   data-expand-click>Отмена</button>
-                                                <button class="btn btn-background filter-btn--approve sidebar-btn"
-                                                   data-close-modal>Сохранить</button>
-                                             </div>
+                                          </div>
+                                          <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
+                                          <div class="d-f">
+                                             <button class="btn btn-color mr-10 sidebar-btn">Отмена</button>
+                                             <button class="btn btn-background sidebar-btn">Сохранить</button>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
-      
+                              <div class="table-sidebar--list-main__items--checkbox">
+                                 <div class="table-sidebar--list-main__items--checkbox-dropdown d-f f-w cursor-pointer"
+                                    data-sub-expand-click data-expand="false">
+                                    <i class="icon icon-arrow table-sidebar--list-main__items--checkbox-dropdown__icon"
+                                       data-sub-expand-icon></i>
+                                    <p class="table-sidebar--list-main__items--checkbox-text d-f a-i-c">Возвраты</p>
+                                 </div>
+                                 <div class="table-sidebar--list-main__items--checkbox-underpart" data-expand-box hidden>
+                                    <div class="table-sidebar--list-main__items--checkbox-underpart__block">
+                                       <div class="table-sidebar__dropdown">
+                                          <div class="dropdown">
+                                             <button class="dropdown-btn table-sidebar__dropdown--btn d-f j-c-b a-i-c"
+                                                data-sub-expand-click data-sub-not-outside-expand data-not-outside
+                                                data-expand="false">
+                                                <p class="dropdown-btn__selected">По артикулам</p>
+                                                <i class="icon icon-arrow dropdown-btn__arrow" data-sub-expand-icon
+                                                   data-sub-expand-outside-icon></i>
+                                             </button>
+                                             <div class="dropdown-list" hidden data-expand-box data-sub-outside-expand>
+                                                <span class="dropdown-list__item cursor-pointer d-block"> По датам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По
+                                                   артикулам</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По SKU</span>
+                                                <span class="dropdown-list__item cursor-pointer d-block">По брендам</span>
+                                             </div>
+                                          </div>
+                                          <input type="text" class="input mt-10 mb-10" placeholder="Фильтровать">
+                                          <div class="d-f">
+                                             <button class="btn btn-color mr-10 sidebar-btn">Отмена</button>
+                                             <button class="btn btn-background sidebar-btn">Сохранить</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
@@ -901,35 +962,33 @@
                            <i class="icon icon-slider table-sidebar--list-item__icon"></i>
                            <p class="table-sidebar--list-item__text">Настройки</p>
                         </div>
-                        <div class="table-sidebar--list-main scrollbar" hidden data-expand-box data-outside-expand
+                        <div class="table-sidebar--list-main " hidden data-expand-box data-outside-expand
                            data-not-outside>
-                           <div class="table-sidebar--list-main__settings">
+                           <div class="table-sidebar--list-main__settings scrollbar">
                               <div class="table-sidebar--list-main__settings--block">
-                                 <div class="cursor-pointer table-sidebar--list-main__settings--block-list d-f a-i-c">
+                                 <div class="table-sidebar--list-main__settings--block-list d-f a-i-c cursor-pointer" data-sub-expand-click data-expand="true">
                                     <i
-                                       class="icon icon-arrow table-sidebar--list-main__settings--block-list__icon cursor-pointer rotate"></i>
+                                       class="icon icon-arrow table-sidebar--list-main__settings--block-list__icon rotate" data-sub-expand-icon></i>
                                     <p class="table-sidebar--list-main__settings--block-list__text">Столбцы</p>
                                  </div>
-                                 <div class="table-sidebar--list-main__settings--block-btn">
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">Сбросить
+                                 <div class="table-sidebar--list-main__settings--block-btn" data-expand-box>
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>Сбросить
                                        колонки</button>
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">Автоширина</button>
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">По ширине
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>Автоширина</button>
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>По ширине
                                        таблицы</button>
                                  </div>
                               </div>
                               <div class="table-sidebar--list-main__settings--block">
-                                 <div class="cursor-pointer table-sidebar--list-main__settings--block-list d-f a-i-c">
+                                 <div class="table-sidebar--list-main__settings--block-list d-f a-i-c cursor-pointer" data-sub-expand-click data-expand="true">
                                     <i
-                                       class="icon icon-arrow table-sidebar--list-main__settings--block-list__icon cursor-pointer rotate"></i>
-                                    <p class="table-sidebar--list-main__settings--block-list__text">Столбцы</p>
+                                       class="icon icon-arrow table-sidebar--list-main__settings--block-list__icon rotate" data-sub-expand-icon></i>
+                                    <p class="table-sidebar--list-main__settings--block-list__text">Пресеты фильтров</p>
                                  </div>
-                                 <div class="table-sidebar--list-main__settings--block-btn">
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">Сбросить
-                                       колонки</button>
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">Автоширина</button>
-                                    <button class="table-sidebar--list-main__settings--block-btn__main">По ширине
-                                       таблицы</button>
+                                 <div class="table-sidebar--list-main__settings--block-btn" data-expand-box>
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>Сохранить фильтр</button>
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>Сбросить фильтр</button>
+                                    <button class="table-sidebar--list-main__settings--block-btn__main" data-change-active>Сохраненные фильтры</button>
                                  </div>
                               </div>
                            </div>
