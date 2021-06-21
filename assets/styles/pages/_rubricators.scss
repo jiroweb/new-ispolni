@@ -27,7 +27,7 @@
                   }
 
                   &--icon {
-                     color: var(--primary_color_green-dark);
+                     color: var(--primary_color_dark);
                   }
 
                   &:hover {
@@ -50,13 +50,13 @@
                         color: var(--default_dark);
 
                         &:hover {
-                           color: var(--primary_color_green-dark);
+                           color: var(--primary_color_dark);
                            transition: var(--transition-global);
                         }
                      }
 
                      &-icon {
-                        color: var(--primary_color_green-dark);
+                        color: var(--primary_color_dark);
                         float: right;
                      }
 

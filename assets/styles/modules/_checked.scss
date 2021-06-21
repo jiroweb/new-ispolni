@@ -9,13 +9,13 @@
         border-radius: 2px;
 
         &:hover {
-            border-color: var(--primary_color_green-dark);
+            border-color: var(--primary_color_dark);
         }
     }
 
     .checkbox:checked~&-checkbox {
-        background-color: var(--primary_color_green-dark);
-        border: 1px solid var(--primary_color_green-dark);
+        background-color: var(--primary_color_dark);
+        border: 1px solid var(--primary_color_dark);
 
         &::before {
             content: "";
@@ -73,7 +73,7 @@
         }
 
         input:checked~&__slider {
-            background-color: var(--primary_color_green-dark);
+            background-color: var(--primary_color_dark);
 
             &::before {
                 left: auto;

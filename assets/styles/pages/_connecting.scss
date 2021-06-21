@@ -10,7 +10,7 @@
          background: var(--neutral_color_white);
          border: 1px solid #F2F2F7;
          border-radius: 8px;
-         border-top: 5px solid var(--primary_color_green-dark);
+         border-top: 5px solid var(--primary_color_dark);
 
          &+& {
             margin-left: 30px;
@@ -35,11 +35,11 @@
                   color: var(--default_light);
 
                   &:active {
-                     color: var(--primary_color_green-dark)
+                     color: var(--primary_color_dark)
                   }
 
                   &:hover {
-                     color: var(--primary_color_green-dark)
+                     color: var(--primary_color_dark)
                   }
                }
             }
@@ -63,7 +63,7 @@
                   font: rem(12px) $Bold;
                   line-height: rem(14px);
                   text-transform: uppercase;
-                  color: var(--primary_color_green-dark);
+                  color: var(--primary_color_dark);
                   margin-left: 10px;
                }
             }

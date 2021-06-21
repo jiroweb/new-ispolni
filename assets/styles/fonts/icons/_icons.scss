@@ -12,7 +12,7 @@
 
 .icon {
     // custom size
-    // font-size: 24px;
+    font-size: rem(24px);
 
     font-family: 'icomoon' !important;
     font-style: normal;
@@ -21,7 +21,6 @@
     text-transform: none;
     line-height: 1;
     display: inline-block;
-    font-size: 24px;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;

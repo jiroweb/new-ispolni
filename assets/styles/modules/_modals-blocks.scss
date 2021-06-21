@@ -107,7 +107,7 @@
 
 
    &__name {
-      background: var(--primary_color_green-dark);
+      background: var(--primary_color_dark);
       border-radius: 0px 8px 8px 0px;
       padding: 11px 22px 14px 20px;
       position: relative;
@@ -128,7 +128,7 @@
             content: "";
             width: 9px;
             height: 9px;
-            background-color: var(--primary_color_green-dark);
+            background-color: var(--primary_color_dark);
             border-radius: 50%;
          }
       }
@@ -154,7 +154,7 @@
          }
 
          &:hover &-main {
-            color: var(--primary_color_green-dark);
+            color: var(--primary_color_dark);
          }
 
          &-main {
@@ -163,7 +163,6 @@
 
             &__icon {
                color: #BBBBBB;
-               font-size: 14px;
                margin-right: 15px;
             }
          }

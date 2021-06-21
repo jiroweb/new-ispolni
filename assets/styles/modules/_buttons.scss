@@ -7,7 +7,7 @@
     white-space: nowrap;
 
     &-background {
-        background-color: var(--primary_color_green-dark);
+        background-color: var(--primary_color_dark);
         color: var(--neutral_color_white);
 
         &:hover {
@@ -21,18 +21,18 @@
         color: var(--default_dark);
 
         &:hover {
-            border: 1px solid var(--primary_color_green-dark);
+            border: 1px solid var(--primary_color_dark);
         }
 
     }
 
     &-color {
-        border: 1px solid var(--primary_color_green-dark);
+        border: 1px solid var(--primary_color_dark);
         background-color: var(--neutral_color_white);
-        color: var(--primary_color_green-dark);
+        color: var(--primary_color_dark);
 
         &:hover {
-            border: 1px solid var(--primary_color_green-light);
+            border: 1px solid var(--primary_color_light);
         }
 
     }
@@ -59,7 +59,7 @@
 
 .search-btn {
     border-radius: 0px 4px 4px 0px;
-    background-color: var(--primary_color_green-dark);
+    background-color: var(--primary_color_dark);
     color: var(--neutral_color_white);
     width: 43px;
     height: 39px;

@@ -42,13 +42,13 @@
                      left: 50%;
                      width: 0;
                      height: 3px;
-                     background-color: var(--primary_color_green-dark);
+                     background-color: var(--primary_color_dark);
                      transition: var(--transition-global);
                      z-index: 9999;
                   }
 
                   &.active {
-                     color: var(--primary_color_green-dark);
+                     color: var(--primary_color_dark);
 
                      &::before {
                         width: 100%;
@@ -87,7 +87,7 @@
                         transition: var(--transition-global);
 
                         &:hover {
-                           color: var(--primary_color_green-dark);
+                           color: var(--primary_color_dark);
                         }
                      }
                   }

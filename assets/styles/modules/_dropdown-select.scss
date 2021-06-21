@@ -14,7 +14,7 @@
         }
 
         &__arrow {
-            color: var(--primary_color_green-dark);
+            color: var(--primary_color_dark);
         }
     }
 
@@ -40,11 +40,11 @@
             transition: var(--transition-global);
 
             &.active {
-                color: var(--primary_color_green-dark);
+                color: var(--primary_color_dark);
             }
 
             &:hover {
-                color: var(--primary_color_green-dark);
+                color: var(--primary_color_dark);
             }
         }
     }

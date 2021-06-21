@@ -1,27 +1,51 @@
 @import '../fonts/icons/icons';
 
-.icon-file:before {
-  content: "\e916";
+.icon-messages:before {
+  content: "\e911";
 }
 
-.icon-coin:before {
+.icon-store:before {
   content: "\e912";
 }
 
-.icon-user:before {
+.icon-time:before {
   content: "\e913";
 }
 
-.icon-history:before {
+.icon-user:before {
   content: "\e914";
 }
 
-.icon-door-open:before {
+.icon-close:before {
   content: "\e915";
 }
 
-.icon-close:before {
-  content: "\e911";
+.icon-coin:before {
+  content: "\e916";
+}
+
+.icon-doc:before {
+  content: "\e917";
+}
+
+.icon-dollar:before {
+  content: "\e918";
+}
+
+.icon-door-open:before {
+  content: "\e919";
+}
+
+.icon-group:before {
+  content: "\e91a";
+}
+
+.icon-history:before {
+  content: "\e91b";
+}
+
+.icon-location:before {
+  content: "\e91c";
 }
 
 .icon-menu-dots:before {
@@ -82,15 +106,6 @@
 
 .icon-arrow:before {
   content: "\e90e";
-}
-
-.icon-arrow-up {
-  transform: rotate(180deg);
-
-  &:before {
-    content: "\e90e";
-
-  }
 }
 
 .icon-loop:before {
